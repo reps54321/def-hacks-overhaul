@@ -13,14 +13,18 @@
 	font-size: inherit;
 }
 
-body:after{
- display:none;
- content: url('../images/sponsors/microsoft on hover.png') url('../images/sponsors/nasa on hover.png') url('../images/sponsors/name on hover.png') url('../images/sponsors/google on hover.png') content: url('../images/sponsors/github on hover.png');
-}
+.microsoft-img img {
+  content: url('../images/sponsors/microsoft on hover.png') center center no-repeat;
+  content: url('../images/sponsors/microsoft.png') center center no-repeat;
+ }
+.microsoft-img img:hover{
+  background: url('../images/sponsors/micorosft on hover.png') center center no-repeat;
+ }
 
+/*
 .microsoft-img img:hover {
     content: url('../images/sponsors/microsoft on hover.png');
-}
+} */
 .nasa-img img:hover {
     content: url('../images/sponsors/nasa on hover.png');
 }
