@@ -15,22 +15,55 @@
 
 .microsoft-img img:hover {
     content: url('../images/sponsors/microsoft on hover.png');
-    margin-left: 40px;
 }
-/* .nasa-img
-.name-img
-.google-img
-.kingston-img
-.github-img
-.mongo-img
-.docusign-img
-.acumatica-img
-.hackerearth-img
-.mlh-img
-.remind-img
-.shapeways-img
-.samsung-img
-.thoughtworks-img
-.mozilla-img
-.rough-img
-.make-img  */
+.nasa-img img:hover {
+    content: url('../images/sponsors/nasa on hover.png');
+}
+.name-img img:hover {
+    content: url('../images/sponsors/name on hover.png');
+}
+.google-img img:hover {
+    content: url('../images/sponsors/google on hover.png');
+}
+.kingston-img img:hover {
+    content: url('../images/sponsors/kingston on hover.png');
+}
+.github-img img:hover {
+    content: url('../images/sponsors/github on hover.png');
+}
+.mongo-img img:hover {
+    content: url('../images/sponsors/mongodb on hover.png');
+}
+.docusign-img img:hover {
+    content: url('../images/sponsors/docusign on hover.png');
+}
+.acumatica-img img:hover {
+    content: url('../images/sponsors/acumatica on hover.png');
+}
+.hackerearth-img img:hover {
+    content: url('../images/sponsors/hackerearth on hover.png');
+}
+.mlh-img img:hover {
+    content: url('../images/sponsors/mlh on hover.png');
+}
+.remind-img img:hover {
+    content: url('../images/sponsors/remind on hover.png');
+}
+.shapeways-img img:hover {
+    content: url('../images/sponsors/shapeways on hover.png');
+}
+.samsung-img img:hover {
+    content: url('../images/sponsors/samsung accelerator on hover.png');
+}
+.thoughtworks-img img:hover {
+    content: url('../images/sponsors/thoughtworks on hover.png');
+}
+.mozilla-img img:hover {
+    content: url('../images/sponsors/mozilla hive on hover.png');
+}
+.rough-img img:hover {
+    content: url('../images/sponsors/rough draft vc on hover.png');
+}
+.make-img img:hover {
+    content: url('../images/sponsors/make school on hover.png');
+}
