@@ -13,6 +13,11 @@
 	font-size: inherit;
 }
 
+body:after{
+ display:none;
+ content: url('../images/sponsors/microsoft on hover.png') url('../images/sponsors/nasa on hover.png') url('../images/sponsors/name on hover.png') url('../images/sponsors/google on hover.png') content: url('../images/sponsors/github on hover.png');
+}
+
 .microsoft-img img:hover {
     content: url('../images/sponsors/microsoft on hover.png');
 }
