@@ -5135,9 +5135,8 @@ small {
   border: none;
   border-radius: 2px;
   display: inline-block;
-  height: 36px;
   line-height: 36px;
-  padding: 0 2rem;
+  padding: 0 1.3rem;
   text-transform: uppercase;
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent;
@@ -5201,13 +5200,13 @@ small {
 
 .btn:focus, .btn-large:focus,
 .btn-floating:focus {
-  background-color: #1d7d74;
+  background-color: #62a337;
 }
 
 .btn, .btn-large {
   text-decoration: none;
   color: #fff;
-  background-color: #26a69a;
+  background-color: #62a337;
   text-align: center;
   letter-spacing: .5px;
   -webkit-transition: .2s ease-out;
@@ -5216,7 +5215,7 @@ small {
 }
 
 .btn:hover, .btn-large:hover {
-  background-color: #2bbbad;
+  background-color: #62a337;
 }
 
 .btn-floating {
@@ -5229,7 +5228,7 @@ small {
   height: 40px;
   line-height: 40px;
   padding: 0;
-  background-color: #26a69a;
+  background-color: #62a337;
   border-radius: 50%;
   -webkit-transition: .3s;
   transition: .3s;
@@ -5238,7 +5237,7 @@ small {
 }
 
 .btn-floating:hover {
-  background-color: #26a69a;
+  background-color: #62a337;
 }
 
 .btn-floating:before {
