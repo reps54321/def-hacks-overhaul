@@ -14,39 +14,24 @@
 }
 
 .microsoft-img{
+  background-image: url('../images/sponsors/microsoft on hover.png');
   background-image: url('...images/sponsors/microsoft.png');
-}
-.microsoft-img:before {
-  content: url('../images/sponsors/microsoft on hover.png');
-  width:0;
-  height:0;
-  visibility:hidden;
 }
 .microsoft-img:hover {
   background-image: url('../images/sponsors/microsoft on hover.png');
 }
 
 .nasa-img{
+  background-image: url('../images/sponsors/nasa on hover.png');
   background-image: url('...images/sponsors/nasa.png');
-}
-.nasa-img:before {
-  content: url('../images/sponsors/nasa on hover.png');
-  width:0;
-  height:0;
-  visibility:hidden;
 }
 .nasa-img:hover {
   background-image: url('../images/sponsors/nasa on hover.png');
 }
 
 .name-img{
+  background-image: url('../images/sponsors/name on hover.png');
   background-image: url('...images/sponsors/name.png');
-}
-.name-img:before {
-  content: url('../images/sponsors/name on hover.png');
-  width:0;
-  height:0;
-  visibility:hidden;
 }
 .name-img:hover {
   background-image: url('../images/sponsors/name on hover.png');
