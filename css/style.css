@@ -53,13 +53,8 @@
 }
 
 .google-img{
+  background-image: url('...images/sponsors/google on hover.png');
   background-image: url('...images/sponsors/google.png');
-}
-.google-img:before {
-  content: url('../images/sponsors/google on hover.png');
-  width:0;
-  height:0;
-  visibility:hidden;
 }
 .google-img:hover {
   background-image: url('../images/sponsors/google on hover.png');
@@ -67,12 +62,6 @@
 
 .kingston-img{
   background-image: url('...images/sponsors/kingston.png');
-}
-.kingston-img:before {
-  content: url('../images/sponsors/kingston on hover.png');
-  width:0;
-  height:0;
-  visibility:hidden;
 }
 .kingston-img:hover {
   background-image: url('../images/sponsors/kingston on hover.png');
@@ -82,24 +71,12 @@
 .github-img{
   background-image: url('...images/sponsors/github.png');
 }
-.github-img:before {
-  content: url('../images/sponsors/github on hover.png');
-  width:0;
-  height:0;
-  visibility:hidden;
-}
 .github-img:hover {
   background-image: url('../images/sponsors/github on hover.png');
 }
 
 .mongo-img{
   background-image: url('...images/sponsors/mongo db.png');
-}
-.mongo-img:before {
-  content: url('../images/sponsors/mongodb on hover.png');
-  width:0;
-  height:0;
-  visibility:hidden;
 }
 .mongo-img:hover {
   background-image: url('../images/sponsors/mongodb on hover.png');
@@ -108,24 +85,12 @@
 .docusign-img{
   background-image: url('...images/sponsors/docusign.png');
 }
-.docusign-img:before {
-  content: url('../images/sponsors/docusign on hover.png');
-  width:0;
-  height:0;
-  visibility:hidden;
-}
 .docusign-img:hover {
   background-image: url('../images/sponsors/docusign on hover.png');
 }
 
 .acumatica-img{
   background-image: url('...images/sponsors/acumatica.png');
-}
-.acumatica-img:before {
-  content: url('../images/sponsors/acumatica on hover.png');
-  width:0;
-  height:0;
-  visibility:hidden;
 }
 .acumatica-img:hover {
   background-image: url('../images/sponsors/acumatica on hover.png');
@@ -134,24 +99,12 @@
 .hackerearth-img{
   background-image: url('...images/sponsors/hackerearth.png');
 }
-.hackerearth-img:before {
-  content: url('../images/sponsors/hackerearth on hover.png');
-  width:0;
-  height:0;
-  visibility:hidden;
-}
 .hackerearth-img:hover {
   background-image: url('../images/sponsors/hackerearth on hover.png');
 }
 
 .mlh-img{
   background-image: url('...images/sponsors/mlh.png');
-}
-.mlh-img:before {
-  content: url('../images/sponsors/mlh on hover.png');
-  width:0;
-  height:0;
-  visibility:hidden;
 }
 .mlh-img:hover {
   background-image: url('../images/sponsors/mlh on hover.png');
@@ -160,24 +113,12 @@
 .remind-img{
   background-image: url('...images/sponsors/remind.png');
 }
-.remind-img:before {
-  content: url('../images/sponsors/remind on hover.png');
-  width:0;
-  height:0;
-  visibility:hidden;
-}
 .remind-img:hover {
   background-image: url('../images/sponsors/remind on hover.png');
 }
 
 .shapeways-img{
   background-image: url('...images/sponsors/shapeways.png');
-}
-.shapeways-img:before {
-  content: url('../images/sponsors/shapeways on hover.png');
-  width:0;
-  height:0;
-  visibility:hidden;
 }
 .shapeways-img:hover {
   background-image: url('../images/sponsors/shapeways on hover.png');
@@ -186,24 +127,12 @@
 .samsung-img{
   background-image: url('...images/sponsors/samsung accelerator.png');
 }
-.samsung-img:before {
-  content: url('../images/sponsors/samsung accelerator on hover.png');
-  width:0;
-  height:0;
-  visibility:hidden;
-}
 .samsung-img:hover {
   background-image: url('../images/sponsors/samsung accelerator on hover.png');
 }
 
 .thoughtworks-img{
   background-image: url('...images/sponsors/thoughtworks.png');
-}
-.thoughtworks-img:before {
-  content: url('../images/sponsors/thoughtworks on hover.png');
-  width:0;
-  height:0;
-  visibility:hidden;
 }
 .thoughtworks-img:hover {
   background-image: url('../images/sponsors/thoughtworks on hover.png');
@@ -212,12 +141,6 @@
 .mozilla-img{
   background-image: url('...images/sponsors/mozilla hive.png');
 }
-.mozilla-img:before {
-  content: url('../images/sponsors/mozilla hive on hover.png');
-  width:0;
-  height:0;
-  visibility:hidden;
-}
 .mozilla-img:hover {
   background-image: url('../images/sponsors/mozilla hive on hover.png');
 }
@@ -225,24 +148,12 @@
 .rough-img{
   background-image: url('...images/sponsors/rough draft vs.png');
 }
-.rough-img:before {
-  content: url('../images/sponsors/rough draft vc on hover.png');
-  width:0;
-  height:0;
-  visibility:hidden;
-}
 .rough-img:hover {
   background-image: url('../images/sponsors/rough draft vc on hover.png');
 }
 
 .make-img{
   background-image: url('...images/sponsors/make school.png');
-}
-.make-img:before {
-  content: url('../images/sponsors/make school on hover.png');
-  width:0;
-  height:0;
-  visibility:hidden;
 }
 .make-img:hover {
   background-image: url('../images/sponsors/make school on hover.png');
