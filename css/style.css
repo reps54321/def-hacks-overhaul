@@ -26,7 +26,7 @@
   background-image: url('...images/sponsors/nasa.png');
 }
 .nasa-img:hover {
-  background-image: url('../images/sponsors/nasa on hover.png');
+  content: url('../images/sponsors/nasa on hover.png');
 }
 
 .name-img{
@@ -34,7 +34,7 @@
   background-image: url('...images/sponsors/name.png');
 }
 .name-img:hover {
-  background-image: url('../images/sponsors/name on hover.png');
+  content: url('../images/sponsors/name on hover.png');
 }
 
 .google-img{
@@ -42,104 +42,117 @@
   background-image: url('...images/sponsors/google.png');
 }
 .google-img:hover {
-  background-image: url('../images/sponsors/google on hover.png');
+  content: url('../images/sponsors/google on hover.png');
 }
 
 .kingston-img{
+  background-image: url('...images/sponsors/kingston on hover.png');
   background-image: url('...images/sponsors/kingston.png');
 }
 .kingston-img:hover {
-  background-image: url('../images/sponsors/kingston on hover.png');
+  content: url('../images/sponsors/kingston on hover.png');
 }
 
-
 .github-img{
+  background-image: url('../images/sponsors/github on hover.png');
   background-image: url('...images/sponsors/github.png');
 }
 .github-img:hover {
-  background-image: url('../images/sponsors/github on hover.png');
+  content: url('../images/sponsors/github on hover.png');
 }
 
 .mongo-img{
   background-image: url('...images/sponsors/mongo db.png');
+  background-image: url('../images/sponsors/mongodb on hover.png');
 }
 .mongo-img:hover {
-  background-image: url('../images/sponsors/mongodb on hover.png');
+  content: url('../images/sponsors/mongodb on hover.png');
 }
 
 .docusign-img{
+  background-image: url('../images/sponsors/docusign on hover.png');
   background-image: url('...images/sponsors/docusign.png');
 }
 .docusign-img:hover {
-  background-image: url('../images/sponsors/docusign on hover.png');
+  content: url('../images/sponsors/docusign on hover.png');
 }
 
 .acumatica-img{
+  background-image: url('../images/sponsors/acumatica on hover.png');
   background-image: url('...images/sponsors/acumatica.png');
 }
 .acumatica-img:hover {
-  background-image: url('../images/sponsors/acumatica on hover.png');
+  content: url('../images/sponsors/acumatica on hover.png');
 }
 
 .hackerearth-img{
+  background-image: url('../images/sponsors/hackerearth on hover.png');
   background-image: url('...images/sponsors/hackerearth.png');
 }
 .hackerearth-img:hover {
-  background-image: url('../images/sponsors/hackerearth on hover.png');
+  content: url('../images/sponsors/hackerearth on hover.png');
 }
 
 .mlh-img{
+  background-image: url('../images/sponsors/mlh on hover.png');
   background-image: url('...images/sponsors/mlh.png');
 }
 .mlh-img:hover {
-  background-image: url('../images/sponsors/mlh on hover.png');
+  content: url('../images/sponsors/mlh on hover.png');
 }
 
 .remind-img{
+  background-image: url('../images/sponsors/remind on hover.png');
   background-image: url('...images/sponsors/remind.png');
 }
 .remind-img:hover {
-  background-image: url('../images/sponsors/remind on hover.png');
+  content: url('../images/sponsors/remind on hover.png');
 }
 
 .shapeways-img{
+  background-image: url('../images/sponsors/shapeways on hover.png');
   background-image: url('...images/sponsors/shapeways.png');
 }
 .shapeways-img:hover {
-  background-image: url('../images/sponsors/shapeways on hover.png');
+  content: url('../images/sponsors/shapeways on hover.png');
 }
 
 .samsung-img{
+  background-image: url('../images/sponsors/samsung accelerator on hover.png');
   background-image: url('...images/sponsors/samsung accelerator.png');
 }
 .samsung-img:hover {
-  background-image: url('../images/sponsors/samsung accelerator on hover.png');
+  content: url('../images/sponsors/samsung accelerator on hover.png');
 }
 
 .thoughtworks-img{
+  background-image: url('../images/sponsors/thoughtworks on hover.png');
   background-image: url('...images/sponsors/thoughtworks.png');
 }
 .thoughtworks-img:hover {
-  background-image: url('../images/sponsors/thoughtworks on hover.png');
+  content: url('../images/sponsors/thoughtworks on hover.png');
 }
 
 .mozilla-img{
+  background-image: url('../images/sponsors/mozilla hive on hover.png');
   background-image: url('...images/sponsors/mozilla hive.png');
 }
 .mozilla-img:hover {
-  background-image: url('../images/sponsors/mozilla hive on hover.png');
+  content: url('../images/sponsors/mozilla hive on hover.png');
 }
 
 .rough-img{
-  background-image: url('...images/sponsors/rough draft vs.png');
+  background-image: url('../images/sponsors/rough draft vc on hover.png');
+  background-image: url('...images/sponsors/rough draft vc.png');
 }
 .rough-img:hover {
-  background-image: url('../images/sponsors/rough draft vc on hover.png');
+  content: url('../images/sponsors/rough draft vc on hover.png');
 }
 
 .make-img{
+  background-image: url('../images/sponsors/make school on hover.png');
   background-image: url('...images/sponsors/make school.png');
 }
 .make-img:hover {
-  background-image: url('../images/sponsors/make school on hover.png');
+  content: url('../images/sponsors/make school on hover.png');
 }
