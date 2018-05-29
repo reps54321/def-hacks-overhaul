@@ -22,27 +22,50 @@
   height:0;
   visibility:hidden;
 }
-
 .microsoft-img:hover {
   background-image: url('../images/sponsors/microsoft on hover.png');
 }
 
-/*
+.nasa-img{
+  background-image: url('...images/sponsors/nasa.png');
+}
+.nasa-img:before {
+  content: url('../images/sponsors/nasa on hover.png');
+  width:0;
+  height:0;
+  visibility:hidden;
+}
+.nasa-img:hover {
+  background-image: url('../images/sponsors/nasa on hover.png');
+}
+
+.name-img{
+  background-image: url('...images/sponsors/name.png');
+}
+.name-img:before {
+  content: url('../images/sponsors/name on hover.png');
+  width:0;
+  height:0;
+  visibility:hidden;
+}
+.name-img:hover {
+  background-image: url('../images/sponsors/name on hover.png');
+}
+
+.google-img{
+  background-image: url('...images/sponsors/google.png');
+}
+.google-img:before {
+  content: url('../images/sponsors/google on hover.png');
+  width:0;
+  height:0;
+  visibility:hidden;
+}
+.google-img:hover {
+  background-image: url('../images/sponsors/google on hover.png');
+}
 
 
-
-.microsoft-img img:hover {
-    content: url('../images/sponsors/microsoft on hover.png');
-} */
-.nasa-img img:hover {
-    content: url('../images/sponsors/nasa on hover.png');
-}
-.name-img img:hover {
-    content: url('../images/sponsors/name on hover.png');
-}
-.google-img img:hover {
-    content: url('../images/sponsors/google on hover.png');
-}
 .kingston-img img:hover {
     content: url('../images/sponsors/kingston on hover.png');
 }
