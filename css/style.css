@@ -13,7 +13,7 @@
 	font-size: inherit;
 }
 
-.microsoft-img {
+.base-img {
   position: relative;
   width: 50%;
 }
@@ -34,17 +34,16 @@
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-image: url('../images/sponsors/microsoft on hover.png')!important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 100%;
 }
 
-.microsoft-img:hover .overlay {
+.base-img:hover .overlay {
   opacity: 1;
 }
 
-.microsoft-img:hover img {
+.base-img:hover img {
   content: none;
 }
 
@@ -59,146 +58,74 @@
   text-align: center;
 }
 
-/* .microsoft-img img{
-  background-image: url('../images/sponsors/microsoft on hover.png');
-  background-image: url('...images/sponsors/microsoft.png');
-}
-.microsoft-img img:hover {
-  content: url('../images/sponsors/microsoft on hover.png') !important;
-} */
-
-.nasa-img{
-  background-image: url('../images/sponsors/nasa on hover.png');
-  background-image: url('...images/sponsors/nasa.png');
-}
-.nasa-img:hover {
-  content: url('../images/sponsors/nasa on hover.png');
+.microsoft-overlay {
+    background-image: url('../images/sponsors/microsoft on hover.png')!important;
 }
 
-.name-img{
-  background-image: url('../images/sponsors/name on hover.png');
-  background-image: url('...images/sponsors/name.png');
-}
-.name-img:hover {
-  content: url('../images/sponsors/name on hover.png');
+.nasa-overlay{
+  background-image: url('../images/sponsors/nasa on hover.png')!important;
 }
 
-.google-img{
-  background-image: url('...images/sponsors/google on hover.png');
-  background-image: url('...images/sponsors/google.png');
-}
-.google-img:hover {
-  content: url('../images/sponsors/google on hover.png');
+.name-overlay{
+  background-image: url('../images/sponsors/name on hover.png')!important;
 }
 
-.kingston-img{
-  background-image: url('...images/sponsors/kingston on hover.png');
-  background-image: url('...images/sponsors/kingston.png');
-}
-.kingston-img:hover {
-  content: url('../images/sponsors/kingston on hover.png');
+.google-overlay{
+  background-image: url('../images/sponsors/google on hover.png')!important;
 }
 
-.github-img{
-  background-image: url('../images/sponsors/github on hover.png');
-  background-image: url('...images/sponsors/github.png');
-}
-.github-img:hover {
-  content: url('../images/sponsors/github on hover.png');
+.kingston-overlay{
+  background-image: url('../images/sponsors/kingston on hover.png')!important;
 }
 
-.mongo-img{
-  background-image: url('...images/sponsors/mongo db.png');
-  background-image: url('../images/sponsors/mongodb on hover.png');
-}
-.mongo-img:hover {
-  content: url('../images/sponsors/mongodb on hover.png');
+.github-overlay{
+  background-image: url('../images/sponsors/github on hover.png')!important;
 }
 
-.docusign-img{
-  background-image: url('../images/sponsors/docusign on hover.png');
-  background-image: url('...images/sponsors/docusign.png');
-}
-.docusign-img:hover {
-  content: url('../images/sponsors/docusign on hover.png');
+.mongo-overlay{
+  background-image: url('../images/sponsors/mongodb on hover.png')!important;
 }
 
-.acumatica-img{
-  background-image: url('../images/sponsors/acumatica on hover.png');
-  background-image: url('...images/sponsors/acumatica.png');
-}
-.acumatica-img:hover {
-  content: url('../images/sponsors/acumatica on hover.png');
+.docusign-overlay{
+  background-image: url('../images/sponsors/docusign on hover.png')!important;
 }
 
-.hackerearth-img{
-  background-image: url('../images/sponsors/hackerearth on hover.png');
-  background-image: url('...images/sponsors/hackerearth.png');
-}
-.hackerearth-img:hover {
-  content: url('../images/sponsors/hackerearth on hover.png');
+.acumatica-overlay{
+  background-image: url('../images/sponsors/acumatica on hover.png')!important;
 }
 
-.mlh-img{
-  background-image: url('../images/sponsors/mlh on hover.png');
-  background-image: url('...images/sponsors/mlh.png');
-}
-.mlh-img:hover {
-  content: url('../images/sponsors/mlh on hover.png');
+.hackerearth-overlay{
+  background-image: url('../images/sponsors/hackerearth on hover.png')!important;
 }
 
-.remind-img{
-  background-image: url('../images/sponsors/remind on hover.png');
-  background-image: url('...images/sponsors/remind.png');
-}
-.remind-img:hover {
-  content: url('../images/sponsors/remind on hover.png');
+.mlh-overlay{
+  background-image: url('../images/sponsors/mlh on hover.png')!important;
 }
 
-.shapeways-img{
-  background-image: url('../images/sponsors/shapeways on hover.png');
-  background-image: url('...images/sponsors/shapeways.png');
-}
-.shapeways-img:hover {
-  content: url('../images/sponsors/shapeways on hover.png');
+.remind-overlay{
+  background-image: url('../images/sponsors/remind on hover.png')!important;
 }
 
-.samsung-img{
-  background-image: url('../images/sponsors/samsung accelerator on hover.png');
-  background-image: url('...images/sponsors/samsung accelerator.png');
-}
-.samsung-img:hover {
-  content: url('../images/sponsors/samsung accelerator on hover.png');
+.shapeways-overlay{
+  background-image: url('../images/sponsors/shapeways on hover.png')!important;
 }
 
-.thoughtworks-img{
-  background-image: url('../images/sponsors/thoughtworks on hover.png');
-  background-image: url('...images/sponsors/thoughtworks.png');
-}
-.thoughtworks-img:hover {
-  content: url('../images/sponsors/thoughtworks on hover.png');
+.samsung-overlay{
+  background-image: url('../images/sponsors/samsung accelerator on hover.png')!important;
 }
 
-.mozilla-img{
-  background-image: url('../images/sponsors/mozilla hive on hover.png');
-  background-image: url('...images/sponsors/mozilla hive.png');
-}
-.mozilla-img:hover {
-  content: url('../images/sponsors/mozilla hive on hover.png');
+.thoughtworks-overlay{
+  background-image: url('../images/sponsors/thoughtworks on hover.png')!important;
 }
 
-.rough-img{
-  background-image: url('../images/sponsors/rough draft vc on hover.png');
-  background-image: url('...images/sponsors/rough draft vc.png');
-}
-.rough-img:hover {
-  content: url('../images/sponsors/rough draft vc on hover.png');
+.mozilla-overlay{
+  background-image: url('../images/sponsors/mozilla hive on hover.png')!important;
 }
 
-.make-img{
-  background-image: url('../images/sponsors/make school on hover.png');
-  background-image: url('...images/sponsors/make school.png');
+.rough-overlay{
+  background-image: url('../images/sponsors/rough draft vc on hover.png')!important;
 }
-.make-img:hover {
-  content: url('../images/sponsors/make school on hover.png');
+
+.make-overlay{
+  background-image: url('../images/sponsors/make school on hover.png')!important;
 }
