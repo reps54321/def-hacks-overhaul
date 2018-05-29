@@ -1,5 +1,3 @@
-@import url("//use.edgefonts.net/raleway.js");
-
 body{
     overflow-x:hidden
 }
