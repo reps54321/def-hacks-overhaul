@@ -14,6 +14,73 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="css/particles-style.css">
+
+  <script language="JavaScript">
+    function preloader()
+    {
+         // counter
+         var i = 0;
+
+         // create object
+         imageObj = new Image();
+
+         // set image list
+         images = new Array();
+         images[0]="images/sponsors/microsoft on hover.png"
+         images[1]="images/sponsors/nasa on hover.png"
+         images[2]="images/sponsors/name on hover.png"
+         images[3]="images/sponsors/google on hover.png"
+
+                  // .kingston-img img:hover {
+                  //     content: url('../images/sponsors/kingston on hover.png');
+                  // }
+                  // .github-img img:hover {
+                  //     content: url('../images/sponsors/github on hover.png');
+                  // }
+                  // .mongo-img img:hover {
+                  //     content: url('../images/sponsors/mongodb on hover.png');
+                  // }
+                  // .docusign-img img:hover {
+                  //     content: url('../images/sponsors/docusign on hover.png');
+                  // }
+                  // .acumatica-img img:hover {
+                  //     content: url('../images/sponsors/acumatica on hover.png');
+                  // }
+                  // .hackerearth-img img:hover {
+                  //     content: url('../images/sponsors/hackerearth on hover.png');
+                  // }
+                  // .mlh-img img:hover {
+                  //     content: url('../images/sponsors/mlh on hover.png');
+                  // }
+                  // .remind-img img:hover {
+                  //     content: url('../images/sponsors/remind on hover.png');
+                  // }
+                  // .shapeways-img img:hover {
+                  //     content: url('../images/sponsors/shapeways on hover.png');
+                  // }
+                  // .samsung-img img:hover {
+                  //     content: url('../images/sponsors/samsung accelerator on hover.png');
+                  // }
+                  // .thoughtworks-img img:hover {
+                  //     content: url('../images/sponsors/thoughtworks on hover.png');
+                  // }
+                  // .mozilla-img img:hover {
+                  //     content: url('../images/sponsors/mozilla hive on hover.png');
+                  // }
+                  // .rough-img img:hover {
+                  //     content: url('../images/sponsors/rough draft vc on hover.png');
+                  // }
+                  // .make-img img:hover {
+                  //     content: url('../images/sponsors/make school on hover.png');
+                  // }
+         // start preloading
+         for(i=0; i<=3; i++)
+         {
+              imageObj.src=images[i];
+         }
+    }
+  </script>
+
   <style>
   .mySlides {display:none}
   .w3-left, .w3-right, .w3-badge {cursor:pointer}
