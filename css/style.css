@@ -13,7 +13,7 @@
 	font-size: inherit;
 }
 
-.microsoft-img:hover {
+.microsoft-img img:hover {
     content: url('../images/sponsors/microsoft on hover.png');
     margin-left: 40px;
 }
