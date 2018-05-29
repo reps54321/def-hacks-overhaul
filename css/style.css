@@ -13,17 +13,17 @@
 	font-size: inherit;
 }
 
-.microsoft-img img{
+.microsoft-img{
   background-image: url('...images/sponsors/microsoft.png');
 }
-.microsoft-img img:before {
+.microsoft-img:before {
   content: url('../images/sponsors/microsoft on hover.png');
   width:0;
   height:0;
   visibility:hidden;
 }
 
-.microsoft-img img:hover {
+.microsoft-img:hover {
   background-image: url('../images/sponsors/microsoft on hover.png');
 }
 
