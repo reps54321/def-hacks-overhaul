@@ -36,9 +36,8 @@
   transition: .5s ease;
   background-image: url('../images/sponsors/microsoft on hover.png')!important;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
-  background-size: 100% 100%;
+  background-size: auto 100%;
 }
 
 .microsoft-img:hover .overlay {
