@@ -18,7 +18,7 @@
   background-image: url('...images/sponsors/microsoft.png');
 }
 .microsoft-img:hover {
-  background-image: url('../images/sponsors/microsoft on hover.png');
+  background-image: url('../images/sponsors/microsoft on hover.png') !important;
 }
 
 .nasa-img{
