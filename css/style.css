@@ -41,6 +41,10 @@
   opacity: 1;
 }
 
+.microsoft-img:hover img {
+  content: none;
+}
+
 .text {
   color: white;
   font-size: 20px;
