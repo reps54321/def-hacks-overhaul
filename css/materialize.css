@@ -5906,7 +5906,7 @@ button.btn-floating {
 }
 
 .chips:empty ~ label {
-  font-size: 0.8rem;
+  font-size: 1em;
   -webkit-transform: translateY(-140%);
           transform: translateY(-140%);
 }
@@ -5966,7 +5966,7 @@ button:focus {
 }
 
 label {
-  font-size: 0.8rem;
+  font-size: 1em;
   color: #9e9e9e;
 }
 
@@ -7041,7 +7041,7 @@ select {
 .select-wrapper + label {
   position: absolute;
   top: -26px;
-  font-size: 0.8rem;
+  font-size: 1em;
 }
 
 select:disabled {
