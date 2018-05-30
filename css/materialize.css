@@ -5139,7 +5139,7 @@ small {
 .btn, .btn-large,
 .btn-flat {
   border: none;
-  border-radius: 2px;
+  border-radius: 0px;
   display: inline-block;
   line-height: 36px;
   padding: 0 1.3rem;
