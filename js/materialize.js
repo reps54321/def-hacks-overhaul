@@ -709,6 +709,7 @@ if ($) {
 
   $(document).ready(function(){
     $('.dropdown-button').dropdown();
+    $(".button-collapse").sideNav();
   });
 }( jQuery ));
 ;(function($) {
@@ -1169,6 +1170,7 @@ if ($) {
 
 $(document).ready(function(){
   $('.materialboxed').materialbox();
+      $(".button-collapse").sideNav();
 });
 
 }( jQuery ));
@@ -1375,6 +1377,7 @@ $(document).ready(function(){
 
   $(document).ready(function(){
     $('ul.tabs').tabs();
+        $(".button-collapse").sideNav();
   });
 }( jQuery ));
 ;(function ($) {
@@ -1605,6 +1608,7 @@ $(document).ready(function(){
 
   $(document).ready(function(){
      $('.tooltipped').tooltip();
+         $(".button-collapse").sideNav();
    });
 }( jQuery ));
 ;/*!
@@ -2029,7 +2033,7 @@ $(document).ready(function(){
         }
         else {
           // Insert as text;
-          toast.innerHTML = html; 
+          toast.innerHTML = html;
         }
         // Bind hammer
         var hammerHandler = new Hammer(toast, {prevent_default: false});
@@ -2718,6 +2722,7 @@ $(document).ready(function(){
 })(jQuery);
 ;(function ($) {
   $(document).ready(function() {
+        $(".button-collapse").sideNav();
 
     // Function to update labels of text fields
     Materialize.updateTextFields = function() {
@@ -2746,6 +2751,7 @@ $(document).ready(function(){
     // Add active if input element has been pre-populated on document ready
     $(document).ready(function() {
       Materialize.updateTextFields();
+          $(".button-collapse").sideNav();
     });
 
     // HTML DOM FORM RESET handling
