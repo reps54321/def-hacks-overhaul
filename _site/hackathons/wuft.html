@@ -117,7 +117,7 @@
     </div>
   </div>
   <div  class="seperator-top hide-on-small-only fade-in four" style="margin-top: 40px; border-bottom: 70px solid #e8e8e8; border-right: 1500px solid transparent; overflow: hidden"></div>
-    <div class="seperator-bottom fade-in four" style=" margin-top: -1px; margin-bottom: -1px;"></div>
+    <div class="seperator-bottom fade-in four" id="top-separator"></div>
 
       <style>
       .done-chip {
@@ -238,21 +238,28 @@
             padding: 0px 20%;
         }
 
-        @media only screen and (min-width: 1000px) {
+        #question-group {
+          padding: 20px 0 30px 0;
+        }
+
+        @media only screen and (min-width: 992.5px) {
           #top-date-element {
             margin-left: 4.16666666%;
           }
 
           #sponsor-tab {
-            padding: 0px 25%;
+            padding: 0px 15%;
           }
           
         }
 
-        @media only screen and (max-width: 1000px) {
+        @media only screen and (max-width: 992.5px) {
           #wufthacks-container {
             width: 50%;
             min-width: 350px;
+          }
+          #sponsor-tab {
+            padding: 0px 7.5%;
           }
         }
 
@@ -264,11 +271,11 @@
         }
 
         @media only screen and (max-width: 600px) {
+          #top-separator {
+            margin-top: 25px;
+          }
           #wufthacks-container {
             width: 90%;
-          }
-          #sponsor-tab {
-            padding: 0px 30px;
           }
         }
 
@@ -317,7 +324,7 @@
 
     </div>
   </div>
-  <div class="seperator-top hide-on-small-only" style="margin-top: -50px; margin-bottom: -1px;border-bottom: 51px solid #0e2b72; border-right: 1500px solid #e8e8e8; overflow: hidden; -webkit-transform: scaleX(1); transform: scaleX(1);"></div>
+  <div class="separator-top hide-on-small-only" style="margin-top: -50px; margin-bottom: -1px;border-bottom: 51px solid #0e2b72; border-right: 1500px solid #e8e8e8; overflow: hidden; -webkit-transform: scaleX(1); transform: scaleX(1);"></div>
 
   <div style="width: 100%; background-color: #0e2b72; height: 30px; margin-top: -10px;"></div>
 
@@ -400,7 +407,7 @@
             </div>
           -->
 
-            <div id="search-content" style="padding: 20px 0px 30px 0px;">
+            <div id="search-content question-group" style="padding: 20px 0px 30px 0px;">
               <div class="question" style="color: #303030;">
                 <h4>What is WUFT Hacks?</h4>
                 <p>The Wharton Undergraduate FinTech (WUFT) Hackathon is a programming competition sponsored by private companies. The event brings together some of the brightest minds to solve challenges at the crossroads of business and technology. </p>
