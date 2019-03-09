@@ -229,6 +229,49 @@
           height: 10px;
           overflow: hidden;
         }
+
+        #wufthacks-container {
+          width: 40%;
+        }
+
+        #sponsor-tab {
+            padding: 0px 20%;
+        }
+
+        @media only screen and (min-width: 1000px) {
+          #top-date-element {
+            margin-left: 4.16666666%;
+          }
+
+          #sponsor-tab {
+            padding: 0px 25%;
+          }
+          
+        }
+
+        @media only screen and (max-width: 1000px) {
+          #wufthacks-container {
+            width: 50%;
+            min-width: 350px;
+          }
+        }
+
+        @media only screen and (max-width: 800px) {
+          #wufthacks-container {
+            width: 50%;
+            min-width: 350px;
+          }
+        }
+
+        @media only screen and (max-width: 600px) {
+          #wufthacks-container {
+            width: 90%;
+          }
+          #sponsor-tab {
+            padding: 0px 30px;
+          }
+        }
+
       </style>
   </div>
 
@@ -238,16 +281,19 @@
       <div class="row">
          <div class="col s12">
             <div class="row" >
-              <div class="col l3 s12" style="margin-left: 4.16666666%; color: #000">
-                <h3 style="font-family: 'Oswald', sans-serif; color: #0e2b72;">When?</h3>
+              <div class="col l3 s12 offset-l1" id="top-date-element" style="color: #000">
+                <h3 style="font-family: 'Oswald', sans-serif; color: #0e2b72;">When? </h3>
+                <img height="50px" style="margin: 5px 0;"; src="../images/wuft-icons/when.png"/>
                 <p>April 6th, 9AM-5PM</p>
               </div>
               <div class="col l3 s12 offset-l1" style="color: #000">
                 <h3 style="font-family: 'Oswald', sans-serif; color: #0e2b72;">Where?</h3>
+                <img height="50px" style="margin: 5px 0;"; src="../images/wuft-icons/where.png"/>
                 <p>8th Floor of Huntsman Hall, The Wharton School, Philadelphia, PA 19104</p>
               </div>
               <div class="col l3 s12 offset-l1" style="color: #000">
                 <h3 style="font-family: 'Oswald', sans-serif; color: #0e2b72;">What?</h3>
+                <img height="50px" style="margin: 5px 0;"; src="../images/wuft-icons/what.png"/>
                 <p>Team-based FinTech hackathon with a <u>$5,000</u> prize pool</p>
               </div>
             </div>
@@ -286,9 +332,9 @@
        </div>
     </div>
 
-    <div class="row center-align" style="width: 40%;">
+    <div class="row center-align" id="wufthacks-container">
       <div class="col s12" style="text-align: center;">
-        <a href="https://wuft.io"><img style="width: 100%; margin: 25px auto;" src="../images/wufthacks_logo.png" class="responsive-img"></a>
+        <a target="_blank" href="https://wuft.io"><img style="width: 100%; margin: 25px auto; min-width: 300px;" src="../images/wufthacks_logo.png" class="responsive-img"></a>
       </div>
     </div>
 
@@ -302,33 +348,33 @@
     </div>
 
     <div class="row center-align">
-        <div class="col s12" style="text-align: left; padding: 0px 120px;">
+        <div class="col s12" style="text-align: left;" id="sponsor-tab">
           <h4 style="color:#303030; font-family: 'Open Sans'; font-weight: 700;">Gold Sponsor: <a style="color: #448AFF" href="http://defhacks.io">Def Hacks</a></h4>
-          <img style="width: 36%; margin: 10px auto;" src="../images/defhacks-logos/defhacks-wordmark-logo-black-black-green.png" class="responsive-img">
+          <img style="width: 36%; margin: 10px auto; min-width: 250px;" src="../images/defhacks-logos/defhacks-wordmark-logo-black-black-green.png" class="responsive-img">
           <h4 style="color:#303030; font-family: 'Open Sans'; font-weight: 400;">About <a style="text-decoration: underline;" href="http://defhacks.io">Def Hacks</a>:</h4>
           <h5 style="color:#303030; font-family: 'Open Sans'; font-weight: 400; line-height: 1.7;">
               Def Hacks is a certified 501(c)(3) non-profit organization dedicated to providing immersive learning experiences for students in computer science through high school and college hackathons.</h5>
         </div>
-      <div class="col s12" style="text-align: left; padding: 0px 120px;">
+      <div class="col s12" style="text-align: left;" id="sponsor-tab">
         <h4 style="color:#303030; font-family: 'Open Sans'; font-weight: 700;">Silver Sponsor: <a style="color: #448AFF" href="https://evenfinancial.com">Even</a></h4>
-        <img style="width: 27.5%; margin: 0 auto;" src="../images/sponsors/even-leftsideempty.png" class="responsive-img">
+        <img style="width: 27.5%; margin: 0 auto; min-width: 190px;" src="../images/sponsors/even-leftsideempty.png" class="responsive-img">
         <h4 style="color:#303030; font-family: 'Open Sans'; font-weight: 400;">About <a style="text-decoration: underline;" href="https://evenfinancial.com">Even</a>:</h4>
         <h5 style="color:#303030; font-family: 'Open Sans'; font-weight: 400; line-height: 1.7;">
           Even is the leading search, comparison and recommendation engine for financial services.</h5>
       </div>
-      <div class="col s12" style="text-align: left; padding: 0px 120px;">
+      <div class="col s12" style="text-align: left;" id="sponsor-tab">
         <h4 style="color:#303030; font-family: 'Open Sans'; font-weight: 700;">Silver Sponsor: <a style="color: #448AFF" href="https://www.cdw.com">CDW</a></h4>
-        <img style="width: 30%; margin: 0 auto;" src="../images/sponsors/cdw-leftsideempty.png" class="responsive-img">
+        <img style="width: 30%; margin: 0 auto; min-width: 175px;" src="../images/sponsors/cdw-leftsideempty.png" class="responsive-img">
         <h4 style="color:#303030; font-family: 'Open Sans'; font-weight: 400;">About <a style="text-decoration: underline;" href="https://www.cdw.com">CDW</a>:</h4>
         <h5 style="color:#303030; font-family: 'Open Sans'; font-weight: 400; line-height: 1.7;">
           CDW is a leading multi-brand technology solutions provider to business, government, education and healthcare organizations in the United States, the United Kingdom and Canada.</h5>
       </div>
-      <div class="col s12" style="text-align: left; padding: 0px 120px;">
+      <div class="col s12" style="text-align: left;" id="sponsor-tab">
         <h4 style="color:#303030; font-family: 'Open Sans'; font-weight: 700;">Bronze Sponsor: <a style="color: #448AFF" href="https://www.trumid.com/">Trumid</a></h4>
-        <img style="width: 25%; margin: 0 auto;" src="../images/sponsors/trumid-leftsideempty.png" class="responsive-img">
+        <img style="width: 25%; margin: 0 auto; min-width: 190px;" src="../images/sponsors/trumid-leftsideempty.png" class="responsive-img">
         <h4 style="color:#303030; font-family: 'Open Sans'; font-weight: 400;">About <a style="text-decoration: underline;" href="https://www.trumid.com/">Trumid</a>:</h4>
         <h5 style="color:#303030; font-family: 'Open Sans'; font-weight: 400; line-height: 1.7;">
-          Trumid is a financial technology company bringing efficiency to credit trading through data, technology and beautifully simple products.s</h5>
+          Trumid is a financial technology company bringing efficiency to credit trading through data, technology and beautifully simple products.</h5>
       </div>
     </div>
   </div>
@@ -410,34 +456,19 @@
            <h2 style="color: #000; margin-bottom: 20px; font-size: 3em;">Previous Sponsors and Collaborators</h2>
            <div class="row" style="width: 100%; margin: 0 auto;">
              <div class="base-img col l3 m6 s12">
-                <img style="width: 100%; margin: 0 auto; padding: 12px 12px;" src="../images/sponsors/tradeweb.png" class="responsive-img">
-                <div class="overlay">
-                  <div class="text"></div>
-                </div>
+                <a target="_blank" href="http://www.tradeweb.com/"><img style="width: 100%; margin: 0 auto; padding: 10px 10px;" src="../images/sponsors/tradeweb.png" class="responsive-img"></a>
              </div>
              <div class="base-img col l3 m6 s12">
-                <img style="width: 100%; margin: 0 auto; padding: 12px 12px;" src="../images/sponsors/wharton_fintech.png" class="responsive-img">
-                <div class="overlay">
-                  <div class="text"></div>
-                </div>
+                <a target="_blank" href="http://whartonfintech.org/"><img style="width: 100%; margin: 0 auto; padding: 10px 10px;" src="../images/sponsors/wharton_fintech.png" class="responsive-img"></a>
              </div>
              <div class="base-img col l3 m6 s12">
-                <img style="width: 100%; margin: 0 auto; padding: 12px 12px;" src="../images/sponsors/tdbank.png" class="responsive-img">
-                <div class="overlay">
-                  <div class="text"></div>
-                </div>
+                <a target="_blank" href="https://www.tdbank.com/"><img style="width: 100%; margin: 0 auto; padding: 10px 10px;" src="../images/sponsors/tdbank.png" class="responsive-img"></a>
              </div>
              <div class="base-img col l3 m6 s12">
-                <img style="width: 100%; margin: 0 auto; padding: 12px 12px;" src="../images/sponsors/virtusa.png" class="responsive-img">
-                <div class="overlay">
-                  <div class="text"></div>
-                </div>
+                <a target="_blank" href="https://www.virtusa.com/"><img style="width: 100%; margin: 0 auto; padding: 10px 10px;" src="../images/sponsors/virtusa.png" class="responsive-img"></a>
              </div>
              <div class="base-img col l3 m6 s12">
-                <img style="width: 100%; margin: 0 auto; padding: 12px 12px;" src="../images/sponsors/lehigh_fintech.png" class="responsive-img">
-                <div class="overlay">
-                  <div class="text"></div>
-                </div>
+                <a target="_blank" href="http://www.lehighfintech.org/"><img style="width: 100%; margin: 0 auto; padding: 10px 10px;" src="../images/sponsors/lehigh_fintech.png" class="responsive-img"></a>
              </div>
            </div>
          </div>
