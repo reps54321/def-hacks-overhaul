@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <meta name="description" content="Hackathons by students, for students.">
 
-  <title>Def Hacks Seattle</title>
+  <title>Def Hacks WUFT</title>
   <link rel="icon" href="../images/defhacks-logos/defhacks-logo-black-green-square.png">
   <script src="https://use.fontawesome.com/887f11382d.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300,400,700|Raleway:300,400,700" rel="stylesheet">
@@ -107,19 +107,19 @@
   </div>
 
   <div id="particles-js" style="-webkit-box-shadow: inset 0px 0px 10px 0px rgba(48,48,48,0.22);-moz-box-shadow: inset 0px 0px 10px 0px rgba(48,48,48,0.22);box-shadow: inset 0px 0px 10px 0px rgba(48,48,48,0.22);"></div>
-  <div id="banner" style="height: calc(100% - 300px);  margin-bottom: 50px;" class="valign-wrapper">
-    <div style="width: 100%">
-    <h2 style="font-size: 5em; color: #303030; margin-top:90px;" class="center-align fade-in one">DEF HACKS SEATTLE</h2>
-    <h4 style="font-size: 4em; color: #303030; margin-top:30px;" class="center-align fade-in one">Co-Hosted by <a style="text-decoration: underline" target="_blank" href="https://evenfinancial.com">Even</a></h4>
-    <div class="section"  style="background-color: #fff; padding-bottom: 10px">
-        <div class="container center-align">
-          <p style="margin-left: -5px; color: #303030" class="flow-text fade-in two"><a class="modal-trigger" href="mailto:hello@defhacks.io">Contact Us</a>  | <a class="modal-trigger" href="../index.html#SPONSOR">Sponsor</a> | <a class="modal-trigger" href="https://defhacks.typeform.com/to/ajTynT">Join Us</a></p>
+  <div id="banner" style="height: calc(100% - 300px); margin-top: 50px;" class="valign-wrapper">
+    <div style="width: 100%"><h2 style="font-size: 5em; color: #303030; margin-top:90px;" class="center-align fade-in one">DEF HACKS SEATTLE</h2>
+        <h4 class="center-align fade-in one" id="co-host-title">Co-Hosted by <a style="text-decoration: underline" target="_blank" href="https://evenfinancial.com">Even</a></h4>
+        <h4 style="font-size: 5em; margin-top:10px;" class="center-align fade-in one"><a target="_blank" class="soon-chip" style="color: #fff; text-align: center;" href="https://defhacks.typeform.com/to/DzqtrF">APPLY</a></h4>
+        <div class="section"  style="background-color: #fff; padding-bottom: 10px">
+            <div class="container center-align">
+            <p style="margin-left: -5px; color: #303030" class="flow-text fade-in two"><a class="modal-trigger" href="mailto:hello@defhacks.io">Contact Us</a>  | <a class="modal-trigger" href="../index.html#SPONSOR">Sponsor</a> | <a class="modal-trigger" href="https://defhacks.typeform.com/to/ajTynT">Join Us</a></p>
+            </div>
         </div>
     </div>
-    </div>
   </div>
-  <div  class="seperator-top hide-on-small-only fade-in four" style="border-bottom: 70px solid #303030; border-right: 1500px solid transparent; overflow: hidden"></div>
-    <div class="seperator-bottom fade-in four" style=" margin-top: -1px; margin-bottom: -1px;"></div>
+  <div  class="seperator-top hide-on-small-only fade-in four" style="margin-top: 80px; border-bottom: 70px solid #303030; border-right: 1500px solid transparent; overflow: hidden"></div>
+    <div class="seperator-bottom fade-in four" id="top-separator"></div>
 
       <style>
       .done-chip {
@@ -225,6 +225,65 @@
           height: 10px;
           overflow: hidden;
         }
+
+        #co-host-title {
+            font-size: 4em;
+            color: #303030;
+            margin-top:30px;
+        }
+
+        #wufthacks-container {
+          width: 40%;
+        }
+
+        #sponsor-tab {
+            padding: 0px 20%;
+        }
+
+        #question-group {
+          padding: 20px 0 30px 0;
+        }
+
+        @media only screen and (min-width: 992.5px) {
+          #top-date-element {
+            margin-left: 4.16666666%;
+          }
+
+          #sponsor-tab {
+            padding: 0px 15%;
+          }
+          
+        }
+
+        @media only screen and (max-width: 992.5px) {
+          #wufthacks-container {
+            width: 50%;
+            min-width: 350px;
+          }
+          #sponsor-tab {
+            padding: 0px 7.5%;
+          }
+        }
+
+        @media only screen and (max-width: 800px) {
+          #wufthacks-container {
+            width: 50%;
+            min-width: 350px;
+          }
+        }
+
+        @media only screen and (max-width: 600px) {
+          #top-separator {
+            margin-top: 100px;
+          }
+          #wufthacks-container {
+            width: 90%;
+          }
+          #co-host-title {
+              font-size: 3em;
+          }
+        }
+
       </style>
   </div>
 
@@ -234,224 +293,28 @@
       <div class="row">
          <div class="col s12">
             <div class="row" >
-              <div class="col l4 s12 offset-l1" style="margin-left:10%;color: #fff">
-                <h3 style="font-family: 'Oswald', sans-serif; color: #62a337;">When?</h3>
+              <div class="col l3 s12 offset-l1" id="top-date-element" style="color: #fff">
+                <h3 style="font-family: 'Oswald', sans-serif; color: #62a337;">When? </h3>
+                <img height="50px" style="margin: 5px 0;"; src="../images/hackathon-icons/when.png"/>
                 <p>Saturday, April 13th 12:00 PM -<br> Sunday, April 14th 12:00 PM</p>
               </div>
-              <div class="col l4 s12 offset-l1" style="color: #fff">
+              <div class="col l3 s12 offset-l1" style="color: #fff">
                 <h3 style="font-family: 'Oswald', sans-serif; color: #62a337;">Where?</h3>
+                <img height="50px" style="margin: 5px 0;"; src="../images/hackathon-icons/where.png"/>
                 <p>Microsoft HQ Building #20<br>3709 Microsoft Way, Redmond, WA 98052</p>
               </div>
+              <div class="col l3 s12 offset-l1" style="color: #fff">
+                <h3 style="font-family: 'Oswald', sans-serif; color: #62a337;">What?</h3>
+                <img height="50px" style="margin: 5px 0;"; src="../images/hackathon-icons/what.png"/>
+                <p>24-hour hackathon with an emphasis on FinTech, open to all levels of coders</p>
+              </div>
             </div>
          </div>
        </div>
 
        <style>
 
-       .question h4 {
-         font-family: 'Oswald', sans-serif;
-       }
-       </style>
-
-
-       <div class="row">
-         <div class="col 12">
-
-         </div>
-       </div>
-
-
-    </div>
-  </div>
-  <div class="seperator-top hide-on-small-only" style="margin-top: -50px; margin-bottom: -1px;border-bottom: 51px solid #62a337; border-right: 1500px solid #303030; overflow: hidden; -webkit-transform: scaleX(1); transform: scaleX(1);"></div>
-
-  <div style="width: 100%; background-color: #62a337; height: 30px; margin-top: -10px;"></div>
-
-
-  <div class="section" style="width: 100%; background-color: #fff; padding-top: 40px; padding-bottom: 20px;">
-    <div class="container">
-      <div class="row">
-         <div class="col s12">
-           <h2 style="color: #303030; margin-bottom: 18px; margin-top: 30px; margin-bottom: 30px; text-align: center;">Interested in attending?</h2>
-           <p style="color: #303030; font-weight: 500; margin-bottom: 30px; text-align: center;">Applications are now open! Please note: You must be a college student to register for this event.</p>
-           <div style="text-align: center"><a class="soon-chip" style="color: #fff; text-align: center;" href="https://defhacks.typeform.com/to/DzqtrF">APPLY</a></div>
-       </div>
-     </div>
-   </div>
-  </div>
-
-  <div class="section" style=" width: 100%; padding-bottom: 30px">
-    <div class="container">
-
-      <div class="row center-align">
-         <div class="col s12">
-           <h2 style="color: #303030; margin-bottom: 20px; font-size: 3em;">Event 2019 Sponsors</h2>
-         </div>
-       </div>
-    </div>
-
-    <div class="row center-align">
-      <div class="col s12" style="text-align: left; padding: 0px 120px;">
-        <h4 style="color:#303030; font-family: 'Open Sans'; font-weight: 700;">Platinum Sponsor and Co-Host: <a style="color: #448AFF" href="https://evenfinancial.com">Even</a></h4>
-        <img style="width: 35%; margin: 0 auto;" src="../images/sponsors/even-leftsideempty.png" class="responsive-img">
-        <h4 style="color:#303030; font-family: 'Open Sans'; font-weight: 400;">About <a style="text-decoration: underline;" href="https://evenfinancial.com">Even</a>:</h4>
-        <h5 style="color:#303030; font-family: 'Open Sans'; font-weight: 400; line-height: 1.7;">
-          Even is the leading search, comparison and recommendation engine for financial services.  
-          Even provides essential infrastructure for financial institutions and channel partners to 
-          connect consumers with personalized products (including loans, deposits and more), utilizing 
-          its robust yet simple API. Even is proven to lower the cost of acquisition, improve monetization, 
-          monitor compliance and deliver transparency at scale. The Even platform serves as a trusted 
-          intermediary for financial institutions – including Prosper, LendingClub and Marcus by Goldman 
-          Sachs – that finds consumers through its vast network of channel partners and distributes their 
-          products digitally.</h5>
-      </div>
-    </div>
-  </div>
-
-  <div class="row center-align">
-    <div class="col s12" style="text-align: left; padding: 0px 120px;">
-      <h4 style="color:#303030; font-family: 'Open Sans'; font-weight: 700;">Bronze Sponsor: <a style="color: #448AFF" href="https://evenfinancial.com">DubHacks</a></h4>
-      <img style="width: 35%; margin: 0 auto;" src="../images/sponsors/dubhacks-small.png" class="responsive-img">
-    </div>
-  </div>
-</div>
-
-  <div style="width: 100%; background-color: #62a337; height: 10px"></div>
-
-  <div style="width: 100%; background-color: #62a337; height: 10px"></div>
-  <div class="seperator-top hide-on-small-only" style="border-bottom: 50px solid #303030; border-right: 1500px solid #62a337; overflow: hidden;margin-bottom: -1px;"></div>
-
-  <div class="section" style="width: 100%; background-color: #303030; padding: 0px; margin: 0px">
-    <div class="container">
-
-      <div class="row">
-         <div class="col s12">
-           <!--
-           <div class="row">
-            <div class="col s12">
-              <div class="row">
-                <div class="input-field col s12">
-                  <i class="material-icons prefix" style="color: #fff">search</i>
-                  <input style="color: #fff; border-color: #fff" value="What is" type="text" id="search">
-                </div>
-              </div>
-            </div>
-          -->
-
-            <div id="search-content" style="padding: 20px 0px 30px 0px;">
-              <div class="question">
-                <h4>What is a hackathon?</h4>
-                <p>A hackathon is an event, typically lasting several hours (or even days), in which a large number of people meet to code and show off their products.</p>
-              </div>
-
-              <div class="question">
-                <h4>What should I bring to a hackathon?</h4>
-                <p>Please bring your own computer and its charger, your ID, and power strips (recommended). The event costs nothing - meals and swag are provided for free! Also consider bringing a sleeping bag and/or pillow.</p>
-              </div>
-
-              <div class="question">
-                <h4>What should I do after I register?</h4>
-                <p>After you register, try to find a team and start brainstorming ideas for the hackathon! You shouldn't start coding until the event, but feel free to brainstorm ideas, especially if a theme is released beforehand!</p>
-              </div>
-
-              <div class="question">
-                <h4>What is the hackathon's Code of Conduct?</h4>
-                <p>This is an MLH Member Event, and this is their official Code of Conduct: <a href="http://mlh.io/code-of-conduct">http://mlh.io/code-of-conduct</a>.</p>
-              </div>
-
-              <div class="question">
-                <h4>What is the schedule for the hackathon?</h4>
-                <table id="schedule">
-                  <tr>
-                    <th colspan="2" id="schedule-header" style="font-size: 20px;">April 13th (Saturday)</th>
-                  </tr>
-                  <tr>
-                    <td>11:30 AM</td>
-                    <td>Check-in</td>
-                  </tr>
-                  <tr>
-                    <td>12:00 PM (noon)</td>
-                    <td>Opening Ceremonies</td>
-                  </tr>
-                  <tr>
-                    <td>1:00 PM</td>
-                    <td>Lunch</td>
-                  </tr>
-                  <tr>
-                    <td>1:30 PM</td>
-                    <td>Ideation Workshop</td>
-                  </tr>
-                  <tr>
-                    <td>2:15 PM</td>
-                    <td>HTML/CSS Workshop</td>
-                  </tr>
-                  <tr>
-                    <td>3:00 PM</td>
-                    <td>Even Workshop #1</td>
-                  </tr>
-                  <tr>
-                    <td>4:00 PM</td>
-                    <td>JavaScript Workshop</td>
-                  </tr>
-                  <tr>
-                    <td>5:00 PM</td>
-                    <td>Even Workshop #2</td>
-                  </tr>
-                  <tr>
-                    <td>7:00 PM</td>
-                    <td>Dinner</td>
-                  </tr>
-                  <tr>
-                    <td>10:00 PM</td>
-                    <td>Cup-stacking Contest</td>
-                  </tr>
-                  <tr>
-                    <th colspan="2" id="schedule-header" style="font-size: 20px;">April 14th (Sunday)</th>
-                  </tr>
-                  <tr>
-                    <td>12:00 AM (midnight)</td>
-                    <td>Midnight Snack</td>
-                  </tr>
-                  <tr>
-                    <td>8:00 AM</td>
-                    <td>Breakfast and Judge Briefing</td>
-                  </tr>
-                  <tr>
-                    <td>8:30 AM</td>
-                    <td>Devpost Submit Deadline</td>
-                  </tr>
-                  <tr>
-                    <td>9:00 AM</td>
-                    <td>Judge Presentations/Demos</td>
-                  </tr>
-                  <tr>
-                    <td>10:30 AM</td>
-                    <td>Judging Deliberation</td>
-                  </tr>
-                  <tr>
-                    <td>11:15 AM</td>
-                    <td>Closing Ceremonies</td>
-                  </tr>
-                  <tr>
-                    <td>12:00 PM (noon)</td>
-                    <td>Event Ends!</td>
-                </table>
-              </div>
-
-              <!--
-              <hr style="margin-top: 10px; border: 0; width: 60%; height: 1px; background: #fff;">
-              <div class="row center-align">
-                <a class="waves-effect btn-flat" style="color: #fff">Show All</a>
-              </div>
-            -->
-
-            </div>
-          </div>
-         </div>
-       </div>
-
-       <style>
-       .question {
+        .question {
          margin-bottom: 20px;
          color: #fff;
        }
@@ -483,8 +346,200 @@
         #schedule-header:hover {
           background-color: #D1D1D1;
         }
+       </style>
 
-        </style>
+
+       <div class="row">
+         <div class="col 12">
+
+         </div>
+       </div>
+
+
+    </div>
+  </div>
+  <div class="separator-top hide-on-small-only" style="margin-top: -50px; margin-bottom: -1px;border-bottom: 51px solid #62a337; border-right: 1500px solid #303030; overflow: hidden; -webkit-transform: scaleX(1); transform: scaleX(1);"></div>
+
+  <div style="width: 100%; background-color: #62a337; height: 30px; margin-top: -10px;"></div>
+
+  <div class="section" style="margin-top: 40px; width: 100%; padding-bottom: 30px">
+
+    <div class="container">
+
+        <div class="row center-align">
+           <div class="col s12">
+             <h2 style="color: #303030; margin-bottom: 20px; font-size: 3em;">Event 2019 Sponsors</h2>
+           </div>
+         </div>
+      </div>
+
+    <div class="row center-align">
+        <div class="col s12" style="text-align: left;" id="sponsor-tab">
+            <h4 style="color:#303030; font-family: 'Open Sans'; font-weight: 700;">Platinum Sponsor and Co-Host: <a target="_blank" style="color: #448AFF" href="https://evenfinancial.com">Even</a></h4>
+            <a target="_blank" href="https://evenfinancial.com"><img style="width: 27.5%; margin: 0 auto; min-width: 190px;" src="../images/sponsors/even-leftsideempty.png" class="responsive-img"></a>
+            <h4 style="color:#303030; font-family: 'Open Sans'; font-weight: 400;">About <a target="_blank" style="text-decoration: underline;" href="https://evenfinancial.com">Even</a>:</h4>
+            <h5 style="color:#303030; font-family: 'Open Sans'; font-weight: 400; line-height: 1.7;">
+            Even is the leading search, comparison and recommendation engine for financial services.  
+            Even provides essential infrastructure for financial institutions and channel partners to 
+            connect consumers with personalized products (including loans, deposits and more), utilizing 
+            its robust yet simple API. Even is proven to lower the cost of acquisition, improve monetization, 
+            monitor compliance and deliver transparency at scale. The Even platform serves as a trusted 
+            intermediary for financial institutions – including Prosper, LendingClub and Marcus by Goldman 
+            Sachs – that finds consumers through its vast network of channel partners and distributes their 
+            products digitally.</h5>
+        </div>
+        <div class="col s12" style="text-align: left;" id="sponsor-tab">
+            <h4 style="color:#303030; font-family: 'Open Sans'; font-weight: 700;">Bronze Sponsor: <a target="_blank" style="color: #448AFF" href="https://www.dubhacks.co">DubHacks</a></h4>
+            <a target="_blank" href="https://www.dubhacks.co"><img style="width: 30%; margin: 0 auto; min-width: 175px;" src="../images/sponsors/dubhacks-small.png" class="responsive-img"></a>
+        </div>
+        <div class="col s12" style="text-align: left;" id="sponsor-tab">
+            <h4 style="color:#303030; font-family: 'Open Sans'; font-weight: 700;">Bronze Sponsor: <a target="_blank" style="color: #448AFF" href="http://hackp.ac/mlh-stickermule-hackathons">Sticker Mule</a></h4>
+            <a target="_blank" href="http://hackp.ac/mlh-stickermule-hackathons"><img style="width: 35%; margin: 0 auto; min-width: 225px;" src="../images/sponsors/sticker-mule.png" class="responsive-img"></a>
+        </div>
+    </div>
+  </div>
+
+  <div style="width: 100%; background-color: #62a337; height: 10px"></div>
+  <div class="seperator-top hide-on-small-only" style="border-bottom: 50px solid #303030; border-right: 1500px solid #62a337; overflow: hidden;margin-bottom: -1px;"></div>
+
+  <div class="section" style="color: #000; width: 100%; background-color: #303030; padding: 0px; margin: 0px">
+    <div class="container">
+
+      <div class="row">
+         <div class="col s12">
+           <!--
+           <div class="row">
+            <div class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix" style="color: #fff">search</i>
+                  <input style="color: #fff; border-color: #fff" value="What is" type="text" id="search">
+                </div>
+              </div>
+            </div>
+          -->
+
+            <div id="search-content question-group" style="padding: 20px 0px 30px 0px;">
+                <div class="question">
+                    <h4>What is a hackathon?</h4>
+                    <p>A hackathon is an event, typically lasting several hours (or even days), in which a large number of people meet to code and show off their products.</p>
+                </div>
+
+                <div class="question">
+                    <h4>What should I bring to a hackathon?</h4>
+                    <p>Please bring your own computer and its charger, your ID, and power strips (recommended). The event costs nothing - meals and swag are provided for free! Also consider bringing a sleeping bag and/or pillow.</p>
+                </div>
+
+                <div class="question">
+                    <h4>What should I do after I register?</h4>
+                    <p>After you register, try to find a team and start brainstorming ideas for the hackathon! You shouldn't start coding until the event, but feel free to brainstorm ideas, especially if a theme is released beforehand!</p>
+                </div>
+
+                <div class="question">
+                    <h4>What is the hackathon's Code of Conduct?</h4>
+                    <p>This is an MLH Member Event, and this is their official Code of Conduct: <a target="_blank" href="http://mlh.io/code-of-conduct">http://mlh.io/code-of-conduct</a>.</p>
+                </div>
+
+                <div class="question">
+                    <h4>What is the schedule for the hackathon?</h4>
+                <table id="schedule">
+                    <tr>
+                        <th colspan="2" id="schedule-header" style="font-size: 20px;">April 13th (Saturday)</th>
+                    </tr>
+                    <tr>
+                        <td>11:30 AM</td>
+                        <td>Check-in</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 PM (noon)</td>
+                        <td>Opening Ceremonies</td>
+                    </tr>
+                    <tr>
+                        <td>1:00 PM</td>
+                        <td>Lunch</td>
+                    </tr>
+                    <tr>
+                        <td>1:30 PM</td>
+                        <td>Ideation Workshop</td>
+                    </tr>
+                    <tr>
+                        <td>2:15 PM</td>
+                        <td>HTML/CSS Workshop</td>
+                    </tr>
+                    <tr>
+                        <td>3:00 PM</td>
+                        <td>Even Workshop #1</td>
+                    </tr>
+                    <tr>
+                        <td>4:00 PM</td>
+                        <td>JavaScript Workshop</td>
+                    </tr>
+                    <tr>
+                        <td>5:00 PM</td>
+                        <td>Even Workshop #2</td>
+                    </tr>
+                    <tr>
+                        <td>7:00 PM</td>
+                        <td>Dinner</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 PM</td>
+                        <td>Cup-stacking Contest</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2" id="schedule-header" style="font-size: 20px;">April 14th (Sunday)</th>
+                    </tr>
+                    <tr>
+                        <td>12:00 AM (midnight)</td>
+                        <td>Midnight Snack</td>
+                    </tr>
+                    <tr>
+                        <td>8:00 AM</td>
+                        <td>Breakfast and Judge Briefing</td>
+                    </tr>
+                    <tr>
+                        <td>8:30 AM</td>
+                        <td>Devpost Submit Deadline</td>
+                    </tr>
+                    <tr>
+                        <td>9:00 AM</td>
+                        <td>Judge Presentations/Demos</td>
+                    </tr>
+                    <tr>
+                        <td>10:30 AM</td>
+                        <td>Judging Deliberation</td>
+                    </tr>
+                    <tr>
+                        <td>11:15 AM</td>
+                        <td>Closing Ceremonies</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 PM (noon)</td>
+                        <td>Event Ends!</td>
+                    </tr>
+                </table>
+              <!--
+              <hr style="margin-top: 10px; border: 0; width: 60%; height: 1px; background: #fff;">
+              <div class="row center-align">
+                <a class="waves-effect btn-flat" style="color: #fff">Show All</a>
+              </div>
+            -->
+
+            </div>
+          </div>
+         </div>
+       </div>
+
+       <style>
+       .question {
+         margin-bottom: 20px;
+         color: #fff;
+       }
+
+       .question h4 {
+         font-family: 'Oswald', sans-serif;
+       }
+       </style>
 
        <div class="row">
          <div class="col 12">
@@ -554,12 +609,6 @@
                   <div class="text"></div>
                 </div>
              </div>
-             <div class="base-img col l3 m6 s12">
-              <img style="width: 100%; margin: 0 auto;" src="../images/sponsors/dubhacks.png" class="responsive-img">
-              <div class="overlay dubhacks-overlay">
-                <div class="text"></div>
-              </div>
-            </div>
            </div>
          </div>
        </div>
