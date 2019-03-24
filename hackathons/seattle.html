@@ -67,6 +67,32 @@
   #top-update:hover {
     background: #489216;
   }
+
+  #title-font {
+    font-size: 5em;
+  }
+
+  #apply-seattle {
+    font-size: 0.8em;
+  }
+
+  #judge-text {
+    display: inline-block;
+    font-size: 2.5em;
+    color: #448AFF;
+    border-bottom: 1px #448AFF dotted;
+    margin: 10px;
+    padding: 0;
+  }
+
+  #judge-text:hover {
+    margin: 0;
+    padding: 10px;
+    border-bottom: none;
+    background: rgba(68, 137, 255, 0.247);
+    color: #448AFF;
+    border-radius: 10px;
+  }
   </style>
 
 </head>
@@ -123,14 +149,15 @@
 
   <div id="particles-js" style="-webkit-box-shadow: inset 0px 0px 10px 0px rgba(48,48,48,0.22);-moz-box-shadow: inset 0px 0px 10px 0px rgba(48,48,48,0.22);box-shadow: inset 0px 0px 10px 0px rgba(48,48,48,0.22);"></div>
   <div id="banner" style="height: calc(100% - 300px); margin-top: 50px;" class="valign-wrapper">
-    <div style="width: 100%; text-align: center;"><h2 style="font-size: 5em; color: #303030; margin-top:140px; text-align: center;" class="center-align fade-in one">DEF HACKS SEATTLE</h2>
+    <div style="width: 100%; text-align: center;"><h2 id="title-font" style="color: #303030; margin-top:140px; text-align: center;" class="center-align fade-in one">DEF HACKS SEATTLE</h2>
         <h4 class="center-align fade-in one" id="co-host-title">Co-Hosted by <a style="text-decoration: underline" target="_blank" href="https://evenfinancial.com">Even</a></h4>
-        <div style="text-align: center;">
-          <h5 class="center-align fade-in one" cursor="pointer" id="top-update"><a href="#FAQ">Update: High school students can apply</a></h5>
-        </div>
-        <h4 style="font-size: 5em; margin-top:10px; display: inline-block;" class="center-align fade-in one"><a target="_blank" class="soon-chip" style="color: #fff; text-align: center;" href="https://defhacks.typeform.com/to/soJJIA">APPLY (HIGH SCHOOL)</a></h4>
-        <h4 style="font-size: 5em; margin-top:10px; display: inline-block;" class="center-align fade-in one"><a target="_blank" class="soon-chip" style="color: #fff; text-align: center;" href="https://defhacks.typeform.com/to/DzqtrF">APPLY (COLLEGE/BEYOND)</a></h4>
+        <h4 style="margin-top:10px; display: inline-block;" class="center-align fade-in one"><a target="_blank" class="soon-chip" id="apply-seattle" style="color: #fff; text-align: center;" href="https://defhacks.typeform.com/to/soJJIA">APPLY (HIGH SCHOOL)</a></h4>
+        <h4 style="margin-top:10px; display: inline-block;" class="center-align fade-in one"><a target="_blank" id="apply-seattle" class="soon-chip" style="color: #fff; text-align: center;" href="https://defhacks.typeform.com/to/DzqtrF">APPLY (COLLEGE/BEYOND)</a></h4>
+        
         <div class="section"  style="background-color: #fff; padding-bottom: 10px">
+            <div class="container center-align">
+              <h6 id="judge-text" class="center-align fade-in one"><a target="_blank" style="text-align: center;" href="https://defhacks.typeform.com/to/v2Ja4o">Be a Judge</a></h6>
+            </div>
             <div class="container center-align">
               <p style="margin-left: -5px; color: #303030" class="flow-text fade-in two"><a class="modal-trigger" href="mailto:hello@defhacks.io">Contact Us</a>  | <a class="modal-trigger" href="../index.html#SPONSOR">Sponsor</a> | <a class="modal-trigger" href="https://defhacks.typeform.com/to/ajTynT">Join Us</a></p>
             </div>
@@ -251,10 +278,6 @@
             margin-top:30px;
         }
 
-        #wufthacks-container {
-          width: 40%;
-        }
-
         #sponsor-tab {
             padding: 0px 20%;
         }
@@ -275,19 +298,14 @@
         }
 
         @media only screen and (max-width: 992.5px) {
-          #wufthacks-container {
-            width: 50%;
-            min-width: 350px;
-          }
           #sponsor-tab {
             padding: 0px 7.5%;
           }
         }
 
         @media only screen and (max-width: 800px) {
-          #wufthacks-container {
-            width: 50%;
-            min-width: 350px;
+          #judge-text {
+            display: inline-block;
           }
         }
 
@@ -298,11 +316,28 @@
           #top-separator {
             margin-top: 120px;
           }
-          #wufthacks-container {
-            width: 90%;
-          }
           #co-host-title {
               font-size: 3em;
+          }
+          #apply-seattle {
+            font-size: 0.7em;
+          }
+          #judge-text {
+            font-size: 2em;
+          }
+          #title-font {
+            font-size: 4em;
+          }
+        }
+        @media only screen and (max-width: 450px) {
+          #title-font {
+            font-size: 3.5em;
+          }
+          #co-host-title {
+            font-size: 2.5em;
+          }
+          #apply-seattle {
+            font-size: 0.65em;
           }
         }
 
@@ -594,6 +629,15 @@
        .question h4 {
          font-family: 'Oswald', sans-serif;
        }
+
+       #team-list {
+         font-size: 1.75em;
+         margin: 20px;
+       }
+       #team-list-item {
+          margin: 10px;
+          line-height: 1.5;
+       }
        </style>
 
        <div class="row">
@@ -611,6 +655,11 @@
 
       <div class="row center-align">
          <div class="col s12">
+           <h2 style="color: #000; margin-bottom: 20px; font-size: 3em;">Team</h2>
+           <ul id="team-list">
+             <li id="team-list-item"><b>Organizing team:</b> Chris Elliott, David Wei, Sachin Bhargava, Varun Viswanathan</li>
+             <li id="team-list-item"><b>Advisors:</b> <i>Add your name here by promoting the event! Contact <a href="mailto:christopher@defhacks.io" style="border-bottom: 1px dotted black;">christopher@defhacks.io</a> for more information.</i></li>
+           </ul>
            <h2 style="color: #000; margin-bottom: 20px; font-size: 3em;">Previous Sponsors</h2>
            <div class="row" style="width: 100%; max-width: 800px; margin: 0 auto;">
              <div class="base-img col l3 m6 s12">
