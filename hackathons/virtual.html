@@ -269,6 +269,61 @@
 
       <div class="row">
          <div class="col s12">
+		 <style>
+            .flex-container {
+              display: flex;
+              border-bottom: 2px solid #D1D1D1;
+              border-top: 2px solid #D1D1D1;
+              padding-left: 10px;
+              padding-right: 10px;
+              padding-bottom: 20px;
+              padding-top: 20px;
+            }
+            @media screen and (max-width : 600px){
+          
+            }
+            .flex-child {
+              flex: 1;
+              padding-left: 30px;
+              padding-right: 30px;
+              padding-top: 20px;
+              padding-bottom: 20px;
+            }
+
+            .flex-child:first-child {
+              margin-right: 20px;
+              text-align: right;
+              border-top-right-radius: 0px;
+              border-bottom-right-radius: 0px;
+              font-size: 3em;
+              color: rgba(9, 224, 9, 0.911);
+              border-right:2px solid #D1D1D1;
+            } 
+
+            .flex-child:last-child{
+              text-align: left;
+              color: #000;
+              box-shadow:5px 5px 5px 5px grey;
+              background-color: #D1D1D1;
+              border-radius: 25px;
+            }
+          </style>
+          <div class="flex-container">
+            <div class="flex-child">
+              <p><strong>Announcement</strong></p>
+            </div>
+            <div class="flex-child">
+              <h3>The hackathon is over! 1.3k+ attendees participated over 54 countries.</h3>
+            
+              <ul style="list-style: circle; font-size: medium;">
+                <li>If you have any questions, please reach out to <a href="sheshank@defhacks.co"><u>sheshank@defhacks.co</u></a>.</li>
+                <li> See the projects <a href="https://def-hacks-virtual-2020.devpost.com/submissions" target="_blank"><u>here</u></a>.</li>
+              </ul>
+            
+            </div>
+          </div>
+          <br>
+          
             <div class="row" >
               <div class="col l11 s12 offset-l1" style="color: #fff">
                   <h3 style="font-family: 'Oswald', sans-serif; color: #62a337;">What?</h3>
