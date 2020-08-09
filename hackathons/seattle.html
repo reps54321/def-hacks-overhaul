@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="../css/particles-style.css">
   <link rel="stylesheet" href="../css/nav-styling.css">
+  <link rel="stylesheet" href="./../css/announcement_bar.css">
   <script src="../js/app.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -108,7 +109,7 @@
 </head>
 <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg" alt="Major League Hacking 2019 Hackathon Season" style="width:100%"></a>
 
-<nav>
+<nav style="position: fixed; top: 0; right: 0; left: 0; z-index: 1030;">
   <div class="nav-wrapper" style="padding: 0px 160px;">
     <a href="../index.html" class="brand-logo" style="margin-top: 8px;">
       <img width="65px" style="float: left;" src="../images/defhacks-logos/defhacks-logo-black-green.png"></img>
@@ -122,7 +123,39 @@
       <li><a href="../blog/blog.html">BLOG</a></li>
     </ul>
   </div>
+  <div id="hellobar-bar" class="regular closable" width="100%">
+    <div class="hb-content-wrapper">
+      <div class="hb-text-wrapper">
+        <div class="hb-headline-text">
+          <table>
+            <tr>
+              <td>Registration&nbsp;</td>
+              <td>for&nbsp;</td>
+              <td>Def Hacks |&nbsp;</td>
+              <td>Global&nbsp;</td>
+              <td>2.0&nbsp;</td>
+              <td>will&nbsp;</td>
+              <td>open&nbsp;</td>
+              <td>soon!&nbsp;</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <a href="hackathons/global_2.0.html#subscribe" target="_self" class="hb-cta hb-cta-button">
+        <div class="hb-text-holder">
+          <b>GET NOTIFIED</b>
+        </div>
+      </a>
+    </div>
+    <div class="hb-close-wrapper">
+      <a href="javascript:void(0);" class="icon-close" onClick="$('#hellobar-bar').fadeOut()">&#10006;</a>
+    </div>
+  </div>
 </nav>
+
+<br />
+<br />
+<br />
 
   <div id="volunteerModal" class="modal">
     <div class="modal-content">
@@ -604,13 +637,62 @@
               </div>
             </div>
           -->
-          
+          <style>
+            .flex-container {
+              display: flex;
+              border-bottom: 2px solid #D1D1D1;
+              border-top: 2px solid #D1D1D1;
+              padding-left: 10px;
+              padding-right: 10px;
+              padding-bottom: 20px;
+              padding-top: 20px;
+            }
+
+            .flex-child {
+              flex: 1;
+              padding-left: 30px;
+              padding-right: 30px;
+              padding-top: 20px;
+              padding-bottom: 20px;
+            }
+
+            .flex-child:first-child {
+              margin-right: 20px;
+              text-align: right;
+              border-top-right-radius: 0px;
+              border-bottom-right-radius: 0px;
+              font-size: 35px;
+              color: rgba(9, 224, 9, 0.911);
+              border-right:2px solid #D1D1D1;
+            } 
+
+            .flex-child:last-child{
+              text-align: left;
+              color: #000;
+              box-shadow:5px 5px 5px 5px grey;
+              background-color: #D1D1D1;
+              border-radius: 25px;
+            }
+          </style>
+
+          <div class="flex-container">
+            <div class="flex-child">
+              <p><strong>Announcement</strong></p>
+            </div>
+            <div class="flex-child">
+              <h3>The hackathon is over! 160 attendees participated.</h3>
+            
+              <ul style="list-style: circle; font-size: medium;">
+                <li>If you have any questions, please reach out to <a href="christopher@defhacks.io"><u>christopher@defhacks.io</u></a>.</li>
+                <li> See the projects <a href="https://def-hacks-seattle-2019.devpost.com/submissions" target="_blank"><u>here</u></a>.</li>
+              </ul>
+            
+            </div>
+          </div>
+          <br>
             <div id="search-content question-group" style="padding: 20px 0px 30px 0px;">
               
                 <div class="question">
-                    <h3><u>Announcement</u>: The hackathon is over! 160 attendees participated.</h3>
-                    <h4 style="line-height: 1.4;"><i>If you have any questions, please reach out to <a href="christopher@defhacks.io"><u>christopher@defhacks.io</u></a>. See the projects <a href="https://def-hacks-seattle-2019.devpost.com/submissions" target="_blank"><u>here</u></a>.</i></h4></li>
-                    <br>
                     <h4>What is Def Hacks Seattle 2019?</h4>
                     <p>
                       Def Hacks Seattle 2019 is the third annual 24-hour hackathon hosted at Microsoft HQ (on April 13th-14th). This 

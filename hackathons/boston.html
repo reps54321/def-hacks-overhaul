@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="../css/particles-style.css">
   <link rel="stylesheet" href="../css/nav-styling.css">
+  <link rel="stylesheet" href="./../css/announcement_bar.css">
   <script src="../js/app.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167936651-1"></script>
@@ -65,7 +66,7 @@
 
 </head>
 
-<nav>
+<nav style="position: fixed; top: 0; right: 0; left: 0; z-index: 1030;">
   <div class="nav-wrapper" style="padding: 0px 100px;">
     <a href="../index.html" class="brand-logo" style="margin-top: 8px;">
       <img width="65px" style="float: left;" src="../images/defhacks-logos/defhacks-logo-black-green.png"></img>
@@ -78,8 +79,32 @@
       <li><a href="../index.html#CONTACT">CONTACT</a></li>
       <li><a href="../blog/blog.html">BLOG</a></li>
     </ul>
+  </div><div id="hellobar-bar" class="regular closable">
+    <div class="hb-content-wrapper">
+        <div class="hb-text-wrapper">
+            <div class="hb-headline-text">
+                <table>
+                    <tr>
+                    <td>The&nbsp;</td><td>Global&nbsp;</td> <td>v2.0&nbsp;</td> <td>Hackathon&nbsp;</td> <td>will&nbsp;</td> <td>start&nbsp;</td> <td>soon.&nbsp;</td> <td>Willing&nbsp;</td> <td>to&nbsp;</td> <td> Participate??&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <a href="virtual_2.0.html" target="_self" class="hb-cta hb-cta-button">
+            <div class="hb-text-holder">
+                <b>REGISTER NOW</b>
+            </div>
+        </a>
+    </div>
+    <div class="hb-close-wrapper">
+        <a href="javascript:void(0);" class="icon-close" onClick="$('#hellobar-bar').fadeOut()">&#10006;</a>
+    </div>
   </div>
 </nav>
+
+<br />
+<br />
+<br />
 
   <div id="volunteerModal" class="modal">
     <div class="modal-content">
@@ -117,7 +142,7 @@
   <div id="particles-js" style="-webkit-box-shadow: inset 0px 0px 10px 0px rgba(48,48,48,0.22);-moz-box-shadow: inset 0px 0px 10px 0px rgba(48,48,48,0.22);box-shadow: inset 0px 0px 10px 0px rgba(48,48,48,0.22);"></div>
   <div id="banner" style="height: calc(100% - 300px)" class="valign-wrapper">
     <div style="width: 100%">
-    <h2 style="font-size: 5em; color: #303030; margin-top:30px;" class="center-align fade-in one">BOSTON 2019</h2>
+    <h2 style="font-size: 5em; color: #303030; margin-top:60px;" class="center-align fade-in one">BOSTON 2019</h2>
     <div class="section"  style="background-color: #fff; padding-bottom: 10px">
         <div class="container center-align">
         <p style="margin-left: -5px; color: #303030" class="flow-text fade-in two"><a class="modal-trigger" href="mailto:hello@defhacks.io">Contact Us</a>  | <a class="modal-trigger" href="../index.html#SPONSOR">Sponsor</a> | <a class="modal-trigger" href="https://defhacks.typeform.com/to/ajTynT">Join Us</a></p>

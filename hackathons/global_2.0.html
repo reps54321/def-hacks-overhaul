@@ -65,7 +65,7 @@
 
 </head>
 <body>
-<nav>
+<nav style="position: fixed; top: 0; right: 0; left: 0; z-index: 1030;">
   <div class="nav-wrapper" style="padding: 0px 100px;">
     <a href="../index.html" class="brand-logo" style="margin-top: 8px;">
       <img width="65px" style="float: left;" src="../images/defhacks-logos/defhacks-logo-black-green.png">
@@ -117,7 +117,7 @@
   <div id="particles-js" style="-webkit-box-shadow: inset 0px 0px 10px 0px rgba(48,48,48,0.22);-moz-box-shadow: inset 0px 0px 10px 0px rgba(48,48,48,0.22);box-shadow: inset 0px 0px 10px 0px rgba(48,48,48,0.22);"><canvas class="particles-js-canvas-el" width="1144" height="867" style="width: 100%; height: 100%;"></canvas></div>
   <div id="banner" style="height: calc(100% - 300px)" class="valign-wrapper">
     <div style="width: 100%">
-    <h2 style="font-size: 5em; color: #303030; margin-top:30px;" class="center-align fade-in one">Def Hacks | Global 2.0</h2>
+    <h2 style="font-size: 5em; color: #303030; margin-top:110px;" class="center-align fade-in one">Def Hacks | Global 2.0</h2>
     <h4 style="font-size: 2em; color: #303030; margin-top:30px;" class="center-align fade-in one">Nov 14, 2020 - Nov 15, 2020</h4>
     <div class="section" style="background-color: #fff; padding-bottom: 10px">
         <div class="container center-align">
@@ -244,7 +244,7 @@
             <div class="row">
               <div class="col l11 s12 offset-l1" style="color: #fff">
                   <h3 style="font-family: 'Oswald', sans-serif; color: #62a337;">What?</h3>
-                  <p>DefHacks Virtual 2020 hackathon (What is a hackathon?) is a free 36-hour event for high school and college students. It is a worldwide event in which students of all skill levels around can collaborate to create innovative projects to solve the worlds problems. Students can also participate in workshops to learn new skills, ask questions to top tech minds, participate in fun mini-events, and win amazing prizes!</p>
+                  <p>DefHacks | Global 2.0 hackathon is a free 36-hour event for high school and college students. It is a worldwide event in which students of all skill levels around can collaborate to create innovative projects to solve the worlds problems. Students can also participate in workshops to learn new skills, ask questions to top tech minds, participate in fun mini-events, and win amazing prizes!</p>
               </div>
             </div>
             <div class="row">
@@ -254,7 +254,7 @@
             </div>
             <div class="col l3 s12 offset-l1" style="color: #fff">
                 <h3 style="font-family: 'Oswald', sans-serif; color: #62a337;">When?</h3>
-                <p>Saturday, November 14, 2020 12:00 PM PST - Sunday, November 15, 2020 11:59 PM PST</p>
+                <p>Saturday, November 14, 2020 8:00 AM PST - Sunday, November 15, 2020 11:59 PM PST</p>
             </div>
               <div class="col l3 s12 offset-l1" style="color: #fff">
                 <h3 style="font-family: 'Oswald', sans-serif; color: #62a337;">Where?</h3>
@@ -288,7 +288,7 @@
 
   <div class="section" style="width: 100%; background-color: #fff; padding: 40px 0px">
     <div class="container">
-      <div class="row">
+      <div class="row" id="subscribe">
          <div class="col s12">
            <h2 style="color: #303030; margin-bottom: 18px; margin-top: 30px; text-align: center;"><i class="fas fa-user-plus" aria-hidden="true"></i>Interested in attending?</h2>
            <p align="center">
@@ -357,7 +357,7 @@
                 <td>2:00 PM</td>
                 <td>MLH Werewolves</td>
             </tr>
-            <tr>
+            <tr>  
                 <td>5:00 PM</td>
                 <td>Ask me Anything with Amjad Masad, CEO of Repl.it</td>
             </tr>
@@ -440,6 +440,15 @@
     #schedule-header:hover {
       background-color: #D1D1D1;
     }
+
+    #banner {
+          margin-bottom: 150px; margin-top: 50px;
+        }
+        @media only screen and (max-width: 600px) {
+          #banner {
+            margin-top: 50px
+          }
+        }
   </style>
 <!--
   <div class="seperator-top hide-on-small-only" style="margin-top: -50px; margin-bottom: -1px;border-bottom: 51px solid #62a337; border-right: 1500px solid #303030; overflow: hidden; -webkit-transform: scaleX(1); transform: scaleX(1);"></div>

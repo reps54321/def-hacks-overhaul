@@ -25,13 +25,21 @@
   </head>
 
   <body>
-
+    <style>
+      p#first_p:first-letter {
+          float: left;
+          font-size: 60px;
+          line-height: 1;
+          font-weight: bold;
+          margin-right: 9px;
+      }
+    </style>
     <!-- Navigation -->
     
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand page-scroll" href="http://www.defhacks.io">
+        <a class="navbar-brand page-scroll" href="http://www.defhacks.co">
                 <i><img src="img/defhacks-logos/defhacks-logo-white-green-small.png" width="45" height="30" alt=""/></i>
                 <span >DEF</span> <strong>HACKS</strong>
             </a>
@@ -42,7 +50,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="http://www.defhacks.io">Main Site</a>
+              <a class="nav-link" href="http://www.defhacks.co">Main Site</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="blog.html">Blog</a>
@@ -66,7 +74,7 @@
               <h1>Def Hacks goes global in Santiago, Chile</h1>
               <h2 class="subheading">Spreading the art of coding through collaboration, entrepreneurship, and programming challenges.</h2>
               <span class="meta">Posted by
-                <a href="#">Def Hacks</a>
+                <a href="#" style="text-decoration: underline dotted;">Def Hacks</a>
                 on April 24th, 2018</span>
             </div>
           </div>
@@ -79,7 +87,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
-            <p>On April 21st, hundreds of high school and college students convened at the Int’l School Nido de Aguilas in Santiago, Chile, in what became the first truly international Def Hacks event. The event started off with two workshops—”Programming in Python” for high schoolers and “Developing Applications with Microsoft Azure” for college students, delivered by Genevieve Knaus (high school teacher) and Francisco Valenzuela (Microsoft SE) respectively.</p>
+            <p id="first_p">On April 21st, hundreds of high school and college students convened at the Int’l School Nido de Aguilas in Santiago, Chile, in what became the first truly international Def Hacks event. The event started off with two workshops—”Programming in Python” for high schoolers and “Developing Applications with Microsoft Azure” for college students, delivered by Genevieve Knaus (high school teacher) and Francisco Valenzuela (Microsoft SE) respectively.</p>
             <p>Unlike our previous hackathon settings, this particular event posed a great challenge: 99% of high schoolers did not know how to write a single line of code. To tackle this problem, we decided to divide the hackathon into two sections: high school and college.</p>
             <p>While high schoolers learned how to code and implemented their knowledge through different puzzles–FizzBuzz, kinematics calculators, sierpinski triangle, etc—college students were prompted by the challenge of developing something that could potentially grow into a business.</p>
             <p>Over the next 26 hours, college students developed projects that would soon be judged by the judges: Vicente Valencia of Pontificia Universidad Católica, Ignacio Carmach of Microsoft, Wilson Pais of Microsoft, and Genevieve Knaus of Nido de Aguilas. The winning team, “Wally Bot,” developed a college-student friendly A.I assistant application, earning mentorship at start-up incubator StartUp Chile and access to luxurious offices at EdgeCowork (shared office space). </p>
