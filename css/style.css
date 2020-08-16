@@ -62,6 +62,24 @@
   text-align: center;
 }
 
+#logo-txt {
+  color: red;
+  font-size: 1.6rem;
+}
+
+@media all and (max-width: 460px) {
+  #logo-txt {
+    color: red;
+    font-size: 1rem;
+    margin-top: 12px;
+  }
+  #logo-img {
+    margin-top: 0.4rem;
+    width: 40px;
+  }
+}
+
+
 .microsoft-overlay {
     background-image: url('../images/sponsors/microsoft on hover.png')!important;
 }
