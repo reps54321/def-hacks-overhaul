@@ -6,10 +6,6 @@
  * Made By MaterializeCSS.com
  */
 
-html, body {
-  overflow: hidden;
-}
-
 .icon-block {
   padding: 0 15px;
 }
@@ -65,7 +61,6 @@ html, body {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-
 
 @media all and (max-width: 460px) {
   .logo-txt {
