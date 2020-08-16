@@ -65,12 +65,12 @@
 
 @media all and (max-width: 460px) {
   .logo-txt {
-    font-size: 1rem;
-    margin-top: 12px;
+    font-size: 1rem !important;
+    margin-top: 12px !important;
   }
   .logo-img {
-    margin-top: 0.4rem;
-    width: 40px;
+    margin-top: 0.4rem !important;
+    width: 40px !important;
   }
 }
 
