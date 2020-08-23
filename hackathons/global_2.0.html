@@ -65,21 +65,38 @@
 
 </head>
 <body>
-<nav style="position: fixed; top: 0; right: 0; left: 0; z-index: 1030;">
-  <div class="nav-wrapper" style="padding: 0px 100px;">
-    <a href="../index.html" class="brand-logo" style="margin-top: 8px;">
-      <img width="65px" style="float: left;" src="../images/defhacks-logos/defhacks-logo-black-green.png">
-      <h3 style="margin-left: 22px; float: right; color: #303030!important"><strong>DEF</strong> HACKS</h3>
-    </a>
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a href="../index.html#ATTEND">ATTEND</a></li>
-      <li><a href="../index.html#SPONSOR">SPONSOR</a></li>
-      <li><a href="../index.html#OUR-TEAM">OUR TEAM</a></li>
-      <li><a href="../index.html#CONTACT">CONTACT</a></li>
-      <li><a href="../blog/blog.html">BLOG</a></li>
-    </ul>
-  </div>
-</nav>
+  <nav style="position: fixed; top: 0; right: 0; left: 0; z-index: 1030;">
+    
+    <div class="nav-wrapper"">
+      <div class="container" style="width: 90%;">
+
+        <a href="/" class="brand-logo" style="margin-top: 8px;">
+          <img class="logo-img" width="65px" style="float: left; margin-bottom: 0.5rem;" src="../images/defhacks-logos/defhacks-logo-black-green.png">
+          <h3 class="logo-txt" style="margin-left: 22px; float: right; color: #303030!important"><strong>DEF</strong> HACKS</h3>
+        </a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <!-- Dropdown Trigger -->
+          <!-- <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">EVENTS<i class="material-icons right">arrow_drop_down</i></a></li> -->
+          <li><a href="../index.html#ATTEND">ATTEND</a></li>
+          <li><a href="../index.html#SPONSOR">SPONSOR</a></li>
+          <li><a href="../index.html#OUR-TEAM">OUR TEAM</a></li>
+          <li><a href="../index.html#CONTACT">CONTACT</a></li>
+          <li><a href="../blog/blog.html">BLOG</a></li>
+        </ul>
+      </div>
+      <ul class="side-nav" id="mobile-demo" style="transform: translateX(-100%);">
+        <!-- Dropdown Trigger -->
+        <!-- <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">EVENTS<i class="material-icons right">arrow_drop_down</i></a></li> -->
+        <li><a href="../index.html#ATTEND">ATTEND</a></li>
+        <li><a href="../index.html#SPONSOR">SPONSOR</a></li>
+        <li><a href="../index.html#OUR-TEAM">OUR TEAM</a></li>
+        <li><a href="../index.html#CONTACT">CONTACT</a></li>
+        <li><a href="../blog/blog.html">BLOG</a></li>
+      </ul>
+    </div>
+  </nav>
+
 
   <div id="volunteerModal" class="modal">
     <div class="modal-content">
@@ -244,7 +261,7 @@
             <div class="row">
               <div class="col l11 s12 offset-l1" style="color: #fff">
                   <h3 style="font-family: 'Oswald', sans-serif; color: #62a337;">What?</h3>
-                  <p>DefHacks Virtual 2020 hackathon (What is a hackathon?) is a free 36-hour event for high school and college students. It is a worldwide event in which students of all skill levels around can collaborate to create innovative projects to solve the worlds problems. Students can also participate in workshops to learn new skills, ask questions to top tech minds, participate in fun mini-events, and win amazing prizes!</p>
+                  <p>DefHacks | Global 2.0 hackathon is a free 36-hour event for high school and college students. It is a worldwide event in which students of all skill levels around can collaborate to create innovative projects to solve the worlds problems. Students can also participate in workshops to learn new skills, ask questions to top tech minds, participate in fun mini-events, and win amazing prizes!</p>
               </div>
             </div>
             <div class="row">
@@ -254,7 +271,7 @@
             </div>
             <div class="col l3 s12 offset-l1" style="color: #fff">
                 <h3 style="font-family: 'Oswald', sans-serif; color: #62a337;">When?</h3>
-                <p>Saturday, November 14, 2020 12:00 PM PST - Sunday, November 15, 2020 11:59 PM PST</p>
+                <p>Saturday, November 14, 2020 8:00 AM PST - Sunday, November 15, 2020 11:59 PM PST</p>
             </div>
               <div class="col l3 s12 offset-l1" style="color: #fff">
                 <h3 style="font-family: 'Oswald', sans-serif; color: #62a337;">Where?</h3>
@@ -283,21 +300,21 @@
   </div>
   <div class="seperator-top hide-on-small-only" style="margin-top: -50px; margin-bottom: -1px;border-bottom: 51px solid #62a337; border-right: 1500px solid #303030; overflow: hidden; -webkit-transform: scaleX(1); transform: scaleX(1);"></div>
 
-  <div style="width: 100%; background-color: #62a337; height: 30px; margin-top: -10px;"></div>
+  <div id="ATTEND" style="width: 100%; background-color: #62a337; height: 30px; margin-top: -10px;"></div>
 
 
   <div class="section" style="width: 100%; background-color: #fff; padding: 40px 0px">
     <div class="container">
-      <div class="row">
+      <div class="row" id="subscribe">
          <div class="col s12">
            <h2 style="color: #303030; margin-bottom: 18px; margin-top: 30px; text-align: center;"><i class="fas fa-user-plus" aria-hidden="true"></i>Interested in attending?</h2>
-           <p align="center" style="font-weight: bold; font-size: 20px;">
+           <p align="center">
            	Registrations aren't open yet - but subscribe to our newsletter, and we'll let you know when they do!
            </p>
           <div class="press-block">
             <div class="row center-align" style="margin: auto; width: 70%">
               <div class="col s12" style="font-weight: 500!important; margin: auto;">
-                <a class="press-btn waves-effect btn-flat modal-trigger" href="https://defhacks.us17.list-manage.com/subscribe?u=6455f6de7b9e084b1f389c982&id=d2f6669d39" target="_blank" style="border-color: #62a337; color: #fff; background-color: #62a337; margin-top: 18px; padding: 2px 25px; font-size: 1.5em;">HACKER REGISTRATION</a>
+                <a class="press-btn waves-effect btn-flat modal-trigger" href="https://defhacks.us17.list-manage.com/subscribe?u=6455f6de7b9e084b1f389c982&id=d2f6669d39" target="_blank" style="border-color: #62a337; color: #fff; background-color: #62a337; margin-top: 18px; padding: 2px 25px; font-size: 1.5em;">GET NOTIFIED</a>
                 <br />
                 <br />
                 <br />
@@ -357,7 +374,7 @@
                 <td>2:00 PM</td>
                 <td>MLH Werewolves</td>
             </tr>
-            <tr>
+            <tr>  
                 <td>5:00 PM</td>
                 <td>Ask me Anything with Amjad Masad, CEO of Repl.it</td>
             </tr>
@@ -440,6 +457,15 @@
     #schedule-header:hover {
       background-color: #D1D1D1;
     }
+
+    #banner {
+          margin-bottom: 150px; margin-top: 50px;
+        }
+        @media only screen and (max-width: 600px) {
+          #banner {
+            margin-top: 50px
+          }
+        }
   </style>
 <!--
   <div class="seperator-top hide-on-small-only" style="margin-top: -50px; margin-bottom: -1px;border-bottom: 51px solid #62a337; border-right: 1500px solid #303030; overflow: hidden; -webkit-transform: scaleX(1); transform: scaleX(1);"></div>

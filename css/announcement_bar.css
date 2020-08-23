@@ -2,7 +2,8 @@
 body{
     margin: 0;
     padding: 0;
-    width: 100%;
+    /* width: 100%; */
+    overflow: hidden;
 }
 
 #hellobar-bar {
@@ -136,4 +137,9 @@ td:hover {
     left: 0;
     font-size: 16px;
     text-decoration: solid;
+}
+@media only screen and (max-width: 600px) {
+    #hellobar-bar {
+        display: none;
+    }
 }

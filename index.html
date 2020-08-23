@@ -54,11 +54,6 @@
       padding: 0
     }
 
-    html,
-    body {
-      height: 100%;
-    }
-
     p {
       font-family: 'Open Sans', sans-serif;
       font-weight: 300;
@@ -98,10 +93,11 @@
   <style>
     .card-rows .card-columns {
       float: left;
-      width: 50%;
+      width: 400px;
       height: 240px;
       padding-top: 10px;
       padding-bottom: 10px;
+      display: flex;
     }
 
     .card-columns .card-container {
@@ -130,18 +126,18 @@
       transition: all 0.9s;
       position: absolute;
       border: grey;
-      border-radius: 3px;
+      border-radius: 0px;
       height: 200px;
       width: 100%;
       padding-top: 10px;
       backface-visibility: hidden;
-      border-radius: 15px;
+      border-radius: 0px;
     }
 
     .heading {
       background-color: black;
       border-radius: inherit;
-      box-shadow: 3px 7px 4px 7px grey;
+      /* box-shadow: 3px 7px 4px 7px grey; */
       color: white;
       height: 48px;
       line-height: 48px;
@@ -153,11 +149,11 @@
       width : 100%;
       font-size: 18px;
       background-color: white;
-      color : black;
-      border-radius: 15px;
+      color : #62a337;
+      border-radius: 0px;
       padding-left: 10px;
       padding-right: 10px;
-      box-shadow: 3px 7px 4px 7px grey;
+      box-shadow: 1px 2px 5px 1px grey;
       display: table;
     }
 
@@ -221,21 +217,25 @@
     </ul> -->
 
   <nav style="position: fixed; top: 0; right: 0; left: 0; z-index: 1030;">
-    <div class="nav-wrapper" style="padding: 0px 100px;">
-      <a href="index.html" class="brand-logo" style="margin-top: 8px;">
-        <img width="65px" style="float: left;" src="images/defhacks-logos/defhacks-logo-black-green.png">
-        <h3 style="margin-left: 22px; float: right; color: #303030!important"><strong>DEF</strong> HACKS</h3>
-      </a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <!-- Dropdown Trigger -->
-        <!-- <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">EVENTS<i class="material-icons right">arrow_drop_down</i></a></li> -->
-        <li><a href="#ATTEND">ATTEND</a></li>
-        <li><a href="#SPONSOR">SPONSOR</a></li>
-        <li><a href="#OUR-TEAM">OUR TEAM</a></li>
-        <li><a href="#CONTACT">CONTACT</a></li>
-        <li><a href="blog/blog.html">BLOG</a></li>
-      </ul>
+    
+    <div class="nav-wrapper"">
+      <div class="container" style="width: 90%;">
+
+        <a href="index.html" class="brand-logo" style="margin-top: 8px;">
+          <img class="logo-img" width="65px" style="float: left; margin-bottom: 0.5rem;" src="images/defhacks-logos/defhacks-logo-black-green.png">
+          <h3 class="logo-txt" style="margin-left: 22px; float: right; color: #303030!important"><strong>DEF</strong> HACKS</h3>
+        </a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <!-- Dropdown Trigger -->
+          <!-- <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">EVENTS<i class="material-icons right">arrow_drop_down</i></a></li> -->
+          <li><a href="#ATTEND">ATTEND</a></li>
+          <li><a href="#SPONSOR">SPONSOR</a></li>
+          <li><a href="#OUR-TEAM">OUR TEAM</a></li>
+          <li><a href="#CONTACT">CONTACT</a></li>
+          <li><a href="blog/blog.html">BLOG</a></li>
+        </ul>
+      </div>
       <ul class="side-nav" id="mobile-demo" style="transform: translateX(-100%);">
         <!-- Dropdown Trigger -->
         <!-- <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">EVENTS<i class="material-icons right">arrow_drop_down</i></a></li> -->
@@ -253,23 +253,21 @@
           <div class="hb-headline-text">
             <table>
               <tr>
-                <td>The&nbsp;</td>
+                <td>Registration&nbsp;</td>
+                <td>for&nbsp;</td>
+                <td>Def Hacks |&nbsp;</td>
                 <td>Global&nbsp;</td>
-                <td>v2.0&nbsp;</td>
-                <td>Hackathon&nbsp;</td>
+                <td>2.0&nbsp;</td>
                 <td>will&nbsp;</td>
-                <td>start&nbsp;</td>
-                <td>soon.&nbsp;</td>
-                <td>Willing&nbsp;</td>
-                <td>to&nbsp;</td>
-                <td> Participate??&nbsp;</td>
+                <td>open&nbsp;</td>
+                <td>soon!&nbsp;</td>
               </tr>
             </table>
           </div>
         </div>
-        <a href="hackathons/virtual_2.0.html" target="_self" class="hb-cta hb-cta-button">
+        <a href="hackathons/global_2.0.html#subscribe" target="_self" class="hb-cta hb-cta-button">
           <div class="hb-text-holder">
-            <b>REGISTER NOW</b>
+            <b>GET NOTIFIED</b>
           </div>
         </a>
       </div>
@@ -287,7 +285,7 @@
     <canvas class="particles-js-canvas-el" width="1894" height="617" style="width: 100%; height:100%">
     </canvas>
   </div>
-  <div id="banner" style="height: 750px; margin-bottom: 50px; margin-top: -100px;" class="valign-wrapper">
+  <div id="banner" class="valign-wrapper">
     <div style="width: 100%";>
       <img class="center-align fade-in one"
         style="display: block; padding-top: 60px; margin: 120px auto 0px auto; width: 80%; max-width: 755px; margin-bottom: 20px"
@@ -302,33 +300,42 @@
         </div>
       </div>
 
+
+      
+        <!-- <div class="base-img col l3 m6 s12">
+          <img style="width: 100%; margin: 0 auto;" src="images/sponsors/microsoft.png" class="responsive-img">
+          <div class="overlay microsoft-overlay">
+            <div class="text"></div>
+          </div>
+        </div>
+        <div class="base-img col l3 m6 s12">
+          <img style="width: 100%; margin: 0 auto;" src="images/sponsors/nasa.png" class="responsive-img">
+          <div class="overlay nasa-overlay">
+            <div class="text"></div>
+          </div>
+        </div> -->
+
       <div style="width:100%; height:240px;">
-        <div class="card-rows">
-          <div class="card-columns">
-            <div class="card-container">
+        <div class="row" id="d" style="margin: 0 auto;">
+          <div class="card-columns col l6 m6 s12">
+            <div class="card-container" style="border:34px">
               <div class="text-card card-front">
-                <div class="heading">
-                  Upcoming Events
-                </div>
-                <div class="text-box" style="height: 140px;">
-                  <p>Register yourself in one of the best global hackathons..</p>
+                <div class="text-box" style="height: 190px; line-height: 190px; display: table;">
+                  <h3 style="display: table-cell; vertical-align: middle;">Upcoming Events</h3>
                 </div>
               </div>
               <div class="text-card card-back">
                 <div class="text-box" style="height: 190px; line-height: 190px;">
-                  <a class="soon-chip" href="hackathons/virtual_2.0.html" style="color: #fff; font-size:14px;">GLOBAL v2.0 (OPEN)</a>
+                  <a class="soon-chip" href="hackathons/global_2.0.html" style="color: #fff; font-size:14px;">GLOBAL v2.0 (OPEN)</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="card-columns">
+          <div class="card-columns col l6 m6 s12">
             <div class="card-container">
               <div class="text-card card-front">
-                <div class="heading">
-                  Previous Events
-                </div>
-                <div class="text-box" style="height: 140px;">
-                  <p>Have an insight to past events</p>
+                <div class="text-box" style="height: 190px; line-height: 190px; display: table;">
+                  <h3 style="display: table-cell; vertical-align: middle;">Recently Concluded Events</h3>
                 </div>
               </div>
               <div class="text-card card-back">
@@ -336,9 +343,7 @@
                   <p>
                     <a class="soon-chip" href="hackathons/virtual.html" style="color: #fff; font-size: 14px;">VIRTUAL 2020</a>
                     <a class="soon-chip" href="hackathons/seattle.html" style="color: #fff; font-size: 14px;">SEATTLE 2019</a> <br />
-                    <a class="soon-chip" target="_blank" href="hackathons/newyork.html" style="color: #fff; font-size: 14px;">GREEN HACKS: NY<img style="margin-left: 2px; vertical-align: text-top" height="14px" src="../images/hackathon-icons/new_tab.png"></a><br />
-                    <a class="soon-chip" href="hackathons/santiago.html" style="color: #fff; font-size: 14px;">SANTIAGO</a>
-                    <a class="soon-chip" target="_blank" href="http://www.lehighfintech.org/lfghacks" style="color: #fff; font-size: 14px;">LFG HACKS <img style="margin-left: 2px; vertical-align: text-top" height="14px" src="../images/hackathon-icons/new_tab.png"></a><br />
+                    <a class="soon-chip" href="hackathons/santiago.html" style="color: #fff; font-size: 14px;">SANTIAGO 2019</a>
                   </p>
                 </div>
               </div>
@@ -352,6 +357,20 @@
       @media only screen and (min-width: 600px) {
         .soon-chip {
           margin-top: 10px;
+        }
+      }
+      #d {
+          width: 60%;
+        }
+        #banner {
+          height: 750px; margin-bottom: 150px; margin-top: 50px;
+        }
+      @media only screen and (max-width: 600px) {
+        #d {
+          width: 80%;
+        }
+        #banner {
+          margin-top: -50px
         }
       }
     </style>
