@@ -13,13 +13,7 @@
 	font-size: inherit;
 }
 
-#press.press-block:hover {
-  color: #b2ce9f!important;
-}
 .press-block h4:hover {
-  color: #b2ce9f!important;
-}
-.press-block a:hover {
   color: #b2ce9f!important;
 }
 
