@@ -63,6 +63,16 @@ body{
     border-color: green;
 }
 
+#hellobar-bar .hb-ctm {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px 0;
+    color: #ffffff;
+    background-color: black;
+    border-color: black;
+}
+
+
 .hb-cta-button {
     opacity: 1;
     color: #fff;

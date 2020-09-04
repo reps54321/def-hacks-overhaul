@@ -92,6 +92,34 @@
 #devfolio-apply-now:hover {
     background-color: green !important;
 }
+
+	#mentor-apply-now {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #000000fb;
+    border-radius: 3px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 20px;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+#mentor-apply-now:not([disabled]) {
+    cursor: pointer;
+}
+
+#mentor-apply-now:hover {
+    background-color: rgb(0, 0, 0) !important;
+}
 	</style>
 
 </head>
@@ -342,21 +370,32 @@
          <div class="col s12">
            <h2 style="color: #303030; margin-bottom: 18px; margin-top: 30px; text-align: center;"><i class="fas fa-user-plus" aria-hidden="true"></i>Interested in attending?</h2>
            <p align="center">
-           	Registrations are now open! Register now, through our sponsor DevFolio's platform.
+           	Registrations are now open!: hackers can register through our sponsor Devfolio's platform and mentors/judges can register with the button below!
            </p>
           <!-- <div class="press-block">
             <div class="row center-align" style="margin: auto; width: 70%">
               <div class="col s12" style="font-weight: 500!important; margin: auto; text"> -->
               	<div style="text-align: center;">
-                  <button id="devfolio-apply-now" style="margin: auto;display: inline-flex; align-items: center;">
+                  <button id="devfolio-apply-now" style="margin: auto;display: inline-flex; align-items: center; margin-right: 2em;">
                     <svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px;">
                       <path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" />
                       <path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"/>
                     </svg>Apply with Devfolio
                   </button>
+
+                  <a  target="_blank" href = "https://forms.gle/JAunuYGSdFRmmN2X9"> 
+
+                    <button id="mentor-apply-now" style="margin: auto;display: inline-flex; align-items: center; ">
+                    <svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px;">
+                      <path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" />
+                      <path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"/>
+                    </svg>Apply As Mentor
+                  </button>
               		<br><br><br>
               		
-              	</div>
+                </div>
+                                  </a>
+
               	
                 <!-- <a class="press-btn waves-effect btn-flat modal-trigger" href="https://defhacks.us17.list-manage.com/subscribe?u=6455f6de7b9e084b1f389c982&id=d2f6669d39" target="_blank" style="border-color: #62a337; color: #fff; background-color: #62a337; margin-top: 18px; padding: 2px 25px; font-size: 1.5em;">REGISTER WITH DEVFOLIO</a> -->
                 
@@ -941,7 +980,7 @@
               <div class="question">
                 <h4 class="accordion"><i class="fas fa-caret-right" aria-hidden="true"></i>How do teams work?</h4>
                 <div class="panel">
-                    <p>You can work individually or work in a team of up to 5! If you don't know anyone participating at the hackathon, don't worry! There will be many other people in the same situation as you. We highly recommend you reach out to other hackers on the slack workspace and form teams. You won't have to register as a team, just register individually. When it's time to submit your project, you can add the names of all your teammates there! </p>
+                    <p>You can work individually or work in a team of up to 4! If you don't know anyone participating at the hackathon, don't worry! There will be many other people in the same situation as you. We highly recommend you reach out to other hackers on the slack workspace and form teams. You won't have to register as a team, just register individually. When it's time to submit your project, you can add the names of all your teammates there! </p>
                 </div>
               </div>
 
@@ -1270,6 +1309,7 @@
 </style>
 
 <!-- Script of devfolio Button -->
+<!-- Script of devfolio Button -->
 <script>
 	document.addEventListener('DOMContentLoaded', function () {
     let devfolioOptions = {
@@ -1293,6 +1333,8 @@
 });
 	
 </script>
+
+
 
 <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 <script src="../js/materialize.js"></script>
