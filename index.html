@@ -110,14 +110,26 @@
     }
 
     .card-container:hover .card-front {
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
       transform: rotateY(180deg);
     }
 
     .card-container:hover .card-back {
+      -webkit-transform: rotateY(0deg);
+      -moz-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      -o-transform: rotateY(0deg);
       transform: rotateY(0deg);
     }
 
     .card-back {
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
       transform: rotateY(180deg);
       border: whitesmoke;
     }
@@ -264,10 +276,17 @@
               </tr>
             </table>
           </div>
+          
         </div>
-        <a href="http://defhacks.co/register" target="_self" class="hb-cta hb-cta-button">
+        <a  style="margin-left:2.5em" href="http://defhacks.co/register" target="_blank" class="hb-cta hb-cta-button">
           <div class="hb-text-holder">
-            <b>REGISTER NOW WITH DEVFOLIO</b>
+            <b>Apply with Devfolio</b>
+          </div>
+        </a>
+
+           <a  style="margin-left:1.5em" href="https://forms.gle/JAunuYGSdFRmmN2X9" target="_blank" class="hb-ctm hb-cta-button">
+          <div class="hb-text-holder">
+            <b>Apply As Mentor</b>
           </div>
         </a>
       </div>
@@ -326,7 +345,7 @@
               </div>
               <div class="text-card card-back">
                 <div class="text-box" style="height: 190px; line-height: 190px;">
-                  <a class="soon-chip" href="hackathons/global_2.0.html" style="color: #fff; font-size:14px;">GLOBAL v2.0 (OPEN)</a>
+                  <a class="soon-chip" href="hackathons/global_2.0.html" style="color: #fff; font-size:14px;">GLOBAL v2.0 (OPEN)</a></br>
                 </div>
               </div>
             </div>
@@ -851,11 +870,18 @@
   <div class="seperator-top hide-on-small-only"
     style="border-bottom: 50px solid #62a337; border-left: 1500px solid #dfdfdf; overflow: hidden;"></div>
   <div style="width: 100%; background-color: #62a337; height: 10px"></div>
-  <div class="section" style="width: 100%; background-color: #303030; padding: 60px 0px 30px 0px">
+  <div class="section" id="press-sec" style="width: 100%; background-color: #303030; padding: 60px 0px 30px 0px">
     <div class="container">
       <div class="row">
         <div class="col s12">
+
           <h2 style="color: #62a337; margin-bottom: 30px;">Press</h2>
+          <a href="https://www.geekwire.com/2020/junior-geek-month-early-tech-learner-sheshank-shankar-follows-path-toward-teaching/" target="_blank">
+            <div class="press-block">
+              <h4 style="color: #fff">Def Hacks CEO recognized as Junior Geek of the Month by GeekWire</h4>
+              <p style="color: #fff"> An early tech learner, Sheshank Shankar follows a path toward teaching</p>
+            </div>
+          </a>
           <a href="blog/4-24-2018.html">
             <div class="press-block">
               <h4 style="color: #fff">Def Hacks goes global in Santiago, Chile</h4>
@@ -881,6 +907,14 @@
               <!-- <a class="press-btn waves-effect btn-flat">Read More</a> -->
             </div>
           </a>
+            <div>
+              <h4 style="color: #fff">
+               Interested in covering Def Hacks? Shoot us an email at 
+              <a class="press-block" href="mailto:press@defhacks.co">
+                press@defhacks.co
+              </a>
+            </h4>
+          </div>
         </div>
       </div>
     </div>

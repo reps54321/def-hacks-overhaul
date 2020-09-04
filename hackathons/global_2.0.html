@@ -69,7 +69,7 @@
     -ms-flex-align: center;
     -webkit-box-align: center;
     align-items: center;
-    background-color: green;
+    background-color: #1fa804fb;
     border-radius: 3px;
     border: none;
     color: #FFFFFF;
@@ -91,6 +91,34 @@
 
 #devfolio-apply-now:hover {
     background-color: green !important;
+}
+
+	#mentor-apply-now {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #000000fb;
+    border-radius: 3px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 20px;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+#mentor-apply-now:not([disabled]) {
+    cursor: pointer;
+}
+
+#mentor-apply-now:hover {
+    background-color: rgb(0, 0, 0) !important;
 }
 	</style>
 
@@ -342,16 +370,32 @@
          <div class="col s12">
            <h2 style="color: #303030; margin-bottom: 18px; margin-top: 30px; text-align: center;"><i class="fas fa-user-plus" aria-hidden="true"></i>Interested in attending?</h2>
            <p align="center">
-           	Registrations are now open! Register now, through our sponsor DevFolio's platform.
+           	Registrations are now open!: hackers can register through our sponsor Devfolio's platform and mentors/judges can register with the button below!
            </p>
           <!-- <div class="press-block">
             <div class="row center-align" style="margin: auto; width: 70%">
               <div class="col s12" style="font-weight: 500!important; margin: auto; text"> -->
               	<div style="text-align: center;">
-              		<button id="devfolio-apply-now" style="margin: auto;display: block;"><svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff"viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px;"><path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" /><path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"/></svg>Apply with Devfolio</button>
-              		<br>
+                  <button id="devfolio-apply-now" style="margin: auto;display: inline-flex; align-items: center; margin-right: 2em;">
+                    <svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px;">
+                      <path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" />
+                      <path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"/>
+                    </svg>Apply with Devfolio
+                  </button>
+
+                  <a  target="_blank" href = "https://forms.gle/JAunuYGSdFRmmN2X9"> 
+
+                    <button id="mentor-apply-now" style="margin: auto;display: inline-flex; align-items: center; ">
+                    <svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px;">
+                      <path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" />
+                      <path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"/>
+                    </svg>Apply As Mentor
+                  </button>
+              		<br><br><br>
               		
-              	</div>
+                </div>
+                                  </a>
+
               	
                 <!-- <a class="press-btn waves-effect btn-flat modal-trigger" href="https://defhacks.us17.list-manage.com/subscribe?u=6455f6de7b9e084b1f389c982&id=d2f6669d39" target="_blank" style="border-color: #62a337; color: #fff; background-color: #62a337; margin-top: 18px; padding: 2px 25px; font-size: 1.5em;">REGISTER WITH DEVFOLIO</a> -->
                 
@@ -380,8 +424,180 @@
      </div>
    </div>
   </div>
+  <div class="seperator-top hide-on-small-only" style="margin-top: -50px; margin-bottom: -1px;border-bottom: 51px solid #62a337; border-right: 1500px solid white; overflow: hidden; -webkit-transform: scaleX(1); transform: scaleX(1);"></div>
+  <div class="section" style="width: 100%; background-color: #303030; padding: 40px 0px">
+    <div class="container">
+      <div class="row">
+         <div class="col s12" style="margin: auto 0; display: block; color: #fff;">
+           <h2 style="color: #fff; margin-bottom: 30px; margin-top: 30px; text-align: center;"><i class="fas fa-user"></i>Guest Speakers</h2>
+           <center>
+              <div class="center-block" style="margin: auto 0; width: 80%;">   
+                <div class="base-img col l3 m6 s12" style="text-align: center;">
+                  <a href="https://en.wikipedia.org/wiki/Craig_Newmark" target="_blank"><img style="width: 100%; margin: 0 auto;" src="../images/speakers/Craig-Newmark.jpg" class="responsive-img"></button></a>
+                  <p style="margin-bottom: -15px;"><strong>CRAIG NEWARK</strong></p>
+                  <P style="margin-bottom: 20px;">FOUNDER OF CRAIGSLIST</p>
+                </div> 
+                <div class="base-img col l3 m6 s12" style="text-align: center;">
+                  <a href="https://en.wikipedia.org/wiki/Ken_Goldberg" target="_blank"><img style="width: 100%; margin: 0 auto;" src="../images/speakers/ken_goldberg.jpeg" class="responsive-img"></button></a>
+                  <p style="margin-bottom: -15px;"><strong>KEN GOLDBERG</strong></p>
+                  <P style="margin-bottom: 20px;">PROF. at UC BERKELEY</p>
+                </div>                
+                <div class="base-img col l3 m6 s12" style="text-align: center;">
+                  <a href="https://www.mozilla.org/en-US/about/leadership/" target="_blank"><img style="width: 100%; margin: 0 auto;" src="../images/speakers/dave_camp.jpg" class="responsive-img"></a>
+                  <p style="margin-bottom: -15px;"><strong>DAVE CAMP</strong></p>
+                  <P style="margin-bottom: 20px;">SENIOR V.P. OF FIREFOX</p>
+                </div>
+                <div class="base-img col l3 m6 s12" style="text-align: center;">
+                  <a href="https://en.wikipedia.org/wiki/David_Patterson_(computer_scientist)" target="_blank"><img style="width: 100%; margin: 0 auto;" src="../images/speakers/david_patterson.jpeg" class="responsive-img"></button></a>
+                  <p style="margin-bottom: -15px;"><strong>DAVID PATTERSON</strong></p>
+                  <P style="margin-bottom: 20px;">TURING AWARD RECEPIENT<br>DISTINGUISHED ENGINEER AT GOOGLE<br><small>FORMER PROF. at UC BERKELEY</small></p>
+                </div>
+              </div>
+              <div class="center-block" style="margin: auto 0; width: 80%;">   
+                <div class="base-img col l3 m6 s12" style="text-align: center;">
+                  <a href="https://www.youtube.com/channel/UC4JX40jDee_tINbkjycV4Sg" target="_blank"><img style="width: 100%; margin: 0 auto;" src="../images/speakers/tim_ruscian.jpeg" class="responsive-img"></button></a>
+                  <p style="margin-bottom: -15px;"><strong>TIM RUSCIAN</strong></p>
+                  <P style="margin-bottom: 20px;">FOUNDER OF TECH WITH TIM INC.</p>
+                </div> 
+                <div class="base-img col l3 m6 s12" style="text-align: center;">
+                  <a href="https://www.linkedin.com/in/alongrinshpoon" target="_blank"><img style="width: 100%; margin: 0 auto;" src="../images/speakers/alon_grinshpoon.jpeg" class="responsive-img"></button></a>
+                  <p style="margin-bottom: -15px;"><strong>ALON GRINSHPOON</strong></p>
+                  <P style="margin-bottom: 20px;">CEO of ECHOAR</p>
+                </div> 
+              </div>
+          </center>
+         </div>
+       </div>
+     </div>
+   </div>
+  </div>
 
+  <div class="seperator-top hide-on-small-only" style="margin-top: -50px; margin-bottom: -1px;border-bottom: 51px solid #62a337; border-right: 1500px solid #303030; overflow: hidden; -webkit-transform: scaleX(1); transform: scaleX(1);"></div>
+  <div class="section" style="width: 100%; background-color: #fff; padding: 40px 0px">
+    <div class="container">
+      <div class="row">
+         <div class="col s12">
+           <h2 style="color: #303030; margin-bottom: 18px; margin-top: 30px; text-align: center;"><i class="fas fa-hands-helping"></i>Event Sponsors</h2>
+           <div class="press-block">
+             <center>
+              <div class="row center-align" style="margin: auto; display: inline;">
+                <div style="display: inline-block; margin: 20px;">
+                  <a href= "https://devfolio.co">
+                    <img style="height: 4rem; width:auto" src="../images/sponsors/devfolio.png"></img>
+                  </a>
+                </div>
+                <div style="display: inline-block; margin: 20px;">
+                  <a href= "https://repl.it">
+                    <img style="height: 5rem; width:auto" src="../images/sponsors/replit.png"></img>
+                  </a>
+                </div>
+                <div style="display: inline-block; margin: 20px;">
+                  <a href= "https://linode.com">
+                    <img style="height: 7rem; width:auto" src="../images/sponsors/linode.png"></img>
+                  </a>
+                </div>
+              </div>
+              <div class="row center-align" style="margin: auto; display: inline;">
+                <div style="display: inline-block; margin: 20px;">
+                  <a href= "https://balsamiq.com">
+                    <img style="height: 5rem; width:auto" src="../images/sponsors/balsamiq.svg"></img>
+                  </a>
+                </div>
+                <div style="display: inline-block; margin: 20px;">
+                  <a href= "https://matic.network">
+                    <img style="height: 5rem; margin: auto;" src="../images/sponsors/matic.png"></img>
+                  </a>
+                </div>
+                <div style="display: inline-block; margin: 20px;">
+                  <a href= "https://portis.io">
+                    <img style="height: 4rem; margin: auto;" src="../images/sponsors/portis.png"></img>
+                  </a>
+                </div>
+              </div>
+              <div class="row center-align" style="margin: auto; display: inline;">
+                <div style="display: inline-block; margin: 20px;">
+                  <a href= "https://echoar.xyz">
+                    <img style="height: 4rem;" src="../images/sponsors/echoar.png"></img>
+                  </a>
+                </div>
+                <div style="display: inline-block; margin: 20px;">
+                  <a href= "https://wolfram.com/hackathons">
+                    <img style="height: 4rem;" src="../images/sponsors/wolfram.png"></img>
+                  </a>
+                </div>
+                <div style="display: inline-block; margin: 20px;">
+                  <a href= "https://bugsee.com">
+                    <img style="height: 6rem;" src="../images/sponsors/bugsee.svg"></img>
+                  </a>
+                </div>
+                <div style="display: inline-block; margin: 20px;">
+                  <a href= "https://cloud.google.com">
+                    <img style="height: 4rem;" src="../images/sponsors/googlecloud.png"></img>
+                  </a>
+                </div>
+              </div>
+              <div class="row center-align" style="margin: auto; display: inline;">
+                <div style="display: inline-block; margin: 20px;">
+                  <a href= "https://openwatervc.com">
+                    <img style="height: 3rem;" src="../images/sponsors/openwater.png"></img>
+                  </a>
+                </div>
+                <div style="display: inline-block; margin: 20px; background:black; border-radius: 5px; padding: 8px;">
+                  <a href= "https://www.bigspeak.com/">
+                    <img style="height: 3rem;" src="../images/sponsors/big-speak.png"></img>
+                  </a>
+                </div>
+                <div style="display: inline-block; margin: 20px;">
+                  <a href= "https://1password.com">
+                    <img style="height: 4rem;" src="../images/sponsors/1password.png"></img>
+                  </a>
+                </div>
+                <div style="display: inline-block; margin: 20px;">
+                  <a href= "https://taskade.com">
+                    <img style="height: 3rem;" src="../images/sponsors/taskade.png"></img>
+                  </a>
+                </div>
+              </div>
+              <div class="row center-align" style="margin: auto; display: inline;">
+                <div style="display: inline-block; margin: 20px;">
+                  <a href= "https://artofproblemsolving.com/">
+                    <img style="height: 4rem;" src="../images/sponsors/aops.png"></img>
+                  </a>
+                </div>
+                
+                <div style="display: inline-block; margin: 20px;">
+                  <a href= "https://modulusedu.com/">
+                    <img style="height: 3.5rem;" src="../images/sponsors/modulus.png"></img>
+                  </a>
+                </div>
 
+                <div style="display: inline-block; margin: 20px;">
+                  <a href= "https://magoosh.com/">
+                    <img style="height: 2rem;" src="../images/sponsors/magoosh.png"></img>
+                  </a>
+                </div>
+              </div>
+              <hr style="width: 90%; border-color:#62a337">
+             </center>
+            </div>
+            <h2 style="color: #303030; margin-bottom: 18px; margin-top: 30px; text-align: center;"><i class="fas fa-hands-helping"></i>Event Partner</h2>
+            <div class="press-block">
+              <center>
+              <div class="row center-align" style="margin:auto; display: inline;">
+                <div style="display: inline-block; margin: 40px;">
+                  <a href= "https://synhacks.org">
+                    <img style="height: 4rem; width:auto; max-width: 100%;" src="../images/sponsors/synhacks.jpeg"></img>
+                  </a>
+                </div>
+              </div>
+              <div style="font-size: large; margin-bottom: 50px;">Want to sponsor us? We'd love to get in touch. Read our <a href="../index.html#SPONSOR" style="color:rgb(30, 167, 212); text-decoration: underline;">prospectus</a> and shoot us an <a href="mailto:virtual@defhacks.co" style="color:rgb(30, 167, 212); text-decoration: underline;">email</a>!</div>
+             </center>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+  </div>
 <!--
   <div style="width: 100%; background-color: #62a337; height: 10px"></div>
   <div class="seperator-top hide-on-small-only" style="border-bottom: 50px solid #303030; border-right: 1500px solid #62a337; overflow: hidden;margin-bottom: -1px;"></div>
@@ -764,7 +980,7 @@
               <div class="question">
                 <h4 class="accordion"><i class="fas fa-caret-right" aria-hidden="true"></i>How do teams work?</h4>
                 <div class="panel">
-                    <p>You can work individually or work in a team of up to 5! If you don't know anyone participating at the hackathon, don't worry! There will be many other people in the same situation as you. We highly recommend you reach out to other hackers on the slack workspace and form teams. You won't have to register as a team, just register individually. When it's time to submit your project, you can add the names of all your teammates there! </p>
+                    <p>You can work individually or work in a team of up to 4! If you don't know anyone participating at the hackathon, don't worry! There will be many other people in the same situation as you. We highly recommend you reach out to other hackers on the slack workspace and form teams. You won't have to register as a team, just register individually. When it's time to submit your project, you can add the names of all your teammates there! </p>
                 </div>
               </div>
 
@@ -1093,6 +1309,7 @@
 </style>
 
 <!-- Script of devfolio Button -->
+<!-- Script of devfolio Button -->
 <script>
 	document.addEventListener('DOMContentLoaded', function () {
     let devfolioOptions = {
@@ -1116,6 +1333,8 @@
 });
 	
 </script>
+
+
 
 <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 <script src="../js/materialize.js"></script>
