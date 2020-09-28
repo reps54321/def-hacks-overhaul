@@ -107,6 +107,9 @@
       width: 85%;
       height: 220px;
       perspective: 200rem;
+      transform-style: preserve-3d;
+      -webkit-transform-style: preserve-3d;
+
     }
 
     .card-container:hover .card-front {
@@ -142,8 +145,10 @@
       height: 200px;
       width: 100%;
       padding-top: 10px;
-      backface-visibility: hidden;
       border-radius: 0px;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+
     }
 
     .heading {
