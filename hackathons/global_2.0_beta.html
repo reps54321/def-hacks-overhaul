@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+  <meta name="description" content="Hackathons by students, for students.">
+
+  <title>Def Hacks | Global 2.0</title>
+
+  <link rel="icon" href="../images/defhacks-logos/defhacks-logo-black-green-square.png">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300,400,700|Raleway:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/particles-style.css">
+  <link rel="stylesheet" href="../css/global_2.0.css">
+</head>
+<body>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper " >
+        <div class="container">
+          <a href="/" class="brand-logo">
+            <img class="logo-img" width="65px" style="float: left; margin-bottom: 0.5rem;" src="../images/defhacks-logos/defhacks-logo-black-green.png">
+            DEF HACKS()
+          </a>
+          <ul class="right">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">FAQ</a></li>
+            <li> <a href="#" onclick="toggleSidebar(this)"><i class="material-icons">menu</i></a></li>
+            <li>
+              <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;" href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=gray" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-gray.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
+            </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div id="sidebar">
+    <span class="material-icons toggle-btn" onclick="toggleSidebar(this)" >close</span>
+    <ul class="list">
+      <li class="item"><a href="/">Home</a></li>
+      <li class="item"><a href="/">About</a></li>
+      <li class="item"><a href="/">Speakers</a></li>
+      <li class="item"><a href="/">Sponsors</a></li>
+      <li class="item"><a href="/">Interns</a></li>
+      <li class="item"><a href="/">Team</a></li>
+      <li class="item"><a href="/">Contact</a></li>
+      <li class="item"><a href="/">Blog</a></li>
+    </ul>
+  </div>
+  <section id="Hero">
+    <div id="particles-js" style="-webkit-box-shadow: inset 0px 0px 10px 0px rgba(48,48,48,0.22);-moz-box-shadow: inset 0px 0px 10px 0px rgba(48,48,48,0.22);box-shadow: inset 0px 0px 10px 0px rgba(48,48,48,0.22);">
+      <canvas class="particles-js-canvas-el" width="1144" height="867" style="width: 100%; height: 100%;"></canvas>
+      <div class="ctn">
+        <h4>2020 | Nov 14 - Nov 15</h4>
+        <h1>Def Hacks ()</h1>
+        <h6>Global 2.0 / Online / 36 Hours</h6>
+        <a class="waves-effect waves-light btn btn-large">Register</a>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="../js/particles-index.js"></script>
+<script src="../js/materialize.js"></script>
+<script src="../js/index.js"></script>
+<script>
+  function toggleSidebar(ref){
+  document.getElementById("sidebar").classList.toggle('active')
+  }
+</script>
+</html>
