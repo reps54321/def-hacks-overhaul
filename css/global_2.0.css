@@ -123,11 +123,10 @@ section .main {
 }
 section .main .sidebar{
   flex: 0 0 30%;
-  background: #303030;
+  background: #373636;
   color: #9F9F9F;
   display: flex;
   flex-flow: column wrap;
-  /* justify-content: center; */
   text-align: left;
   line-height: 0;
   align-items: center;
@@ -138,8 +137,10 @@ section .main .ctn{
   color: #fff;
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
+}
+
+#About {
   padding: 4rem;
 }
 #About p.nest{
@@ -178,10 +179,190 @@ h4 span.material-icons {
   align-items: center;
 }
 
+#Speakers {
+  padding: 4rem;
+}
+#Speakers h2 {
+  margin: 0;
+  margin-bottom: 4rem;
+}
 
+#Speakers .col-4{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
 
+#Speakers .col-4 .item{
+  flex: 0 0 25%;
+  margin-bottom: 3.5rem;
+  text-align: center;
+}
 
+@media all and (max-width: 1000px) {
+  #Speakers .col-4 .item{
+    flex: 0 0 50%;
+  }
+}
 
+#Speakers .item img{
+  border-radius: 50%;
+  width: 65%;
+}
+#Speakers .item h4{
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+#Speakers .item h4 strong{
+  font-family: "Raleway";
+  text-transform: uppercase;
+}
+#Speakers .item p{
+  border-radius: 50%;
+  width: 65%;
+  color: #fff;
+  font-size: 1rem;
+  margin: 0 !important;
+}
+
+#Sponsors h2{
+  padding: 2rem;
+  padding-left: 4rem;
+}
+#Sponsors p{
+  padding: 4rem;
+  width: 55%;
+}
+
+#Sponsors .ctn{
+  padding: 4rem;
+  color:#303030;
+  background: #fff;
+}
+
+#Sponsors .large, #Sponsors .mid, #Sponsors .small{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+#Sponsors .item{
+  padding: 1rem;
+}
+#Sponsors .large .item{
+  flex: 0 0 35%;
+}
+#Sponsors .large .item img{
+  width: 25rem;
+}
+#Sponsors .mid .item{
+  flex: 0 0 25%;
+}
+#Sponsors .mid .item img{
+  width: 18rem;
+}
+#Sponsors .small .item{
+  flex: 0 0 20%;
+}
+#Sponsors .small .item img{
+  width: 10rem;
+}
+
+#Community_partners {
+  background: #fff;
+  color: #303030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+#Community_partners .col-3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+#Community_partners .item{
+flex: 0 0 30%;
+}
+#Community_partners .item img{
+  padding: 1rem;
+  width: 20rem;
+}
+
+#FAQ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  padding: 4rem;
+  position: relative;
+}
+
+#FAQ .col-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+#FAQ .col-2 .item{
+  flex: 0 0 45%;
+  display: flex;
+  flex-flow: row wrap;
+}
+#FAQ .col-2 .item .material-icons{
+  font-size: 2rem;
+}
+
+@media all and (max-width: 700px) {
+  #FAQ .col-2 .item{
+    flex: 0 0 100%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+@media all and (max-width: 1000px) and (min-width: 700px) {
+  #FAQ .col-2 .item{
+    flex: 0 0 80%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+#triangle_small {
+  position: absolute;
+  top: -17px;
+  left: 114px;
+  width: 6rem;
+
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background:#303030;
+  color: #fff;
+  padding: 2rem;
+}
+
+footer div {
+  margin: 0 1.5rem;
+}
+footer svg {
+  padding-top: 1rem;
+  width: 4.5rem;
+}
+
+footer h4,footer p {
+  line-height: 0.7;
+}
+
+#triangle_large {
+  display: block;
+  right: 0;
+  align-self: flex-end;
+}
 /* utils */
 
 h1 {
@@ -204,6 +385,7 @@ h4 {
   font-size: 1.5rem;
   font-weight: 400;
 }
+
 h4 strong{
   font-weight: 700;
 }
@@ -212,6 +394,7 @@ p {
   font-family: "Open Sans";
   font-size: 1.25rem;
   font-weight: 400;
+  margin: 0;
 }
 
 .tag {
@@ -246,4 +429,10 @@ span.tri {
 
 .btn.sec {
   background:#2E2E2E;
+}
+
+
+.separator svg{
+  margin: 4rem 0;
+  width: 100%;
 }
