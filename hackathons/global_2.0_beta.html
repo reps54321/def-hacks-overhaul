@@ -16,40 +16,40 @@
   <link rel="stylesheet" href="../css/global_2.0.css">
 </head>
 <body>
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper " >
-        <div class="container">
-          <a href="/" class="brand-logo">
-            <img class="logo-img" width="50px" style="float: left; margin-bottom: 0.5rem;" src="../images/defhacks-logos/defhacks-logo-black-green.png">
-            <h3>
-              DEF HACKS <span class="sec">()</span>
-            </h3>
-          </a>
-          <ul class="right">
-            <li><a class="nav-links" href="/">Home</a></li>
-            <li><a class="nav-links" href="/">About</a></li>
-            <li><a class="nav-links" href="/">FAQ</a></li>
-            <li> <a class="nav-links" href="#" onclick="toggleSidebar(this)"><i class="material-icons">menu</i></a></li>
-            <li>
-              <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;" href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=gray" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-gray.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
-            </li>
-            </ul>
-        </div>
+  <nav id="Navbar">
+    <div class="nav-wrapper " >
+      <div class="container">
+        <a href="/" class="brand-logo">
+          <img class="logo-img" width="50px" style="float: left; margin-bottom: 0.5rem;" src="../images/defhacks-logos/defhacks-logo-black-green.png">
+          <h3>
+            DEF HACKS<span class="sec">()</span>
+          </h3>
+        </a>
+        <ul class="right">
+          <li><a class="nav-links hide-on-med-and-down" href="/"><span class="sec">Home</span></a></li>
+          <li><a class="nav-links hide-on-med-and-down" href="#About">About</a></li>
+          <li><a class="nav-links hide-on-med-and-down" href="#FAQ">FAQ</a></li>
+          <li> <a class="nav-links" href="#" onclick="toggleSidebar(this)"><i class="material-icons">menu</i></a></li>
+          <li>
+            <a id="mlh-trust-badge"  href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=gray" target="_blank">
+              <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-gray.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%">
+            </a>
+          </li>
+          </ul>
       </div>
-    </nav>
-  </div>
+    </div>
+  </nav>
   <div id="sidebar">
     <span class="material-icons toggle-btn" onclick="toggleSidebar(this)" >close</span>
     <ul class="list">
-      <li class="item nav-links"><a href="/">Home</a></li>
-      <li class="item nav-links"><a href="/">About</a></li>
-      <li class="item nav-links"><a href="/">Speakers</a></li>
-      <li class="item nav-links"><a href="/">Sponsors</a></li>
-      <li class="item nav-links"><a href="/">Interns</a></li>
-      <li class="item nav-links"><a href="/">Team</a></li>
-      <li class="item nav-links"><a href="/">Contact</a></li>
-      <li class="item nav-links"><a href="/">Blog</a></li>
+      <li class="item nav-links"><a href="#"><span class="sec">Home</span></a></li>
+      <li class="item nav-links"><a href="#About">About</a></li>
+      <li class="item nav-links"><a href="#Speakers">Speakers</a></li>
+      <li class="item nav-links"><a href="#Sponsors">Sponsors</a></li>
+      <li class="item nav-links"><a href="/intern">Interns</a></li>
+      <li class="item nav-links"><a href="/#OUR-TEAM">Team</a></li>
+      <li class="item nav-links"><a href="mailto:virtual@defhacks.co">Contact</a></li>
+      <li class="item nav-links"><a href="/blog/blog.html">Blog</a></li>
     </ul>
   </div>
   <section id="Hero">
@@ -60,29 +60,31 @@
         <h1>Def Hacks <span class="sec">()</span> </h1>
         <h6 class="tag">Global 2.0 / Online / 36 Hours</h6>
         <h3>
-          <a class="btn">Register</a>
+          <a href="https://defhacks.co/register" class="btn large">Register</a>
         </h3>
         <div class="more">
+          <a href="#About">
           <p>Learn More</p>
           <div class="loadMore">
             <span class="material-icons">expand_more</span>
             <span class="material-icons">expand_more</span>
             <span class="material-icons">expand_more</span>
           </div>
+        </a>
         </div>
       </div>
     </div>
   </section>
-  <section>
+  <section id="More">
     <div class="main">
-      <div class="sidebar">
-        <h4><span class="material-icons">expand_more</span><span class="material-icons">folder</span>DEFHACKS</h4>
+      <div class="sidebar hide-on-small-only">
+        <h4><span class="material-icons down">expand_more</span><span class="material-icons">folder</span> DEFHACKS</h4>
         <ul>
-          <li><span class="material-icons">description</span> About</li>
-          <li><span class="material-icons">description</span> Register</li>
-          <li><span class="material-icons">description</span> Speaker</li>
-          <li><span class="material-icons">description</span> Sponsors</li>
-          <li><span class="material-icons">description</span> FAQ</li>
+          <li id="Abt"><a href="#About"><span class="material-icons">description</span> About</a></li>
+          <li><a href="#About"><span class="material-icons">description</span> Register</a></li>
+          <li id="Spk"><a href="#Speakers"><span class="material-icons">description</span> Speaker</a></li>
+          <li id="Spo"><a href="#Sponsors"><span class="material-icons">description</span> Sponsors</a></li>
+          <li id="Fq"><a href="#FAQ"><span class="material-icons">description</span> FAQ</a></li>
         </ul>
       </div>
       <div class="ctn">
@@ -124,10 +126,300 @@
               </div>
             </div>
             <div class="btns">
-              <a class="btn" href="#btn">Register</a>
-              <a class="btn sec" href="#btn">Intern Opportunity</a>
+              <a class="btn" href="https://defhacks.co/register">Register</a>
+              <a class="btn sec" href="https://defhacks.co/intern.html">Intern Opportunity</a>
             </div>
           </section>
+          <div class="separator">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1932.698" height="138" viewBox="0 0 1932.698 138">
+              <g id="seperator" transform="translate(0.365)">
+              <g id="Group_28" data-name="Group 28" opacity="0.39">
+                <path id="Path_151" data-name="Path 151" d="M4123,1928l48.667,52,546.667-10L4941,1973.333l424.667-74L5542.333,1931l101.338-33,384.57,48h17.092" transform="translate(-4123 -1868)" fill="none" stroke="#a5ca8b" stroke-width="1" opacity="0.77"/>
+                <path id="Path_152" data-name="Path 152" d="M4133.334,1895.667l202,60,388.667,16L5009.333,1931l162,32.667,270.333-69.333,189,10.667L5794,1971l252.411-39.812h17.255" transform="translate(-4131.333 -1891)" fill="none" stroke="#a5ca8b" stroke-width="1" opacity="0.77"/>
+                <circle id="Ellipse_11" data-name="Ellipse 11" cx="2" cy="2" r="2" transform="translate(1010.333 65)" fill="#b7d4a3"/>
+                <circle id="Ellipse_12" data-name="Ellipse 12" cx="2" cy="2" r="2" transform="translate(876.333 38)" fill="#b7d4a3"/>
+                <circle id="Ellipse_13" data-name="Ellipse 13" cx="2" cy="2" r="2" transform="translate(1308.333)" fill="#b7d4a3"/>
+                <circle id="Ellipse_14" data-name="Ellipse 14" cx="2" cy="2" r="2" transform="translate(1240.333 30)" fill="#b7d4a3"/>
+                <circle id="Ellipse_15" data-name="Ellipse 15" cx="2" cy="2" r="2" transform="translate(1417.333 60)" fill="#b7d4a3"/>
+                <circle id="Ellipse_16" data-name="Ellipse 16" cx="2" cy="2" r="2" transform="translate(1518.333 28)" fill="#b7d4a3"/>
+                <circle id="Ellipse_17" data-name="Ellipse 17" cx="2" cy="2" r="2" transform="translate(1497.333 11)" fill="#b7d4a3"/>
+                <circle id="Ellipse_18" data-name="Ellipse 18" cx="2" cy="2" r="2" transform="translate(1546.333 32)" fill="#b7d4a3"/>
+                <circle id="Ellipse_19" data-name="Ellipse 19" cx="2" cy="2" r="2" transform="translate(589.333 80)" fill="#b7d4a3"/>
+                <circle id="Ellipse_22" data-name="Ellipse 22" cx="2" cy="2" r="2" transform="translate(46.333 108)" fill="#b7d4a3"/>
+                <circle id="Ellipse_23" data-name="Ellipse 23" cx="2" cy="2" r="2" transform="translate(201.333 63)" fill="#b7d4a3"/>
+                <circle id="Ellipse_24" data-name="Ellipse 24" cx="2" cy="2" r="2" transform="translate(1038.333 71)" fill="#b7d4a3"/>
+                <circle id="Ellipse_25" data-name="Ellipse 25" cx="2" cy="2" r="2" transform="translate(816.333 103)" fill="#b7d4a3"/>
+                <circle id="Ellipse_26" data-name="Ellipse 26" cx="2" cy="2" r="2" transform="translate(1110.333 52)" fill="#b7d4a3"/>
+                <circle id="Ellipse_27" data-name="Ellipse 27" cx="2" cy="2" r="2" transform="translate(1661.333 77)" fill="#b7d4a3"/>
+                <circle id="Ellipse_28" data-name="Ellipse 28" cx="2" cy="2" r="2" transform="translate(1774.333 60)" fill="#b7d4a3"/>
+              </g>
+              <g id="Group_27" data-name="Group 27" transform="translate(2 6)">
+                <path id="Path_151-2" data-name="Path 151" d="M4125.333,1892l138.16,88,447.241-88,420.6,48,187.59-48,223.41,33,101.338-33,384.57,48h17.092" transform="translate(-4125 -1850)" fill="none" stroke="#a5ca8b" stroke-width="1" opacity="0.77"/>
+                <path id="Path_152-2" data-name="Path 152" d="M4133.334,1885,4264,1937l457.976,48,405.166-64.478,270.559-50.188,169.6,40.778,211.332-40.778,267.774,50.188h17.255" transform="translate(-4133.334 -1868.333)" fill="none" stroke="#a5ca8b" stroke-width="1" opacity="0.77"/>
+                <circle id="Ellipse_11-2" data-name="Ellipse 11" cx="2" cy="2" r="2" transform="translate(1004.333 88)" fill="#b7d4a3"/>
+                <circle id="Ellipse_12-2" data-name="Ellipse 12" cx="2" cy="2" r="2" transform="translate(860.333 71)" fill="#b7d4a3"/>
+                <circle id="Ellipse_13-2" data-name="Ellipse 13" cx="2" cy="2" r="2" transform="translate(1263.333)" fill="#b7d4a3"/>
+                <circle id="Ellipse_14-2" data-name="Ellipse 14" cx="2" cy="2" r="2" transform="translate(1193.333 40)" fill="#b7d4a3"/>
+                <circle id="Ellipse_15-2" data-name="Ellipse 15" cx="2" cy="2" r="2" transform="translate(1415.333 72)" fill="#b7d4a3"/>
+                <circle id="Ellipse_16-2" data-name="Ellipse 16" cx="2" cy="2" r="2" transform="translate(1516.333 40)" fill="#b7d4a3"/>
+                <circle id="Ellipse_17-2" data-name="Ellipse 17" cx="2" cy="2" r="2" transform="translate(1432.333 40)" fill="#b7d4a3"/>
+                <circle id="Ellipse_18-2" data-name="Ellipse 18" cx="2" cy="2" r="2" transform="translate(1644.333)" fill="#b7d4a3"/>
+                <circle id="Ellipse_19-2" data-name="Ellipse 19" cx="2" cy="2" r="2" transform="translate(587.333 115)" fill="#b7d4a3"/>
+                <circle id="Ellipse_20" data-name="Ellipse 20" cx="2" cy="2" r="2" transform="translate(585.333 40)" fill="#b7d4a3"/>
+                <circle id="Ellipse_21" data-name="Ellipse 21" cx="2" cy="2" r="2" transform="translate(338.333 88)" fill="#b7d4a3"/>
+                <circle id="Ellipse_22-2" data-name="Ellipse 22" cx="2" cy="2" r="2" transform="translate(137.333 128)" fill="#b7d4a3"/>
+                <circle id="Ellipse_23-2" data-name="Ellipse 23" cx="2" cy="2" r="2" transform="translate(130.333 66)" fill="#b7d4a3"/>
+              </g>
+          </g>
+        </svg>
+          </div>
+        <section id="Speakers">
+          <h2>GUEST SPEAKERS<span class="tri">()</span> {</h2>
+          <div class="col-4">
+            <a href="#" class="item">
+              <img src="../images/speakers/Craig-Newmark.jpg" class="responsive-img">
+              <h4><strong>CRAIG NEWMARK</strong></h4>
+              <h4>Founder of <strong>Craigslist</strong></h4>
+            </a>
+            <a href="#" class="item">
+              <img src="../images/speakers/Michael_Seibel.jpeg" class="responsive-img">
+              <h4><strong>Michael Seibel</strong></h4>
+              <h4>CEO of <strong>Y-Combinator</strong></h4>
+              <h4>Co-founder of <strong>Twitch</strong></h4>
+            </a>
+            <a href="#" class="item">
+              <img src="../images/speakers/david_patterson.jpeg" class="responsive-img">
+              <h4><strong>DAVID PATTERSON</strong></h4>
+              <h4><strong>Turning Award</strong></h4>
+              <h4>Recepient</h4>
+            </a>
+            <a href="#" class="item">
+              <img src="../images/speakers/dave_camp.jpg" class="responsive-img">
+              <h4><strong>DAVE CAMP</strong></h4>
+              <h4>Senior V.P of <strong>Firefox</strong></h4>
+            </a>
+            <a href="#" class="item">
+              <img src="../images/speakers/Craig-Newmark.jpg" class="responsive-img">
+              <h4><strong>CRAIG NEWMARK</strong></h4>
+              <h4>Founder of <strong>Craigslist</strong></h4>
+            </a>
+          </div>
+        </section>
+        <div class="separator">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1932.698" height="138" viewBox="0 0 1932.698 138">
+            <g id="seperator" transform="translate(0.365)">
+            <g id="Group_28" data-name="Group 28" opacity="0.39">
+              <path id="Path_151" data-name="Path 151" d="M4123,1928l48.667,52,546.667-10L4941,1973.333l424.667-74L5542.333,1931l101.338-33,384.57,48h17.092" transform="translate(-4123 -1868)" fill="none" stroke="#a5ca8b" stroke-width="1" opacity="0.77"/>
+              <path id="Path_152" data-name="Path 152" d="M4133.334,1895.667l202,60,388.667,16L5009.333,1931l162,32.667,270.333-69.333,189,10.667L5794,1971l252.411-39.812h17.255" transform="translate(-4131.333 -1891)" fill="none" stroke="#a5ca8b" stroke-width="1" opacity="0.77"/>
+              <circle id="Ellipse_11" data-name="Ellipse 11" cx="2" cy="2" r="2" transform="translate(1010.333 65)" fill="#b7d4a3"/>
+              <circle id="Ellipse_12" data-name="Ellipse 12" cx="2" cy="2" r="2" transform="translate(876.333 38)" fill="#b7d4a3"/>
+              <circle id="Ellipse_13" data-name="Ellipse 13" cx="2" cy="2" r="2" transform="translate(1308.333)" fill="#b7d4a3"/>
+              <circle id="Ellipse_14" data-name="Ellipse 14" cx="2" cy="2" r="2" transform="translate(1240.333 30)" fill="#b7d4a3"/>
+              <circle id="Ellipse_15" data-name="Ellipse 15" cx="2" cy="2" r="2" transform="translate(1417.333 60)" fill="#b7d4a3"/>
+              <circle id="Ellipse_16" data-name="Ellipse 16" cx="2" cy="2" r="2" transform="translate(1518.333 28)" fill="#b7d4a3"/>
+              <circle id="Ellipse_17" data-name="Ellipse 17" cx="2" cy="2" r="2" transform="translate(1497.333 11)" fill="#b7d4a3"/>
+              <circle id="Ellipse_18" data-name="Ellipse 18" cx="2" cy="2" r="2" transform="translate(1546.333 32)" fill="#b7d4a3"/>
+              <circle id="Ellipse_19" data-name="Ellipse 19" cx="2" cy="2" r="2" transform="translate(589.333 80)" fill="#b7d4a3"/>
+              <circle id="Ellipse_22" data-name="Ellipse 22" cx="2" cy="2" r="2" transform="translate(46.333 108)" fill="#b7d4a3"/>
+              <circle id="Ellipse_23" data-name="Ellipse 23" cx="2" cy="2" r="2" transform="translate(201.333 63)" fill="#b7d4a3"/>
+              <circle id="Ellipse_24" data-name="Ellipse 24" cx="2" cy="2" r="2" transform="translate(1038.333 71)" fill="#b7d4a3"/>
+              <circle id="Ellipse_25" data-name="Ellipse 25" cx="2" cy="2" r="2" transform="translate(816.333 103)" fill="#b7d4a3"/>
+              <circle id="Ellipse_26" data-name="Ellipse 26" cx="2" cy="2" r="2" transform="translate(1110.333 52)" fill="#b7d4a3"/>
+              <circle id="Ellipse_27" data-name="Ellipse 27" cx="2" cy="2" r="2" transform="translate(1661.333 77)" fill="#b7d4a3"/>
+              <circle id="Ellipse_28" data-name="Ellipse 28" cx="2" cy="2" r="2" transform="translate(1774.333 60)" fill="#b7d4a3"/>
+            </g>
+            <g id="Group_27" data-name="Group 27" transform="translate(2 6)">
+              <path id="Path_151-2" data-name="Path 151" d="M4125.333,1892l138.16,88,447.241-88,420.6,48,187.59-48,223.41,33,101.338-33,384.57,48h17.092" transform="translate(-4125 -1850)" fill="none" stroke="#a5ca8b" stroke-width="1" opacity="0.77"/>
+              <path id="Path_152-2" data-name="Path 152" d="M4133.334,1885,4264,1937l457.976,48,405.166-64.478,270.559-50.188,169.6,40.778,211.332-40.778,267.774,50.188h17.255" transform="translate(-4133.334 -1868.333)" fill="none" stroke="#a5ca8b" stroke-width="1" opacity="0.77"/>
+              <circle id="Ellipse_11-2" data-name="Ellipse 11" cx="2" cy="2" r="2" transform="translate(1004.333 88)" fill="#b7d4a3"/>
+              <circle id="Ellipse_12-2" data-name="Ellipse 12" cx="2" cy="2" r="2" transform="translate(860.333 71)" fill="#b7d4a3"/>
+              <circle id="Ellipse_13-2" data-name="Ellipse 13" cx="2" cy="2" r="2" transform="translate(1263.333)" fill="#b7d4a3"/>
+              <circle id="Ellipse_14-2" data-name="Ellipse 14" cx="2" cy="2" r="2" transform="translate(1193.333 40)" fill="#b7d4a3"/>
+              <circle id="Ellipse_15-2" data-name="Ellipse 15" cx="2" cy="2" r="2" transform="translate(1415.333 72)" fill="#b7d4a3"/>
+              <circle id="Ellipse_16-2" data-name="Ellipse 16" cx="2" cy="2" r="2" transform="translate(1516.333 40)" fill="#b7d4a3"/>
+              <circle id="Ellipse_17-2" data-name="Ellipse 17" cx="2" cy="2" r="2" transform="translate(1432.333 40)" fill="#b7d4a3"/>
+              <circle id="Ellipse_18-2" data-name="Ellipse 18" cx="2" cy="2" r="2" transform="translate(1644.333)" fill="#b7d4a3"/>
+              <circle id="Ellipse_19-2" data-name="Ellipse 19" cx="2" cy="2" r="2" transform="translate(587.333 115)" fill="#b7d4a3"/>
+              <circle id="Ellipse_20" data-name="Ellipse 20" cx="2" cy="2" r="2" transform="translate(585.333 40)" fill="#b7d4a3"/>
+              <circle id="Ellipse_21" data-name="Ellipse 21" cx="2" cy="2" r="2" transform="translate(338.333 88)" fill="#b7d4a3"/>
+              <circle id="Ellipse_22-2" data-name="Ellipse 22" cx="2" cy="2" r="2" transform="translate(137.333 128)" fill="#b7d4a3"/>
+              <circle id="Ellipse_23-2" data-name="Ellipse 23" cx="2" cy="2" r="2" transform="translate(130.333 66)" fill="#b7d4a3"/>
+            </g>
+        </g>
+      </svg>
+        </div>
+        <section id="Sponsors">
+          <h2>Sponsors<span class="tri">()</span> {</h2>
+            <div class="sponsors-ctn">
+              <div class="large">
+                  <a class="item" href= "https://stiddle.com">
+                    <img src="../images/sponsors/stiddle2.png"></img>
+                  </a>
+                  <a class="item" href= "https://stiddle.com">
+                    <img src="../images/sponsors/stiddle2.png"></img>
+                  </a>
+              </div>
+              <div class="mid">
+                  <a class="item" href= "https://stiddle.com">
+                    <img src="../images/sponsors/stiddle2.png"></img>
+                  </a>
+                  <a class="item" href= "https://stiddle.com">
+                    <img src="../images/sponsors/stiddle2.png"></img>
+                  </a>
+                  <a class="item" href= "https://stiddle.com">
+                    <img src="../images/sponsors/stiddle2.png"></img>
+                  </a>
+                  <a class="item" href= "https://stiddle.com">
+                    <img src="../images/sponsors/stiddle2.png"></img>
+                  </a>
+              </div>
+              <div class="small">
+                  <a class="item" href= "https://stiddle.com">
+                    <img src="../images/sponsors/stiddle2.png"></img>
+                  </a>
+                  <a class="item" href= "https://stiddle.com">
+                    <img src="../images/sponsors/stiddle2.png"></img>
+                  </a>
+                  <a class="item" href= "https://stiddle.com">
+                    <img src="../images/sponsors/stiddle2.png"></img>
+                  </a>
+                  <a class="item" href= "https://stiddle.com">
+                    <img src="../images/sponsors/stiddle2.png"></img>
+                  </a>
+              </div>
+            </div>
+            <h4>
+              /* Want to <strong>sponsor</strong> us? We'd love to get in touch. Read our <a href="/#SPONSOR"> <span class="tri">prospectus</span> </a>and shoot us an <a href="mailto:virtual@defhacks.co"><span class="tri">email</span></a>! */
+            </h4>
+        </section>
+        <section id="Community_partners">
+          <h2>COMMUNITY PARTNERS <span class="sec">()</span> {</h2>
+          <div class="col-3">
+            <a class="item" href= "https://synhacks.org">
+              <img src="../images/sponsors/synhacks.jpeg"></img>
+            </a>
+            <a class="item" href= "https://synhacks.org">
+              <img src="../images/sponsors/synhacks.jpeg"></img>
+            </a>
+            <a class="item" href= "https://synhacks.org">
+              <img src="../images/sponsors/synhacks.jpeg"></img>
+            </a>
+            <a class="item" href= "https://synhacks.org">
+              <img src="../images/sponsors/synhacks.jpeg"></img>
+            </a>
+          </div>
+        </section>
+        <div class="separator hide-on-small-only">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1932.698" height="138" viewBox="0 0 1932.698 138">
+            <g id="seperator" transform="translate(0.365)">
+            <g id="Group_28" data-name="Group 28" opacity="0.39">
+              <path id="Path_151" data-name="Path 151" d="M4123,1928l48.667,52,546.667-10L4941,1973.333l424.667-74L5542.333,1931l101.338-33,384.57,48h17.092" transform="translate(-4123 -1868)" fill="none" stroke="#a5ca8b" stroke-width="1" opacity="0.77"/>
+              <path id="Path_152" data-name="Path 152" d="M4133.334,1895.667l202,60,388.667,16L5009.333,1931l162,32.667,270.333-69.333,189,10.667L5794,1971l252.411-39.812h17.255" transform="translate(-4131.333 -1891)" fill="none" stroke="#a5ca8b" stroke-width="1" opacity="0.77"/>
+              <circle id="Ellipse_11" data-name="Ellipse 11" cx="2" cy="2" r="2" transform="translate(1010.333 65)" fill="#b7d4a3"/>
+              <circle id="Ellipse_12" data-name="Ellipse 12" cx="2" cy="2" r="2" transform="translate(876.333 38)" fill="#b7d4a3"/>
+              <circle id="Ellipse_13" data-name="Ellipse 13" cx="2" cy="2" r="2" transform="translate(1308.333)" fill="#b7d4a3"/>
+              <circle id="Ellipse_14" data-name="Ellipse 14" cx="2" cy="2" r="2" transform="translate(1240.333 30)" fill="#b7d4a3"/>
+              <circle id="Ellipse_15" data-name="Ellipse 15" cx="2" cy="2" r="2" transform="translate(1417.333 60)" fill="#b7d4a3"/>
+              <circle id="Ellipse_16" data-name="Ellipse 16" cx="2" cy="2" r="2" transform="translate(1518.333 28)" fill="#b7d4a3"/>
+              <circle id="Ellipse_17" data-name="Ellipse 17" cx="2" cy="2" r="2" transform="translate(1497.333 11)" fill="#b7d4a3"/>
+              <circle id="Ellipse_18" data-name="Ellipse 18" cx="2" cy="2" r="2" transform="translate(1546.333 32)" fill="#b7d4a3"/>
+              <circle id="Ellipse_19" data-name="Ellipse 19" cx="2" cy="2" r="2" transform="translate(589.333 80)" fill="#b7d4a3"/>
+              <circle id="Ellipse_22" data-name="Ellipse 22" cx="2" cy="2" r="2" transform="translate(46.333 108)" fill="#b7d4a3"/>
+              <circle id="Ellipse_23" data-name="Ellipse 23" cx="2" cy="2" r="2" transform="translate(201.333 63)" fill="#b7d4a3"/>
+              <circle id="Ellipse_24" data-name="Ellipse 24" cx="2" cy="2" r="2" transform="translate(1038.333 71)" fill="#b7d4a3"/>
+              <circle id="Ellipse_25" data-name="Ellipse 25" cx="2" cy="2" r="2" transform="translate(816.333 103)" fill="#b7d4a3"/>
+              <circle id="Ellipse_26" data-name="Ellipse 26" cx="2" cy="2" r="2" transform="translate(1110.333 52)" fill="#b7d4a3"/>
+              <circle id="Ellipse_27" data-name="Ellipse 27" cx="2" cy="2" r="2" transform="translate(1661.333 77)" fill="#b7d4a3"/>
+              <circle id="Ellipse_28" data-name="Ellipse 28" cx="2" cy="2" r="2" transform="translate(1774.333 60)" fill="#b7d4a3"/>
+            </g>
+            <g id="Group_27" data-name="Group 27" transform="translate(2 6)">
+              <path id="Path_151-2" data-name="Path 151" d="M4125.333,1892l138.16,88,447.241-88,420.6,48,187.59-48,223.41,33,101.338-33,384.57,48h17.092" transform="translate(-4125 -1850)" fill="none" stroke="#a5ca8b" stroke-width="1" opacity="0.77"/>
+              <path id="Path_152-2" data-name="Path 152" d="M4133.334,1885,4264,1937l457.976,48,405.166-64.478,270.559-50.188,169.6,40.778,211.332-40.778,267.774,50.188h17.255" transform="translate(-4133.334 -1868.333)" fill="none" stroke="#a5ca8b" stroke-width="1" opacity="0.77"/>
+              <circle id="Ellipse_11-2" data-name="Ellipse 11" cx="2" cy="2" r="2" transform="translate(1004.333 88)" fill="#b7d4a3"/>
+              <circle id="Ellipse_12-2" data-name="Ellipse 12" cx="2" cy="2" r="2" transform="translate(860.333 71)" fill="#b7d4a3"/>
+              <circle id="Ellipse_13-2" data-name="Ellipse 13" cx="2" cy="2" r="2" transform="translate(1263.333)" fill="#b7d4a3"/>
+              <circle id="Ellipse_14-2" data-name="Ellipse 14" cx="2" cy="2" r="2" transform="translate(1193.333 40)" fill="#b7d4a3"/>
+              <circle id="Ellipse_15-2" data-name="Ellipse 15" cx="2" cy="2" r="2" transform="translate(1415.333 72)" fill="#b7d4a3"/>
+              <circle id="Ellipse_16-2" data-name="Ellipse 16" cx="2" cy="2" r="2" transform="translate(1516.333 40)" fill="#b7d4a3"/>
+              <circle id="Ellipse_17-2" data-name="Ellipse 17" cx="2" cy="2" r="2" transform="translate(1432.333 40)" fill="#b7d4a3"/>
+              <circle id="Ellipse_18-2" data-name="Ellipse 18" cx="2" cy="2" r="2" transform="translate(1644.333)" fill="#b7d4a3"/>
+              <circle id="Ellipse_19-2" data-name="Ellipse 19" cx="2" cy="2" r="2" transform="translate(587.333 115)" fill="#b7d4a3"/>
+              <circle id="Ellipse_20" data-name="Ellipse 20" cx="2" cy="2" r="2" transform="translate(585.333 40)" fill="#b7d4a3"/>
+              <circle id="Ellipse_21" data-name="Ellipse 21" cx="2" cy="2" r="2" transform="translate(338.333 88)" fill="#b7d4a3"/>
+              <circle id="Ellipse_22-2" data-name="Ellipse 22" cx="2" cy="2" r="2" transform="translate(137.333 128)" fill="#b7d4a3"/>
+              <circle id="Ellipse_23-2" data-name="Ellipse 23" cx="2" cy="2" r="2" transform="translate(130.333 66)" fill="#b7d4a3"/>
+            </g>
+        </g>
+      </svg>
+        </div>
+        <section id="FAQ">
+          <svg id="triangle_small" class="hide-on-med-and-down" data-name="triangle small" xmlns="http://www.w3.org/2000/svg" width="130.041" height="167.794" viewBox="0 0 130.041 167.794">
+            <g id="Group_49" data-name="Group 49" transform="translate(-243.189 1370.753) rotate(-155)">
+              <path id="Path_150" data-name="Path 150" d="M4221.333,1371.751l46.619-146.418,22.413,95.963Z" transform="translate(-3991 -2)" fill="none" stroke="#cde2bf" stroke-width="1"/>
+              <circle id="Ellipse_8" data-name="Ellipse 8" cx="2" cy="2" r="2" transform="translate(228 1368.085)" fill="#b7d4a3"/>
+              <circle id="Ellipse_9" data-name="Ellipse 9" cx="2" cy="2" r="2" transform="translate(297.032 1317.571)" fill="#b7d4a3"/>
+              <circle id="Ellipse_10" data-name="Ellipse 10" cx="2" cy="2" r="2" transform="translate(274.843 1221)" fill="#b7d4a3"/>
+            </g>
+          </svg>
+            
+          <h2> FREQUENTLY ASKED QUESTIONS<span class="sec">()</span> {</h2>
+          <div class="col-2">
+            <div class="item">
+              <h4> <span class="material-icons sec">arrow_right</span><strong>What is a Hackathon?</strong></h4>
+              <p>A hackathon is an event, typically lasting several hours (or even days), in which a large number of people meet to code and show off their products.</p>
+            </div>
+            <div class="item">
+              <h4> <span class="material-icons sec">arrow_right</span><strong>Do I need to know how to code?</strong></h4>
+              <p>Nope! If you already know how to code, that's great! However, if you don't know how to code, this is the perfect time to learn. We will be hosting beginner workshops for you, and we will have experienced mentors to help you with your hacks!</p>
+            </div>
+            <div class="item">
+              <h4> <span class="material-icons sec">arrow_right</span><strong>How do teams work?</strong></h4>
+              <p>You can work individually or work in a team of up to 5! If you don't know anyone participating at the hackathon, don't worry! There will be many other people in the same situation as you. We highly recommend you reach out to other hackers on the slack workspace and form teams. You won't have to register as a team, just register individually. When it's time to submit your project, you can add the names of all your teammates there!</p>
+            </div>
+            <div class="item">
+              <h4> <span class="material-icons sec">arrow_right</span><strong>What can my team make?</strong></h4>
+              <p>Your team has the freedom of making whatever you desire! In addition to our sponsored prompts, we will be having 2 other prompts you can submit your hack in: one for coronavirus related hacks, and another for best overall hack!</p>
+            </div>
+            <div class="item">
+              <h4> <span class="material-icons sec">arrow_right</span><strong>Can I volunteer as a mentor or judge?</strong></h4>
+              <p>Yes! DefHacks wouldn't be possible without our volunteers. We will open mentor and judge sign ups soon, and you can get notified when it opens by signing up for email updates above!</p>
+            </div>
+            <div class="item">
+              <h4> <span class="material-icons sec">arrow_right</span><strong>What do I need for the hackathon?</strong></h4>
+              <p>The only thing you need is a device to access our slack website, and any materials needed for creating your hack!</p>
+            </div>
+          </div>
+          <svg id="triangle_large" class="hide-on-med-and-down" xmlns="http://www.w3.org/2000/svg" width="312" height="202" viewBox="0 0 312 202">
+            <path id="Path_150" data-name="Path 150" d="M4221.333,1422.667l208-197.333,100,129.333Z" transform="translate(-4219 -1223)" fill="none" stroke="#cde2bf" stroke-width="1"/>
+            <circle id="Ellipse_8" data-name="Ellipse 8" cx="2" cy="2" r="2" transform="translate(0 198)" fill="#b7d4a3"/>
+            <circle id="Ellipse_9" data-name="Ellipse 9" cx="2" cy="2" r="2" transform="translate(308 130)" fill="#b7d4a3"/>
+            <circle id="Ellipse_10" data-name="Ellipse 10" cx="2" cy="2" r="2" transform="translate(209)" fill="#b7d4a3"/>
+          </svg>
+        </section>
+        <footer>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="107.262" height="63.5" viewBox="0 0 107.262 63.5">
+              <g id="Group_42" data-name="Group 42" transform="translate(-931.8 -22.5)">
+                <a href="https://twitter.com/def_hacks?lang=en" target="_blank">
+                  <g id="twitter" transform="translate(931.8 28.463)">
+                    <path id="Icon_awesome-twitter" data-name="Icon awesome-twitter" d="M56.973,16.234c.04.564.04,1.128.04,1.692,0,17.2-13.095,37.028-37.028,37.028A36.777,36.777,0,0,1,0,49.112a26.924,26.924,0,0,0,3.143.161A26.064,26.064,0,0,0,19.3,43.713,13.037,13.037,0,0,1,7.132,34.688a16.413,16.413,0,0,0,2.458.2,13.764,13.764,0,0,0,3.425-.443A13.016,13.016,0,0,1,2.579,21.673v-.161a13.107,13.107,0,0,0,5.883,1.652A13.034,13.034,0,0,1,4.432,5.758,36.993,36.993,0,0,0,31.266,19.377a14.692,14.692,0,0,1-.322-2.982,13.027,13.027,0,0,1,22.523-8.9,25.623,25.623,0,0,0,8.26-3.143,12.979,12.979,0,0,1-5.721,7.172A26.09,26.09,0,0,0,63.5,9.505a27.976,27.976,0,0,1-6.527,6.729Z" transform="translate(0 -3.381)" fill="#fff"/>
+                  </g>
+                </a>
+                <a href="https://www.facebook.com/defhacks/?ref=br_rs" target="_blank">
+                  <g id="facebook" transform="translate(1005.052 22.5)">
+                    <path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f" d="M33.391,35.719l1.764-11.492H24.127V16.769c0-3.144,1.54-6.209,6.479-6.209h5.013V.776A61.133,61.133,0,0,0,26.721,0C17.64,0,11.7,5.5,11.7,15.468v8.759H1.609V35.719H11.7V63.5H24.127V35.719Z" transform="translate(-1.609)" fill="#fff"/>
+                  </g>
+                </a>
+              </g>
+            </svg>
+          </div>
+          <div>
+            <a href="mailto:virtual@defhacks.co">
+              <h4><strong>virtual@defhacks.co </strong></h4>
+            </a>
+            <p>Icons made by Flat Icons from www.flaticon.com</p>
+          </div>
+        </footer>
       </div>
     </div>
   </section>
@@ -136,10 +428,5 @@
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="../js/particles-index.js"></script>
 <script src="../js/materialize.js"></script>
-<script src="../js/index.js"></script>
-<script>
-  function toggleSidebar(ref){
-  document.getElementById("sidebar").classList.toggle('active')
-  }
-</script>
+<script src="../js/global_2.0.js"></script>
 </html>
