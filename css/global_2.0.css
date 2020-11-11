@@ -63,7 +63,6 @@ nav {
   color: #303030;
 }
 
-
 #Hero {
   display: block;
   height: 100vh;
@@ -164,7 +163,7 @@ section .main .ctn{
   color: #fff;
   display: flex;
   flex-flow: column wrap;
-  overflow: hidden;
+  overflow-x: hidden !important;
 }
 
 @media all and (max-width: 700px) {
@@ -331,7 +330,7 @@ h4 span.material-icons {
 }
 
 #Sponsors .sponsors-ctn{
-  padding: 4rem;
+  padding: 2rem 8rem;
   color:#303030;
   background: #fff;
 }
@@ -343,26 +342,33 @@ h4 span.material-icons {
 }
 #Sponsors .item{
   padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #Sponsors .large .item{
   flex: 0 0 35%;
 }
 #Sponsors .large .item img{
-  width: 25rem;
+  width: 20rem;
 }
 #Sponsors .mid .item{
   flex: 0 0 25%;
 }
 #Sponsors .mid .item img{
-  width: 18rem;
+  width: 15rem;
 }
 #Sponsors .small .item{
+  align-self: center;
+  justify-self: center;
   flex: 0 0 20%;
 }
 #Sponsors .small .item img{
   width: 10rem;
 }
-
+#Sponsors .small .item.adj img{
+  width: 50%;
+}
 
 
 #Community_partners {
@@ -374,6 +380,7 @@ h4 span.material-icons {
   flex-flow: column wrap;
 }
 #Community_partners .col-3{
+  padding: 2rem 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -381,10 +388,69 @@ h4 span.material-icons {
 }
 #Community_partners .item{
 flex: 0 0 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
 }
 #Community_partners .item img{
   padding: 1rem;
-  width: 20rem;
+  width: 15rem;
+}
+
+#Schedule {
+  padding: 4rem;
+}
+#Schedule h2{
+  margin-bottom: 4rem;
+}
+#Schedule .col-1 {
+  display: flex;
+  flex-flow: column wrap;
+}
+#Schedule .col-1 .title{
+  padding: 1.4rem;
+  background: #94DF62;
+}
+#Schedule .col-1 .row{
+  padding: 0 2rem;
+  margin: 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+#Schedule .event,#Schedule .time{
+  flex: 0 0 50%;
+  margin: 0.7rem 0;
+}
+#Schedule .row h2{
+  margin: 0;
+  font-weight: 800;
+  font-size: 1.9rem;
+}
+
+@media all and (max-width: 700px) {
+  #Schedule .row h2{
+    font-size: 1.5rem;
+  }
+}
+#Schedule .title{
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+#Schedule .title .material-icons{
+  font-size: 2rem;
+  padding-right: 0.3rem;
+}
+#Schedule .col-1 .row .event{
+  display: flex;
+  flex-flow: column wrap;
+}
+#Schedule .col-1 .row .event p{
+  display: flex;
+  flex-flow: column wrap;
+  color: #9F9F9F;
 }
 
 #FAQ {
@@ -407,6 +473,10 @@ flex: 0 0 30%;
   flex: 0 0 45%;
   display: flex;
   flex-flow: row wrap;
+}
+#FAQ .col-2 .item h4{
+  display: flex;
+  align-items: center;
 }
 #FAQ .col-2 .item .material-icons{
   font-size: 2rem;
@@ -617,4 +687,9 @@ span.tri {
 }
 .selected a{
   color: #fff !important;
+}
+
+.dark {
+  background: #000;
+  padding: 0;
 }
