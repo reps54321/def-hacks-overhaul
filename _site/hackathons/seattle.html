@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta name="description" content="Hackathons by students, for students.">
+
+  <title>Def Hacks Seattle</title>
+  <link rel="icon" href="../images/defhacks-logos/defhacks-logo-black-green-square.png">
+  <script src="https://use.fontawesome.com/887f11382d.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300,400,700|Raleway:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet">
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="../css/particles-style.css">
+  <link rel="stylesheet" href="../css/nav-styling.css">
+  <script src="../js/app.js"></script>
+
+
+  <style>
+  .mySlides {display:none}
+  .w3-left, .w3-right, .w3-badge {cursor:pointer}
+  .w3-badge {height:13px;width:13px;padding:0}
+
+  html, body{
+    height: 100%;
+  }
+
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.5em;
+  }
+
+  h1 {
+    font-family: 'Fjalla One', sans-serif;
+  }
+
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+  }
+
+  h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+  }
+
+  #top-update {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    background: #62a337;
+    color: white;
+    padding: 12.5px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  #top-update:hover {
+    background: #489216;
+  }
+
+  #title-font {
+    font-size: 5em;
+  }
+
+  #apply-seattle {
+    font-size: 0.8em;
+  }
+
+  #more-info-text {
+    display: inline-block;
+    font-size: 2.5em;
+    color: #448AFF;
+    border-bottom: 1px #448AFF dotted;
+    margin: 10px;
+    padding: 0;
+  }
+
+  #more-info-text:hover {
+    margin: 0;
+    padding: 10px;
+    background: rgba(68, 137, 255, 0.247);
+    color: #448AFF;
+    border-bottom: 1px rgba(255, 255, 255, 0) solid;
+    border-radius: 10px;
+  }
+  
+  </style>
+
+</head>
+<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg" alt="Major League Hacking 2019 Hackathon Season" style="width:100%"></a>
+
+<nav>
+  <div class="nav-wrapper" style="padding: 0px 160px;">
+    <a href="../index.html" class="brand-logo" style="margin-top: 8px;">
+      <img width="65px" style="float: left;" src="../images/defhacks-logos/defhacks-logo-black-green.png"></img>
+      <h3 style="margin-left: 22px; float: right; color: #303030!important"><strong>DEF</strong> HACKS</h3>
+    </a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="../index.html#ATTEND">ATTEND</a></li>
+      <li><a href="../index.html#SPONSOR">SPONSOR</a></li>
+      <li><a href="../index.html#OUR-TEAM">OUR TEAM</a></li>
+      <li><a href="../index.html#CONTACT">CONTACT</a></li>
+      <li><a href="../blog/blog.html">BLOG</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <div id="volunteerModal" class="modal">
+    <div class="modal-content">
+      <h4>Want to volunteer? Send us an email.</h4>
+      <p class="flow-text">hello@defhacks.io</p>
+      <a class="flow-text" style="color: #62a337" href="mailto:hello@defhacks.io?subject=I%20Would%20Like%20To%20Volunteer%20For%20The%20Seattle%202018%20Hackathon%20&body=Dear%20Def%20Hacks%20Team%2C%0A%0AMy%20name%20is%20%5Binsert%20name%5D%20and%20I%20am%20interested%20in%20volunteering%20for%20the%20Seattle%202018%20Hackathon.%0A%0AMy%20background%20is%20%5Binsert%20my%20incredible%20background%5D.%0A%0ASincerely%2C%0A%5BInsert%20your%20name%5D">Here. We already wrote the email for you. Click here.</a>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+
+  <div id="sponsorModal" class="modal">
+    <div class="modal-content">
+      <h4>Want to sponsor? Send us an email.</h4>
+      <p class="flow-text">hello@defhacks.io</p>
+      <a class="flow-text" style="color: #62a337" href="mailto:hello@defhacks.io?subject=We%20Are%20Interested%20In%20Sponsoring%20The%20Seattle%202018%20Hackathon%20&body=Dear%20Def%20Hacks%20Team%2C%0A%0AMy%20name%20is%20%5Binsert%20name%5D%20and%20I%20work%20for%20%5Binsert%20company%5D.%20We%20%5Bdo%20the%20incredible%20things%20your%20company%20does%5D.%0A%0AWe%20are%20interested%20in%20sponsoring%20and%20would%20like%20more%20information.%0A%0ASincerely%2C%0A%5BInsert%20your%20name%5D%2C%0A%5BInsert%20your%20company%20name%5D">Here. We already wrote the email for you. Click here.</a>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+
+  <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <h4>Want to contact us? Send us an email.</h4>
+        <p class="flow-text">hello@defhacks.io</p>
+        <a class="flow-text" style="color: #62a337" href="mailto:hello@defhacks.io?subject=Contact%20Us&body=Dear%20Def%20Hacks%20Team%2C%0A%0AMy%20name%20is%20%5Binsert%20name%5D.%0A%0A%5BInsert%20the%20incredible%20thing%20you%20want%20to%20contact%20us%20about.%5D%0A%0ASincerely%2C%0A%5BInsert%20your%20name%5D">Here. We already wrote the email for you. Click here.</a>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
+  </div>
+
+  <div id="particles-js" style="-webkit-box-shadow: inset 0px 0px 10px 0px rgba(48,48,48,0.22);-moz-box-shadow: inset 0px 0px 10px 0px rgba(48,48,48,0.22);box-shadow: inset 0px 0px 10px 0px rgba(48,48,48,0.22);"></div>
+  <div id="banner" style="height: calc(100% - 300px); margin-top: 50px;" class="valign-wrapper">
+    <div style="width: 100%; text-align: center;"><h2 id="title-font" style="color: #303030; margin-top:140px; text-align: center;" class="center-align fade-in one">DEF HACKS SEATTLE</h2>
+        <h4 class="center-align fade-in one" id="co-host-title">Co-Hosted by <a style="text-decoration: underline" target="_blank" href="https://evenfinancial.com">Even</a></h4>
+        
+        <div class="section"  style="background-color: #fff; padding-bottom: 10px">
+            <div class="container center-align">
+              <h6 id="more-info-text" class="center-align fade-in one"><a style="text-align: center;" target="_blank" href="https://defhacks.typeform.com/to/aoqNLZ">Join the DEF HACKS Team</a></h6>
+            </div>
+            <div class="container center-align">
+              <p style="margin-left: -5px; color: #303030" class="flow-text fade-in two"><a class="modal-trigger" href="mailto:hello@defhacks.io">Contact Us</a>  | <a class="modal-trigger" href="../index.html#SPONSOR">Sponsor</a> | <a class="modal-trigger" href="https://defhacks.typeform.com/to/ajTynT">Join Us</a></p>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div  class="seperator-top hide-on-small-only fade-in four" style="margin-top: 140px; border-bottom: 70px solid #303030; border-right: 1500px solid transparent; overflow: hidden"></div>
+    <div class="seperator-bottom fade-in four" id="top-separator"></div>
+
+      <style>
+      .done-chip {
+        display: inline-block;
+        height: 44px;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+        line-height: 44px;
+        padding: 0 16px;
+        background-color:  rgba(204, 204, 204, 1);
+        margin-bottom: 5px;
+        border-radius: 0px;
+        margin-right: 5px;
+        min-width: 10em;
+      }
+
+      .active-chip {
+        display: inline-block;
+        height: 44px;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+        line-height: 44px;
+        padding: 0 16px;
+        border-radius: 0px;
+        background-color: #62a337;
+        margin-bottom: 5px;
+        margin-right: 10px;
+        min-width: 10em;
+      }
+
+      .soon-chip {
+        display: inline-block;
+        height: 44px;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+        line-height: 44px;
+        padding: 0 16px;
+        border-radius: 0px;
+        background-color: #62a337;
+        margin-bottom: 5px;
+        margin-right: 10px;
+        min-width: 10em;
+      }
+
+      /* make keyframes that tell the start state and the end state of our object */
+
+        @-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+        @-moz-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+        @keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+
+        .fade-in {
+            opacity:0;  /* make things invisible upon start */
+            -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+            -moz-animation:fadeIn ease-in 1;
+            animation:fadeIn ease-in 1;
+
+            -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+            -moz-animation-fill-mode:forwards;
+            animation-fill-mode:forwards;
+
+            -webkit-animation-duration:0.2s;
+            -moz-animation-duration:0.2s;
+            animation-duration:0.2s;
+        }
+
+        .fade-in.one {
+        -webkit-animation-delay: 0s;
+        -moz-animation-delay: 0s;
+        animation-delay: 0s;
+        }
+
+        .fade-in.two {
+        -webkit-animation-delay: 0.2s;
+        -moz-animation-delay:0.2s;
+        animation-delay: 0.2s;
+        }
+
+        .fade-in.three {
+        -webkit-animation-delay: 0.4s;
+        -moz-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+        }
+
+        .fade-in.four {
+        -webkit-animation-delay: 0.6s;
+        -moz-animation-delay: 0.6s;
+        animation-delay: 0.6s;
+        }
+
+        .seperator-top {
+          width: 100%;
+          height: 0;
+          margin: 0;
+          overflow: hidden;
+        }
+
+        .seperator-bottom {
+          width: 100%;
+          background-color: #303030;
+          height: 10px;
+          overflow: hidden;
+        }
+
+        #co-host-title {
+            font-size: 4em;
+            color: #303030;
+            margin-top:30px;
+        }
+
+        #sponsor-tab {
+            padding: 0px 20%;
+        }
+
+        #question-group {
+          padding: 20px 0 30px 0;
+        }
+
+        @media only screen and (min-width: 992.5px) {
+          #top-date-element {
+            margin-left: 4.16666666%;
+          }
+
+          #sponsor-tab {
+            padding: 0px 15%;
+          }
+          
+        }
+
+        @media only screen and (max-width: 992.5px) {
+          #sponsor-tab {
+            padding: 0px 7.5%;
+          }
+        }
+
+        @media only screen and (max-width: 800px) {
+          #more-info-text {
+            display: inline-block;
+          }
+        }
+
+        @media only screen and (max-width: 600px) {
+          #top-update {
+            display: none;
+          }
+          #top-separator {
+            margin-top: 120px;
+          }
+          #co-host-title {
+              font-size: 3em;
+          }
+          #apply-seattle {
+            font-size: 0.7em;
+          }
+          #more-info-text {
+            font-size: 2em;
+          }
+          #title-font {
+            font-size: 4em;
+          }
+        }
+        @media only screen and (max-width: 450px) {
+          #title-font {
+            font-size: 3.5em;
+          }
+          #co-host-title {
+            font-size: 2.5em;
+          }
+          #apply-seattle {
+            font-size: 0.65em;
+          }
+        }
+
+      </style>
+  </div>
+
+  <div class="section fade-in four" style="width: 100%; background-color: #303030; padding: 35px 0px; margin: 0px">
+    <div class="container">
+
+      <div class="row">
+         <div class="col s12">
+            <div class="row" >
+              <div class="col l3 s12 offset-l1" id="top-date-element" style="color: #fff">
+                <h3 style="font-family: 'Oswald', sans-serif; color: #62a337;">When? </h3>
+                <img height="50px" style="margin: 5px 0;"; src="../images/hackathon-icons/when.png"/>
+                <p>Saturday, April 13th 12:00 PM -<br> Sunday, April 14th 12:00 PM</p>
+              </div>
+              <div class="col l3 s12 offset-l1" style="color: #fff">
+                <h3 style="font-family: 'Oswald', sans-serif; color: #62a337;">Where?</h3>
+                <img height="50px" style="margin: 5px 0;"; src="../images/hackathon-icons/where.png"/>
+                <p>Microsoft HQ Building #20<br>3709 Microsoft Way, Redmond, WA 98052</p>
+              </div>
+              <div class="col l3 s12 offset-l1" style="color: #fff">
+                <h3 style="font-family: 'Oswald', sans-serif; color: #62a337;">What?</h3>
+                <img height="50px" style="margin: 5px 0;"; src="../images/hackathon-icons/what.png"/>
+                <p>24-hour hackathon with an emphasis on FinTech, open to all levels of coders; $2K+ in prize money</p>
+              </div>
+            </div>
+         </div>
+       </div>
+
+       <style>
+
+        .question {
+         margin-bottom: 20px;
+         color: #fff;
+       }
+
+       .question h4 {
+         font-family: 'Oswald', sans-serif;
+       }
+
+       #schedule {
+          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 70%;
+          background-color: #323232;
+        }
+
+        #schedule tr:hover {background-color: #292929;}
+
+        #schedule td, #schedule th {
+          font-size: 16px;
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+
+        #schedule-header {
+          background-color: #ddd;
+          color: #444;
+        }
+
+        #schedule-header:hover {
+          background-color: #D1D1D1;
+        }
+
+        .speaker-name {
+          margin-top: 0px;
+          color: #303030;
+          font-family: 'Raleway', sans-serif;
+        }
+
+        .speaker-subtitle {
+          line-height: 1.4;
+          color: #303030;
+          font-style: italic;
+          font-family: 'Open Sans', sans-serif;
+        }
+
+        .speaker-description {
+          line-height: 1.5;
+          color: #303030;
+          font-size: 16px;
+          font-family: 'Open Sans', sans-serif;
+        }
+
+        @media only screen and (max-width: 600px) {
+          .speaker-name {
+            margin-top: 15px;
+          }
+          #speaker-image {
+            width: 35%;
+            min-width: 150px;
+          }
+        }
+       </style>
+
+
+       <div class="row">
+         <div class="col 12">
+
+         </div>
+       </div>
+
+
+    </div>
+  </div>
+  <div class="separator-top hide-on-small-only" style="margin-top: -50px; margin-bottom: -1px;border-bottom: 51px solid #62a337; border-right: 1500px solid #303030; overflow: hidden; -webkit-transform: scaleX(1); transform: scaleX(1);"></div>
+
+  <div style="width: 100%; background-color: #62a337; height: 30px; margin-top: -10px;"></div>
+
+  <div class="section" style="margin-top: 40px; width: 100%; padding-bottom: 30px">
+
+    <div class="container">
+      <div class="row center-align">
+        <div class="col s12">
+          <h2 style="color: #303030; margin-bottom: 20px; font-size: 3em;">Event 2019 Sponsors</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row center-align">
+        <div class="col s12" style="text-align: left;" id="sponsor-tab">
+            <h4 style="color:#303030; font-family: 'Open Sans'; font-weight: 700;">Platinum Sponsor and Co-Host: <a target="_blank" style="color: #448AFF" href="https://evenfinancial.com">Even</a></h4>
+            <a target="_blank" href="https://evenfinancial.com"><img style="width: 27.5%; margin: 0 auto; min-width: 190px;" src="../images/sponsors/even-leftsideempty.png" class="responsive-img"></a>
+            <h4 style="color:#303030; font-family: 'Open Sans'; font-weight: 400;">About <a target="_blank" style="text-decoration: underline;" href="https://evenfinancial.com">Even</a>:</h4>
+            <h5 style="color:#303030; font-family: 'Open Sans'; font-weight: 400; line-height: 1.7;">
+            Even is the leading search, comparison and recommendation engine for financial services.  
+            Even provides essential infrastructure for financial institutions and channel partners to 
+            connect consumers with personalized products (including loans, deposits and more), utilizing 
+            its robust yet simple API. Even is proven to lower the cost of acquisition, improve monetization, 
+            monitor compliance and deliver transparency at scale. The Even platform serves as a trusted 
+            intermediary for financial institutions – including Prosper, LendingClub and Marcus by Goldman 
+            Sachs – that finds consumers through its vast network of channel partners and distributes their 
+            products digitally.</h5>
+        </div>
+        <div class="col s12" style="text-align: left;" id="sponsor-tab">
+          <h4 style="color:#303030; font-family: 'Open Sans'; font-weight: 700;">Bronze Sponsor: <a target="_blank" style="color: #448AFF" href="https://www.xemelgo.com">Xemelgo</a></h4>
+          <a target="_blank" href="https://www.xemelgo.com"><img style="width: 35%; margin: 10px auto; min-width: 175px;" src="../images/sponsors/xemelgo.png" class="responsive-img"></a>
+        </div>
+        <div class="col s12" style="text-align: left;" id="sponsor-tab">
+            <h4 style="color:#303030; font-family: 'Open Sans'; font-weight: 700;">Bronze Sponsor: <a target="_blank" style="color: #448AFF" href="https://www.dubhacks.co">DubHacks</a></h4>
+            <a target="_blank" href="https://www.dubhacks.co"><img style="width: 30%; margin: 0 auto; min-width: 175px;" src="../images/sponsors/dubhacks-small.png" class="responsive-img"></a>
+        </div>
+        <div class="col s12" style="text-align: left;" id="sponsor-tab">
+          <h4 style="color:#303030; font-family: 'Open Sans'; font-weight: 700;">Bronze Sponsor: <a target="_blank" style="color: #448AFF" href="https://comotion.uw.edu/what-we-do/makerspace/">UW CoMotion Makerspace</a></h4>
+          <a target="_blank" href="https://comotion.uw.edu/what-we-do/makerspace/"><img style="width: 35%; margin: 10px auto; min-width: 225px;" src="../images/sponsors/comotion.png" class="responsive-img"></a>
+        </div>
+        <div class="col s12" style="text-align: left;" id="sponsor-tab">
+          <h4 style="color:#303030; font-family: 'Open Sans'; font-weight: 700;">Bronze Sponsor: <a target="_blank" style="color: #448AFF" href="https://jetbrains.com">JetBrains</a></h4>
+          <a target="_blank" href="https://jetbrains.com"><img style="width: 25%; margin: 0 auto; min-width: 150px;" src="../images/sponsors/jetbrains.png" class="responsive-img"></a>
+        </div>
+        <div class="col s12" style="text-align: left;" id="sponsor-tab">
+            <h4 style="color:#303030; font-family: 'Open Sans'; font-weight: 700;">Bronze Sponsor: <a target="_blank" style="color: #448AFF" href="http://hackp.ac/mlh-stickermule-hackathons">Sticker Mule</a></h4>
+            <a target="_blank" href="http://hackp.ac/mlh-stickermule-hackathons"><img style="width: 35%; margin: 0 auto; min-width: 225px;" src="../images/sponsors/sticker-mule.png" class="responsive-img"></a>
+        </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row center-align">
+      <div class="col s12">
+        <h2 style="color: #303030; margin-bottom: 20px; font-size: 3em;">With Support From</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="row center-align">
+    <div class="col s12">
+      <div class="row" style="width: 100%; max-width: 800px; margin: 0 auto;">
+        <div class="base-img col l3 m3 s3">
+          <a target="_blank" href="https://cloudsploit.com/"><img style="width: 100%; margin: 0 auto;" src="../images/sponsors/cloudsploit-square.png" class="responsive-img"></a>
+        </div>
+        <div class="base-img col l3 m3 s3">
+          <a target="_blank" href="https://www.thisismetis.com/"><img style="width: 100%; margin: 0 auto;" src="../images/sponsors/metis-square.png" class="responsive-img"></a>
+        </div>
+        <div class="base-img col l3 m3 s3">
+          <a target="_blank" href="https://www.epicodus.com/"><img style="width: 100%; margin: 0 auto;" src="../images/sponsors/epicodus-square.png" class="responsive-img"></a>
+        </div>
+        <div class="base-img col l3 m3 s3">
+          <a target="_blank" href="https://ischool.uw.edu/"><img style="width: 100%; margin: 0 auto;" src="../images/sponsors/ischooluw-square.png" class="responsive-img"></a>
+        </div>
+        <div class="base-img col l3 m3 s3">
+          <a target="_blank" href="https://depts.washington.edu/compfin/"><img style="width: 100%; margin: 0 auto;" src="../images/sponsors/cfrm-square.png" class="responsive-img"></a>
+        </div>
+        <div class="base-img col l3 m3 s3">
+          <a target="_blank" href="https://www.codingdojo.com/"><img style="width: 100%; margin: 0 auto;" src="../images/sponsors/codingdojo-square.png" class="responsive-img"></a>
+        </div>
+        <div class="base-img col l3 m3 s3">
+          <a target="_blank" href="https://www.insightdatascience.com/"><img style="width: 100%; margin: 0 auto;" src="../images/sponsors/insight-square.png" class="responsive-img"></a>
+        </div>
+        <div class="base-img col l3 m3 s3">
+          <a target="_blank" href="https://flatironschool.com/"><img style="width: 100%; margin: 0 auto;" src="../images/sponsors/flatiron-square.png" class="responsive-img"></a>
+        </div>
+        <div class="base-img col l3 m3 s3">
+          <a target="_blank" href="http://www.tacoma.uw.edu/"><img style="width: 100%; margin: 0 auto;" src="../images/sponsors/uwtacoma-square.jpg" class="responsive-img"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+  <div class="row center-align">
+    <div class="col s12" style="text-align: center;" id="sponsor-tab">
+      <hr style="border: 1px solid #303030">
+      <h2 style="color: #303030; font-size: 3em;">Speakers</h2>
+    </div>
+  </div>
+
+  <div class="row" style="width: 100%; max-width: 800px; margin: 30px auto;">
+    <div class="base-img col l3 m3 s3" id="speaker-image">
+       <img style="width: 100%; margin: 0 auto;" src="../images/speakers/rich-rogers-xemelgo.png" class="responsive-img">
+    </div>
+    <div class="base-img col l9 m9 s12">
+       <h2 class="speaker-name">Rich Rogers</h2>
+       <h4 class="speaker-subtitle">Keynote Speaker</h4>
+       <h5 class="speaker-description">Rich Rogers is the co-founder and CEO of Xemelgo, a Seattle-based start-up delivering IoT-powered Smart Manufacturing solutions.  
+           Prior to launching Xemelgo, Rich spent 12 years at Hitachi building out net new teams, portfolios, and businesses that accounted for $1B+ in annual revenue. 
+       </h5>
+    </div>
+  </div>
+
+  <div class="row" style="width: 100%; max-width: 800px; margin: 30px auto;">
+    <div class="base-img col l3 m3 s3" id="speaker-image">
+        <img style="width: 100%; margin: 0 auto;" src="../images/speakers/kevin-hyland-even.png" class="responsive-img">
+    </div>
+    <div class="base-img col l9 m9 s12">
+        <h2 class="speaker-name">Kevin Hyland</h2>
+        <h4 class="speaker-subtitle">Opening Ceremony Speaker</h4>
+        <h5 class="speaker-description">Kevin Hyland is the CTO at EVEN Financial. Kevin has been a tech lead for most of his professional life. 
+          He’s performed this function at a handful of NYC startups, most recently Gilt Groupe.
+        </h5>
+    </div>
+  </div>
+
+  <a name="INFO"></a>
+  <div style="width: 100%; background-color: #62a337; height: 10px; margin-top: 40px;"></div>
+  <div class="seperator-top hide-on-small-only" style="border-bottom: 50px solid #303030; border-right: 1500px solid #62a337; overflow: hidden;margin-bottom: -1px;"></div>
+
+  <div nclass="section" style="color: #000; width: 100%; background-color: #303030; padding: 0px; margin: 0px">
+    <a name="FAQ"></a>
+    <div class="container">
+
+      <div class="row">
+         <div class="col s12">
+           <!--
+           <div class="row">
+            <div class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix" style="color: #fff">search</i>
+                  <input style="color: #fff; border-color: #fff" value="What is" type="text" id="search">
+                </div>
+              </div>
+            </div>
+          -->
+          
+            <div id="search-content question-group" style="padding: 20px 0px 30px 0px;">
+              
+                <div class="question">
+                    <h3><u>Announcement</u>: The hackathon is over! 160 attendees participated.</h3>
+                    <h4 style="line-height: 1.4;"><i>If you have any questions, please reach out to <a href="christopher@defhacks.io"><u>christopher@defhacks.io</u></a>. See the projects <a href="https://def-hacks-seattle-2019.devpost.com/submissions" target="_blank"><u>here</u></a>.</i></h4></li>
+                    <br>
+                    <h4>What is Def Hacks Seattle 2019?</h4>
+                    <p>
+                      Def Hacks Seattle 2019 is the third annual 24-hour hackathon hosted at Microsoft HQ (on April 13th-14th). This 
+                      year, the hackathon is co-hosted by <a href="https://evenfinancial.com"><u>Even</u></a>, and 
+                      thus has a large FinTech focus. We will be releasing <b>two prompts</b> based around FinTech 
+                      and Even's API ($2,000 in prizes). These prompts will be released <b>three days</b> before the hackathon alongside our 
+                      hackathon Slack channel, at 4:00 PM PST on Wednesday, April 10th.
+                    </p>
+                    <p>
+                      You are allowed to brainstorm projects/solutions before the hackathons, but all code must be written 
+                      at the event. If you are a current CS student, we encourage you to find a Finance major to join your team (and vice versa); 
+                      however, this is not required. There is also a Best Hack category and a Best High School Hack category if 
+                      you do not wish to compete in the FinTech challenge (the two prompts). 
+                    </p>
+                </div>
+                <hr>
+                <div class="question">
+                  <h3><u>General Questions</u></h3>
+                </div>
+                <div class="question">
+                    <h4>What is a hackathon?</h4>
+                    <p>A hackathon is an event, typically lasting several hours (or even days), in which a large number of people meet to code and show off their products.</p>
+                </div>
+
+                <div class="question">
+                    <h4>What should I bring to a hackathon?</h4>
+                    <p>Please bring your own computer and its charger, your ID, and power strips (recommended). The event costs nothing - meals and swag are provided for free! Also consider bringing a sleeping bag and/or pillow.</p>
+                </div>
+
+                <div class="question">
+                    <h4>What are the rules around teams?</h4>
+                    <p>You can participate as an individual, or as a member of a team of 2-4 people. If you do not have a team but are looking for teammates, we will have a Slack channel at the hackathon titled <b>#find-teammates</b> for this purpose.</p>
+                </div>
+
+                <div class="question">
+                    <h4>What should I do after I register?</h4>
+                    <p>After you register, try to find a team and start brainstorming ideas for the hackathon! You shouldn't start coding until the event, but feel free to brainstorm ideas, especially if a theme is released beforehand!</p>
+                </div>
+
+                <div class="question">
+                    <h4>What is the hackathon's Code of Conduct?</h4>
+                    <p>This is an MLH Member Event, and this is their official Code of Conduct: <a target="_blank" href="http://mlh.io/code-of-conduct"><u>http://mlh.io/code-of-conduct</u></a>.</p>
+                </div>
+
+                <div class="question">
+                  <h4>Do you offer travel reimbursement?</h4>
+                  <p>Unfortunately, we cannot offer travel reimbursement for participants.</p>
+                </div>
+                <a name="SCHEDULE"></a>
+                <div class="question">
+                    <h4>What is the schedule for the hackathon?</h4>
+                <table id="schedule">
+                    <tr>
+                        <th colspan="2" id="schedule-header" style="font-size: 20px;">April 13th (Saturday)</th>
+                    </tr>
+                    <tr>
+                        <td>11:00 AM</td>
+                        <td>Check-in</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 PM (noon)</td>
+                        <td>Opening Ceremonies</td>
+                    </tr>
+                    <tr>
+                        <td>1:00 PM</td>
+                        <td>Lunch</td>
+                    </tr>
+                    <tr>
+                        <td>2:00 PM</td>
+                        <td>Even API/Ideation Workshop #1</td>
+                    </tr>
+                    <tr>
+                        <td>3:30 PM</td>
+                        <td>HTML/CSS Workshop</td>
+                    </tr>
+                    <tr>
+                        <td>6:00 PM</td>
+                        <td>Even API Workshop #2</td>
+                    </tr>
+                    <tr>
+                        <td>7:00 PM</td>
+                        <td>Dinner</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 PM</td>
+                        <td>Cup-stacking Contest</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2" id="schedule-header" style="font-size: 20px;">April 14th (Sunday)</th>
+                    </tr>
+                    <tr>
+                        <td>12:00 AM (midnight)</td>
+                        <td>Midnight Snack</td>
+                    </tr>
+                    <tr>
+                        <td>8:00 AM</td>
+                        <td>Breakfast</td>
+                    </tr>
+                    <tr>
+                        <td>8:00 AM</td>
+                        <td>Devpost Submit Deadline</td>
+                    </tr>
+                    <tr>
+                        <td>9:00 AM</td>
+                        <td>Judge Presentations/Demos</td>
+                    </tr>
+                    <tr>
+                        <td>10:30 AM</td>
+                        <td>Judging Deliberation</td>
+                    </tr>
+                    <tr>
+                      <td>11:00 AM</td>
+                      <td>Final Presentations</td>
+                   </tr>
+                    <tr>
+                        <td>11:30 AM</td>
+                        <td>Closing Ceremonies</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 PM (noon)</td>
+                        <td>Event Ends!</td>
+                    </tr>
+                </table>
+              <!--
+              <hr style="margin-top: 10px; border: 0; width: 60%; height: 1px; background: #fff;">
+              <div class="row center-align">
+                <a class="waves-effect btn-flat" style="color: #fff">Show All</a>
+              </div>
+            -->
+
+            </div>
+          </div>
+         </div>
+       </div>
+
+       <style>
+       .question {
+         margin-bottom: 20px;
+         color: #fff;
+       }
+
+       .question h4 {
+         font-family: 'Oswald', sans-serif;
+       }
+
+       #team-list {
+         font-size: 1.75em;
+         margin: 20px;
+       }
+       #team-list-item {
+          margin: 10px;
+          line-height: 1.5;
+       }
+       </style>
+
+       <div class="row">
+         <div class="col 12">
+
+         </div>
+       </div>
+
+
+    </div>
+  </div>
+  <div style="width: 100%;margin-top: -60px; background-color: #62a337; height: 10px"></div>
+  <div class="section" style=" width: 100%; background-color: #dfdfdf; padding: 45px 0px">
+    <div class="container">
+
+      <div class="row center-align">
+         <div class="col s12">
+           <h2 style="color: #000; margin-bottom: 20px; font-size: 3em;">Team</h2>
+           <ul id="team-list">
+             <li id="team-list-item"><b>Organizing team:</b> Chris Elliott, David Wei, Sachin Bhargava, Varun Viswanathan</li>
+             <li id="team-list-item"><b>Advisors:</b> <i>Add your name here by promoting the event! Contact <a href="mailto:christopher@defhacks.io" style="border-bottom: 1px dotted black;">christopher@defhacks.io</a> for more information.</i></li>
+           </ul>
+           <h2 style="color: #000; margin-bottom: 20px; font-size: 3em;">Previous Sponsors</h2>
+           <div class="row" style="width: 100%; max-width: 800px; margin: 0 auto;">
+             <div class="base-img col l3 m3 s3">
+                <img style="width: 100%; margin: 0 auto;" src="../images/sponsors/microsoft.png" class="responsive-img">
+                <div class="overlay microsoft-overlay">
+                  <div class="text"></div>
+                </div>
+             </div>
+
+             <div class="base-img col l3 m3 s3">
+                <img style="width: 100%; margin: 0 auto;" src="../images/sponsors/name.png" class="responsive-img">
+                <div class="overlay name-overlay">
+                  <div class="text"></div>
+                </div>
+             </div>
+
+             <div class="base-img col l3 m3 s3">
+                <img style="width: 100%; margin: 0 auto;" src="../images/sponsors/github.png" class="responsive-img">
+                <div class="overlay github-overlay">
+                  <div class="text"></div>
+                </div>
+             </div>
+
+             <div class="base-img col l3 m3 s3">
+                <img style="width: 100%; margin: 0 auto;" src="../images/sponsors/docusign.png" class="responsive-img">
+                <div class="overlay docusign-overlay">
+                  <div class="text"></div>
+                </div>
+             </div>
+             <div class="base-img col l3 m3 s3">
+                <img style="width: 100%; margin: 0 auto;" src="../images/sponsors/acumatica.png" class="responsive-img">
+                <div class="overlay acumatica-overlay">
+                  <div class="text"></div>
+                </div>
+             </div>
+             <div class="base-img col l3 m3 s3">
+                <img style="width: 100%; margin: 0 auto;" src="../images/sponsors/hackerearth.png" class="responsive-img">
+                <div class="overlay hackerearth-overlay">
+                  <div class="text"></div>
+                </div>
+             </div>
+             <div class="base-img col l3 m3 s3">
+                <img style="width: 100%; margin: 0 auto;" src="../images/sponsors/mlh.png" class="responsive-img">
+                <div class="overlay mlh-overlay">
+                  <div class="text"></div>
+                </div>
+             </div>
+             <div class="base-img col l3 m3 s3">
+                <img style="width: 100%; margin: 0 auto;" src="../images/sponsors/make school.png" class="responsive-img">
+                <div class="overlay make-overlay">
+                  <div class="text"></div>
+                </div>
+             </div>
+           </div>
+         </div>
+       </div>
+
+
+    </div>
+  </div>
+  </div>
+  <div style="width: 100%; background-color: #62a337; height: 10px"></div>
+
+</body>
+
+<footer class="page-footer" style="background-color: #054609; padding-top: 40px;">
+            <div class="row center">
+              <i style="font-size: 20px; margin-right: 15px; color: #fff" class="fa fa-facebook" aria-hidden="true" onclick="window.open('https://www.facebook.com/profile.php?id=315896121953286&ref=br_rs')"></i>
+              <i style="font-size: 20px; margin-right: 5px; color: #fff" class="fa fa-twitter" aria-hidden="true" onclick="window.open('https://twitter.com/def_hacks?lang=en')"></i>
+              <br><br>
+              <a href="mailto:hello@defhacks.io" style="color: #fff; margin: 100px 0px; font-size: 1.2em">hello@defhacks.io</a>
+     			 </div>
+		 </div>
+		 <div class="footer-copyright">
+			 <div class="container">
+         © 2019 Def Hacks Inc.
+       </div>
+		 </div>
+</footer>
+
+<style>
+/* label color */
+  .input-field label {
+    color: #fff;
+  }
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: #fff;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+  }
+  /* valid color */
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: #fff;
+  }
+</style>
+
+<script
+src="https://code.jquery.com/jquery-2.2.4.js"
+integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+crossorigin="anonymous"></script>
+<script src='../js/materialize.js'></script>
+<script  src="../js/index.js"></script>
+<script  src="../js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+  <script  src="../js/particles-index.js"></script>
+
+
+  </body>
+</html>

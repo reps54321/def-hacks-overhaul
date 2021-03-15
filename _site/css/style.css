@@ -1,0 +1,140 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.press-block h4:hover {
+  color: #b2ce9f!important;
+}
+
+.base-img {
+  position: relative;
+  width: 50%;
+}
+
+.responsive-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+.base-img:hover .overlay {
+  opacity: 1;
+}
+
+.base-img:hover img {
+  content: none;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.microsoft-overlay {
+    background-image: url('../images/sponsors/microsoft on hover.png')!important;
+}
+
+.nasa-overlay{
+  background-image: url('../images/sponsors/nasa on hover.png')!important;
+}
+
+.name-overlay{
+  background-image: url('../images/sponsors/name on hover.png')!important;
+}
+
+.google-overlay{
+  background-image: url('../images/sponsors/google on hover.png')!important;
+}
+
+.kingston-overlay{
+  background-image: url('../images/sponsors/kingston on hover.png')!important;
+}
+
+.github-overlay{
+  background-image: url('../images/sponsors/github on hover.png')!important;
+}
+
+.mongo-overlay{
+  background-image: url('../images/sponsors/mongodb on hover.png')!important;
+}
+
+.docusign-overlay{
+  background-image: url('../images/sponsors/docusign on hover.png')!important;
+}
+
+.acumatica-overlay{
+  background-image: url('../images/sponsors/acumatica on hover.png')!important;
+}
+
+.hackerearth-overlay{
+  background-image: url('../images/sponsors/hackerearth on hover.png')!important;
+}
+
+.mlh-overlay{
+  background-image: url('../images/sponsors/mlh on hover.png')!important;
+}
+
+.remind-overlay{
+  background-image: url('../images/sponsors/remind on hover.png')!important;
+}
+
+.shapeways-overlay{
+  background-image: url('../images/sponsors/shapeways on hover.png')!important;
+}
+
+.samsung-overlay{
+  background-image: url('../images/sponsors/samsung accelerator on hover.png')!important;
+}
+
+.thoughtworks-overlay{
+  background-image: url('../images/sponsors/thoughtworks on hover.png')!important;
+}
+
+.mozilla-overlay{
+  background-image: url('../images/sponsors/mozilla hive on hover.png')!important;
+}
+
+.rough-overlay{
+  background-image: url('../images/sponsors/rough draft vc on hover.png')!important;
+}
+
+.make-overlay{
+  background-image: url('../images/sponsors/make school on hover.png')!important;
+}
+
+.dubhacks-overlay{
+  background-image: url('../images/sponsors/dubhacks on hover.png')!important;
+}
+

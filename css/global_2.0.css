@@ -1,0 +1,695 @@
+ * {
+   box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.4;
+  color: #303030;
+}
+
+.nav-wrapper .container {
+  width: 100%;
+}
+.nav-wrapper {
+ box-shadow: 0px 3px 5px #C5E1D633;
+ position: relative;
+}
+nav {
+  box-shadow: none;
+}
+
+#sidebar {
+  z-index: 10;
+  position: fixed;
+  top:0px;
+  right:-30rem;
+  width:25rem;
+  height:100%;
+  background: #FEFEFE;
+  transition:all 300ms linear;
+  box-shadow: -4px 0px 12px -11px #000000;
+}
+
+#sidebar .toggle-btn {
+  display: block;
+  position: absolute;
+  right:2rem;
+  top:2rem;
+  font-size: 2.5rem;
+  color: #303030;
+  cursor: pointer;
+}
+
+#sidebar.active {
+  right:0px;
+}
+
+#sidebar .list {
+  padding: 5rem 0;
+}
+#sidebar .list .item {
+  display: flex;
+  justify-content: center;
+  padding:0.7rem;
+  font-size:1.5rem;
+  font-weight: 700;
+}
+
+#sidebar .list .item a {
+  color: #303030;
+}
+
+#Hero {
+  display: block;
+  height: 100vh;
+}
+#Hero .ctn{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+#Hero .ctn h4 {
+  margin: 0.1rem;
+  font-weight: 500;
+}
+#Hero a .more{
+  color: #303030;
+}
+#Hero .ctn h1 {
+  margin: 0.1rem;
+}
+#Hero .ctn h2 {
+  margin: 0.5rem;
+  letter-spacing: 0px;
+}
+#Hero .ctn .btn {
+  margin: 0.5rem;
+  padding:auto 2rem;
+  background:#72B843;
+}
+
+.more a{
+  color: #303030;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 40%;
+  right: 40%;
+  bottom: 2rem;
+}
+
+.brand-logo {
+  width: 40%;
+}
+.brand-logo img{
+  margin: 1rem;
+}
+.brand-logo h3{
+  font-family: "Raleway";
+}
+
+@media all and (max-width: 700px) {
+  .brand-logo img{
+    margin: 1rem 0.5rem;
+    height: 2rem;
+    width: 3rem;
+  }
+  .brand-logo h3{
+    font-size: 1.3rem;
+  }
+}
+
+#mlh-trust-badge {
+  position: absolute;
+  z-index: 10;
+}
+
+section .main {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  position: relative;
+}
+section .main .sidebar{
+  overflow: hidden;
+  display: flex;
+  height: 100vh;
+  width: 25%;
+  background: #303030;
+  color: #9F9F9F;
+  flex-flow: column wrap;
+  text-align: left;
+  line-height: 0;
+  border: 1px solid black;
+  border-bottom: none;
+}
+section .main .ctn{
+  overflow: hidden;
+  position: absolute;
+  width: 75%;
+  margin-left: 25%;
+  background: #373636;
+  color: #fff;
+  display: flex;
+  flex-flow: column wrap;
+  overflow-x: hidden !important;
+}
+
+@media all and (max-width: 700px) {
+  section .main .ctn{
+    width: 100%;
+    margin: 0;
+  }
+  section .main .sidebar{
+    display: none;
+  }
+}
+.sidebar h4  {
+
+margin: 1rem;
+}
+.sidebar h4 .material-icons {
+  position: relative;
+  top: 6px;
+  font-size: 2rem;
+  margin-right: 0.2rem;
+}
+.sidebar h4 .material-icons .down{
+  top: 5px;
+}
+
+.sidebar ul {
+  height: 80%;
+  width: 100%
+}
+
+.sidebar ul li{
+  margin: 0.5rem 0;
+  padding-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  padding-left: 4rem;
+}
+.sidebar ul li a{
+  color: #9F9F9F;
+  font-size: 1rem;
+}
+.sidebar ul li  .material-icons{
+  position: relative;
+  top: 6px;
+}
+
+#About {
+  padding: 4rem;
+}
+#About p.nest{
+  padding-left: 4rem;
+}
+
+h4 span.material-icons {
+  font-size: 1.5rem;
+}
+
+.col-2 {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.col-2 .item{
+  flex: 0 0 50%;
+  display: flex;
+  margin: 1.5rem 0;
+}
+
+@media all and (max-width: 1000px) {
+  #About .col-2 .item{
+    flex: 0 0 100%;
+  }
+}
+.col-2 .item .icon{
+  font-size: 4rem;
+}
+.col-2 .item h3{
+  margin: 0;
+}
+.col-2 .item .txt{
+  margin: 0 2rem 2rem;
+}
+
+#About .btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#Speakers {
+  padding: 4rem;
+}
+#Speakers h2 {
+  margin: 0;
+  margin-bottom: 4rem;
+}
+
+#Speakers .col-4{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#Speakers .col-4 .item{
+  flex: 0 0 25%;
+  margin-bottom: 3.5rem;
+  text-align: center;
+}
+
+@media all and (max-width: 1000px) {
+  #Speakers .col-4 .item{
+    flex: 0 0 50%;
+  }
+}
+
+#Speakers .item img{
+  border-radius: 50%;
+  width: 65%;
+}
+#Speakers .item h4{
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+#Speakers .item h4 strong{
+  font-family: "Raleway";
+  text-transform: uppercase;
+}
+#Speakers .item p{
+  border-radius: 50%;
+  width: 65%;
+  color: #fff;
+  font-size: 1rem;
+  margin: 0 !important;
+}
+
+@media all and (max-width: 700px) {
+  section {
+    width: 100%;
+  }
+  #Speakers .item h4 {
+    margin: 0.4rem;
+    line-height: 1.2;
+  }
+  #Sponsors h4{
+  width: 100% !important;
+  margin: 0 !important;
+  }
+}
+
+#Sponsors h2{
+  padding: 2rem;
+  padding-left: 4rem;
+}
+#Sponsors h4{
+  padding: 4rem;
+  width: 55%;
+  font-family: "Open Sans";
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+#Sponsors .sponsors-ctn{
+  padding: 2rem 8rem;
+  color:#303030;
+  background: #fff;
+}
+
+#Sponsors .large, #Sponsors .mid, #Sponsors .small{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+#Sponsors .item{
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Sponsors .large .item{
+  flex: 0 0 35%;
+}
+#Sponsors .large .item img{
+  width: 20rem;
+}
+#Sponsors .mid .item{
+  flex: 0 0 25%;
+}
+#Sponsors .mid .item img{
+  width: 15rem;
+}
+#Sponsors .small .item{
+  align-self: center;
+  justify-self: center;
+  flex: 0 0 20%;
+}
+#Sponsors .small .item img{
+  width: 10rem;
+}
+#Sponsors .small .item.adj img{
+  width: 50%;
+}
+
+
+#Community_partners {
+  background: #fff;
+  color: #303030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+#Community_partners .col-3{
+  padding: 2rem 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+#Community_partners .item{
+flex: 0 0 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+#Community_partners .item img{
+  padding: 1rem;
+  width: 15rem;
+}
+
+#Schedule {
+  padding: 4rem;
+}
+#Schedule h2{
+  margin-bottom: 4rem;
+}
+#Schedule .col-1 {
+  display: flex;
+  flex-flow: column wrap;
+}
+#Schedule .col-1 .title{
+  padding: 1.4rem;
+  background: #94DF62;
+}
+#Schedule .col-1 .row{
+  padding: 0 2rem;
+  margin: 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+#Schedule .event,#Schedule .time{
+  flex: 0 0 50%;
+  margin: 0.7rem 0;
+}
+#Schedule .row h2{
+  margin: 0;
+  font-weight: 800;
+  font-size: 1.9rem;
+}
+
+@media all and (max-width: 700px) {
+  #Schedule .row h2{
+    font-size: 1.5rem;
+  }
+}
+#Schedule .title{
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+#Schedule .title .material-icons{
+  font-size: 2rem;
+  padding-right: 0.3rem;
+}
+#Schedule .col-1 .row .event{
+  display: flex;
+  flex-flow: column wrap;
+}
+#Schedule .col-1 .row .event p{
+  display: flex;
+  flex-flow: column wrap;
+  color: #9F9F9F;
+}
+
+#FAQ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  padding: 4rem;
+  position: relative;
+  margin-bottom: 10rem;
+}
+
+#FAQ .col-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+#FAQ .col-2 .item{
+  flex: 0 0 45%;
+  display: flex;
+  flex-flow: row wrap;
+}
+#FAQ .col-2 .item h4{
+  display: flex;
+  align-items: center;
+}
+#FAQ .col-2 .item .material-icons{
+  font-size: 2rem;
+}
+
+@media all and (max-width: 700px) {
+  #Navbar {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+  }
+  #FAQ .col-2 .item{
+    flex: 0 0 100%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+@media all and (max-width: 1000px) and (min-width: 700px) {
+  #FAQ .col-2 .item{
+    flex: 0 0 80%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+#triangle_small {
+  position: absolute;
+  top: -17px;
+  left: 114px;
+  width: 6rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background:#303030;
+  color: #fff;
+  padding: 2rem;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  width: 100%;
+}
+footer div {
+  margin: 0 1.5rem;
+}
+footer a{
+  color: #fff;
+}
+
+footer svg {
+  padding-top: 1rem;
+  width: 4.5rem;
+}
+
+footer h4,footer p {
+  line-height: 0.7;
+}
+
+@media all and (max-width: 700px) {
+  footer h4,footer p {
+    line-height: 1.4;
+  }
+  footer svg {
+  padding-top: 0rem;
+  width: 4.5rem;
+  }
+  footer h4 {
+    margin: 0;
+  }
+}
+
+#triangle_large {
+  display: block;
+  right: 0;
+  align-self: flex-end;
+}
+/* utils */
+
+h1 {
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+h3, .nav-links {
+  font-family: "Open Sans";
+  font-size: 1.688rem;
+  font-weight: 700;
+}
+h4 {
+  font-family: "Open Sans";
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h4 strong{
+  font-weight: 700;
+}
+
+p,h6 {
+  font-family: "Open Sans";
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.tag {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #989898;
+}
+
+span.sec {
+  color: #72B843;
+}
+span.tri {
+  color: #94DF62;
+}
+
+.loadMore .material-icons {
+  display: flex;
+  flex-flow: column;
+  line-height: 0.4;
+}
+
+.btn {
+  padding: 0.7rem 3rem;
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: none;
+  border-radius: 4px;
+  background: #72B843;
+  box-shadow: none;
+}
+
+.btn.sec {
+  background:#2E2E2E;
+}
+
+.separator svg{
+  margin: 4rem 0;
+  width: 100%;
+}
+@media all and (max-width: 700px) {
+  h1 {
+    font-size: 2.7rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+  h3, .nav-links {
+  font-size: 1.3rem;
+  font-weight: 700;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  h4 strong{
+    font-weight: 700;
+  }
+
+  .tag {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+  .btn {
+    font-size: 0.8rem;
+    padding: 0.2rem 1.3rem;
+  }
+  .btn.large{
+    font-size: 1.1rem;
+    padding: 0.4rem 2rem;
+  }
+  .brand-logo {
+    width: 42%;
+  }
+  .separator svg{
+  margin: 2rem 0;
+  width: 100%;
+  height: 100%;
+}
+}
+
+
+@media all and (max-width: 2000px) and (min-width: 700px) {
+  .fixed {
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+  }
+}
+
+.selected {
+  background: #94DF62;
+}
+.selected a{
+  color: #fff !important;
+}
+
+.dark {
+  background: #000;
+  padding: 0;
+}

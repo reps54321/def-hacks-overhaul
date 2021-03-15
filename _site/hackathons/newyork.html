@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta name="description" content="Hackathons by students, for students.">
+
+  <title>Def Hacks NY</title>
+  <link rel="icon" href="../images/defhacks-logos/defhacks-logo-black-green-square.png">
+  <script src="https://use.fontawesome.com/887f11382d.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300,400,700|Raleway:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet">
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="../css/particles-style.css">
+  <link rel="stylesheet" href="../css/nav-styling.css">
+  <script src="../js/app.js"></script>
+
+
+  <style>
+  .mySlides {display:none}
+  .w3-left, .w3-right, .w3-badge {cursor:pointer}
+  .w3-badge {height:13px;width:13px;padding:0}
+
+  html, body{
+    height: 100%;
+  }
+
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.5em;
+  }
+
+  h1 {
+    font-family: 'Fjalla One', sans-serif;
+  }
+
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+  }
+
+  h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+  }
+  </style>
+
+</head>
+
+<nav>
+  <div class="nav-wrapper" style="padding: 0px 100px;">
+    <a href="../index.html" class="brand-logo" style="margin-top: 8px;">
+      <img width="65px" style="float: left;" src="../images/defhacks-logos/defhacks-logo-black-green.png"></img>
+      <h3 style="margin-left: 22px; float: right; color: #303030!important"><strong>DEF</strong> HACKS</h3>
+    </a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="../index.html#ATTEND">ATTEND</a></li>
+      <li><a href="../index.html#SPONSOR">SPONSOR</a></li>
+      <li><a href="../index.html#OUR-TEAM">OUR TEAM</a></li>
+      <li><a href="../index.html#CONTACT">CONTACT</a></li>
+      <li><a href="../blog/blog.html">BLOG</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <div id="volunteerModal" class="modal">
+    <div class="modal-content">
+      <h4>Want to volunteer? Send us an email.</h4>
+      <p class="flow-text">hello@defhacks.io</p>
+      <a class="flow-text" style="color: #62a337" href="mailto:hello@defhacks.io?subject=I%20Would%20Like%20To%20Volunteer%20For%20The%20Seattle%202018%20Hackathon%20&body=Dear%20Def%20Hacks%20Team%2C%0A%0AMy%20name%20is%20%5Binsert%20name%5D%20and%20I%20am%20interested%20in%20volunteering%20for%20the%20Seattle%202018%20Hackathon.%0A%0AMy%20background%20is%20%5Binsert%20my%20incredible%20background%5D.%0A%0ASincerely%2C%0A%5BInsert%20your%20name%5D">Here. We already wrote the email for you. Click here.</a>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+
+  <div id="sponsorModal" class="modal">
+    <div class="modal-content">
+      <h4>Want to sponsor? Send us an email.</h4>
+      <p class="flow-text">hello@defhacks.io</p>
+      <a class="flow-text" style="color: #62a337" href="mailto:hello@defhacks.io?subject=We%20Are%20Interested%20In%20Sponsoring%20The%20Seattle%202018%20Hackathon%20&body=Dear%20Def%20Hacks%20Team%2C%0A%0AMy%20name%20is%20%5Binsert%20name%5D%20and%20I%20work%20for%20%5Binsert%20company%5D.%20We%20%5Bdo%20the%20incredible%20things%20your%20company%20does%5D.%0A%0AWe%20are%20interested%20in%20sponsoring%20and%20would%20like%20more%20information.%0A%0ASincerely%2C%0A%5BInsert%20your%20name%5D%2C%0A%5BInsert%20your%20company%20name%5D">Here. We already wrote the email for you. Click here.</a>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+
+  <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <h4>Want to contact us? Send us an email.</h4>
+        <p class="flow-text">hello@defhacks.io</p>
+        <a class="flow-text" style="color: #62a337" href="mailto:hello@defhacks.io?subject=Contact%20Us&body=Dear%20Def%20Hacks%20Team%2C%0A%0AMy%20name%20is%20%5Binsert%20name%5D.%0A%0A%5BInsert%20the%20incredible%20thing%20you%20want%20to%20contact%20us%20about.%5D%0A%0ASincerely%2C%0A%5BInsert%20your%20name%5D">Here. We already wrote the email for you. Click here.</a>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
+  </div>
+
+  <div id="particles-js" style="-webkit-box-shadow: inset 0px 0px 10px 0px rgba(48,48,48,0.22);-moz-box-shadow: inset 0px 0px 10px 0px rgba(48,48,48,0.22);box-shadow: inset 0px 0px 10px 0px rgba(48,48,48,0.22);"></div>
+  <div id="banner" style="height: calc(100% - 300px)" class="valign-wrapper">
+    <div style="width: 100%">
+    <h2 style="font-size: 5em; color: #303030; margin-top:30px;" class="center-align fade-in one">NEW YORK 2019</h2>
+    <div class="section"  style="background-color: #fff; padding-bottom: 10px">
+        <div class="container center-align">
+          <p style="margin-left: -5px; color: #303030" class="flow-text fade-in two"><a class="modal-trigger" href="mailto:hello@defhacks.io">Contact Us</a>  | <a class="modal-trigger" href="../index.html#SPONSOR">Sponsor</a> | <a class="modal-trigger" href="https://defhacks.typeform.com/to/ajTynT">Join Us</a></p>
+        </div>
+    </div>
+    </div>
+  </div>
+    <div  class="seperator-top hide-on-small-only fade-in four" style="border-bottom: 70px solid #303030; border-right: 1500px solid transparent; overflow: hidden"></div>
+    <div class="seperator-bottom fade-in four" style=" margin-top: -1px; margin-bottom: -1px;"></div>
+
+      <style>
+      .done-chip {
+        display: inline-block;
+        height: 44px;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+        line-height: 44px;
+        padding: 0 16px;
+        background-color:  rgba(204, 204, 204, 1);
+        margin-bottom: 5px;
+        border-radius: 0px;
+        margin-right: 5px;
+        min-width: 10em;
+      }
+
+      .active-chip {
+        display: inline-block;
+        height: 44px;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+        line-height: 44px;
+        padding: 0 16px;
+        border-radius: 0px;
+        background-color: #62a337;
+        margin-bottom: 5px;
+        margin-right: 10px;
+        min-width: 10em;
+      }
+
+      .soon-chip {
+        display: inline-block;
+        height: 44px;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+        line-height: 44px;
+        padding: 0 16px;
+        border-radius: 0px;
+        background-color: #62a337;
+        margin-bottom: 5px;
+        margin-right: 10px;
+        min-width: 10em;
+      }
+
+      /* make keyframes that tell the start state and the end state of our object */
+
+        @-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+        @-moz-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+        @keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+
+        .fade-in {
+            opacity:0;  /* make things invisible upon start */
+            -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+            -moz-animation:fadeIn ease-in 1;
+            animation:fadeIn ease-in 1;
+
+            -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+            -moz-animation-fill-mode:forwards;
+            animation-fill-mode:forwards;
+
+            -webkit-animation-duration:0.2s;
+            -moz-animation-duration:0.2s;
+            animation-duration:0.2s;
+        }
+
+        .fade-in.one {
+        -webkit-animation-delay: 0s;
+        -moz-animation-delay: 0s;
+        animation-delay: 0s;
+        }
+
+        .fade-in.two {
+        -webkit-animation-delay: 0.2s;
+        -moz-animation-delay:0.2s;
+        animation-delay: 0.2s;
+        }
+
+        .fade-in.three {
+        -webkit-animation-delay: 0.4s;
+        -moz-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+        }
+
+        .fade-in.four {
+        -webkit-animation-delay: 0.6s;
+        -moz-animation-delay: 0.6s;
+        animation-delay: 0.6s;
+        }
+
+        .seperator-top {
+          width: 100%;
+          height: 0;
+          margin: 0;
+          overflow: hidden;
+        }
+
+        .seperator-bottom {
+          width: 100%;
+          background-color: #303030;
+          height: 10px;
+          overflow: hidden;
+        }
+      </style>
+  </div>
+
+  <div class="section fade-in four" style="width: 100%; background-color: #303030; padding: 35px 0px; margin: 0px">
+    <div class="container">
+
+      <div class="row">
+         <div class="col s12">
+            <div class="row" >
+              <div class="col l4 s12 offset-l1" style="margin-left:10%;color: #fff">
+                <h3 style="font-family: 'Oswald', sans-serif; color: #62a337;">When?</h3>
+                <p>June 1st-2nd, 2019</p>
+              </div>
+              <div class="col l4 s12 offset-l1" style="color: #fff">
+                <h3 style="font-family: 'Oswald', sans-serif; color: #62a337;">Where?</h3>
+                <p>TBD</p>
+              </div>
+            </div>
+         </div>
+       </div>
+
+       <style>
+
+       .question h4 {
+         font-family: 'Oswald', sans-serif;
+       }
+       </style>
+
+
+       <div class="row">
+         <div class="col 12">
+
+         </div>
+       </div>
+
+
+    </div>
+  </div>
+  <div class="seperator-top hide-on-small-only" style="margin-top: -50px; margin-bottom: -1px;border-bottom: 51px solid #62a337; border-right: 1500px solid #303030; overflow: hidden; -webkit-transform: scaleX(1); transform: scaleX(1);"></div>
+
+  <div style="width: 100%; background-color: #62a337; height: 30px; margin-top: -10px;"></div>
+
+
+  <div class="section" style="width: 100%; background-color: #fff; padding: 40px 0px">
+    <div class="container">
+      <div class="row">
+         <div class="col s12">
+           <h2 style="color: #303030; margin-bottom: 18px; margin-top: 30px; text-align: center;">Interested in attending?</h2>
+           <p style="color: #303030; font-weight: 500; margin-bottom: 38px;text-align: center;">Registration isn't open quite yet...Sign up to receive updates on this event!
+           <div class="press-block">
+              <div class="row center-align" style="margin: auto; width: 70%">
+                <div class="col s12" style="width: 100%; margin-left: 10px;font-weight: 500!important;">
+
+                  <!-- Begin MailChimp Signup Form -->
+                  <link href="// cdn-images.mailchimp.com/embedcode/classic-10_7.css " rel="stylesheet" type="text/css">
+                  <style type="text/css">
+                  #mc_embed_signup{background:# fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+                  /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                  </style>
+                  <div class="center-align" id="mc_embed_signup">
+                  <form action="https://xyz.us14.list-manage.com/subscribe/post?u=1a0222dc02366111c9c8655bd&amp;id=791d0d0947" method="post" id="mc-embedded-subscribe- form" name="mc-embedded-subscribe- form" style="font-family: Raleway;" class="validate" target="_blank" novalidate>
+                      <div id="mc_embed_signup_scroll">
+                  <div class="left-align" class="mc-field-group">
+                  <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                  </label>
+                  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                  </div>
+                  <div class="left-align" class="mc-field-group">
+                  <label for="mce-FNAME">First Name </label>
+                  <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                  </div>
+                  <div class="left-align" class="mc-field-group">
+                  <label for="mce-LNAME">Last Name </label>
+                  <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                  </div>
+                  <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ 1a0222dc02366111c9c8655bd_ 791d0d0947" tabindex="-1" value=""></div>
+                      <div class="clear press-btn waves-effect btn-flat modal-trigger center-align" style="border-color: #62a337; color: #fff; background-color: #62a337; margin-top: 18px; padding: 2px 10px; font-size: 1.2em; "><input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                      </div>
+                  </form>
+                  </div>
+                  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                  <!--End mc_embed_signup-->
+
+                </div>
+              <!-- <p style="color: #000; font-size: 1.6em; font-weight: 500; margin-top: 40px;">Interested in joining one of our organizing teams? </p> -->
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+  </div>
+
+  <div style="width: 100%; background-color: #62a337; height: 10px"></div>
+  <div class="seperator-top hide-on-small-only" style="border-bottom: 50px solid #303030; border-right: 1500px solid #62a337; overflow: hidden;margin-bottom: -1px;"></div>
+
+  <div class="section" style="width: 100%; background-color: #303030; padding: 0px; margin: 0px">
+    <div class="container">
+
+      <div class="row">
+         <div class="col s12">
+           <!--
+           <div class="row">
+            <div class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix" style="color: #fff">search</i>
+                  <input style="color: #fff; border-color: #fff" value="What is" type="text" id="search">
+                </div>
+              </div>
+            </div>
+          -->
+
+            <div id="search-content" style="padding: 20px 0px 30px 0px;">
+              <div class="question">
+                <h4>What is a hackathon?</h4>
+                <p>A hackathon is an event, typically lasting several hours (or even days), in which a large number of people meet to code and show off their products. You can find a longer explanation here!</p>
+              </div>
+
+              <div class="question">
+                <h4>What should I bring to a hackathon?</h4>
+                <p>Please bring your own computer and its charger, your ID, and power strips (recommended). The event costs nothing - meals and swag are provided for free! Also consider bringing a sleeping bag and/or pillow.</p>
+              </div>
+
+              <div class="question">
+                <h4>What should I do after I register?</h4>
+                <p>After you register, try to find a team and start brainstorming ideas for the hackathon! You shouldn't start coding until the event, but feel free to brainstorm ideas, especially if a theme is released beforehand!</p>
+              </div>
+
+              <!--
+              <hr style="margin-top: 10px; border: 0; width: 60%; height: 1px; background: #fff;">
+              <div class="row center-align">
+                <a class="waves-effect btn-flat" style="color: #fff">Show All</a>
+              </div>
+            -->
+
+            </div>
+          </div>
+         </div>
+       </div>
+
+       <style>
+       .question {
+         margin-bottom: 20px;
+         color: #fff;
+       }
+
+       .question h4 {
+         font-family: 'Oswald', sans-serif;
+       }
+       </style>
+
+       <div class="row">
+         <div class="col 12">
+
+         </div>
+       </div>
+
+
+    </div>
+  </div>
+  <div style="width: 100%;margin-top: -60px; background-color: #62a337; height: 10px"></div>
+  <div class="section" style=" width: 100%; background-color: #dfdfdf; padding: 45px 0px">
+    <div class="container">
+
+      <div class="row center-align">
+         <div class="col s12">
+           <h2 style="color: #000; margin-bottom: 20px; font-size: 3em;">Previous Sponsors</h2>
+           <div class="row" style="width: 100%; max-width: 800px; margin: 0 auto;">
+             <div class="base-img col l3 m6 s12">
+                <img style="width: 100%; margin: 0 auto;" src="../images/sponsors/microsoft.png" class="responsive-img">
+                <div class="overlay microsoft-overlay">
+                  <div class="text"></div>
+                </div>
+             </div>
+
+             <div class="base-img col l3 m6 s12">
+                <img style="width: 100%; margin: 0 auto;" src="../images/sponsors/name.png" class="responsive-img">
+                <div class="overlay name-overlay">
+                  <div class="text"></div>
+                </div>
+             </div>
+
+             <div class="base-img col l3 m6 s12">
+                <img style="width: 100%; margin: 0 auto;" src="../images/sponsors/github.png" class="responsive-img">
+                <div class="overlay github-overlay">
+                  <div class="text"></div>
+                </div>
+             </div>
+
+             <div class="base-img col l3 m6 s12">
+                <img style="width: 100%; margin: 0 auto;" src="../images/sponsors/docusign.png" class="responsive-img">
+                <div class="overlay docusign-overlay">
+                  <div class="text"></div>
+                </div>
+             </div>
+             <div class="base-img col l3 m6 s12">
+                <img style="width: 100%; margin: 0 auto;" src="../images/sponsors/acumatica.png" class="responsive-img">
+                <div class="overlay acumatica-overlay">
+                  <div class="text"></div>
+                </div>
+             </div>
+             <div class="base-img col l3 m6 s12">
+                <img style="width: 100%; margin: 0 auto;" src="../images/sponsors/hackerearth.png" class="responsive-img">
+                <div class="overlay hackerearth-overlay">
+                  <div class="text"></div>
+                </div>
+             </div>
+             <div class="base-img col l3 m6 s12">
+                <img style="width: 100%; margin: 0 auto;" src="../images/sponsors/mlh.png" class="responsive-img">
+                <div class="overlay mlh-overlay">
+                  <div class="text"></div>
+                </div>
+             </div>
+             <div class="base-img col l3 m6 s12">
+                <img style="width: 100%; margin: 0 auto;" src="../images/sponsors/make school.png" class="responsive-img">
+                <div class="overlay make-overlay">
+                  <div class="text"></div>
+                </div>
+             </div>
+           </div>
+         </div>
+       </div>
+
+
+    </div>
+  </div>
+  </div>
+  <div style="width: 100%; background-color: #62a337; height: 10px"></div>
+
+</body>
+
+<footer class="page-footer" style="background-color: #054609; padding-top: 40px;">
+            <div class="row center">
+              <i style="font-size: 20px; margin-right: 15px; color: #fff" class="fa fa-facebook" aria-hidden="true" onclick="window.open('https://www.facebook.com/profile.php?id=315896121953286&ref=br_rs')"></i>
+              <i style="font-size: 20px; margin-right: 5px; color: #fff" class="fa fa-twitter" aria-hidden="true" onclick="window.open('https://twitter.com/def_hacks?lang=en')"></i>
+              <br><br>
+              <a href="mailto:hello@defhacks.io" style="color: #fff; margin: 100px 0px; font-size: 1.2em">hello@defhacks.io</a>
+     			 </div>
+		 </div>
+		 <div class="footer-copyright">
+			 <div class="container">
+         © 2019 Def Hacks Inc.
+       </div>
+		 </div>
+</footer>
+
+<style>
+/* label color */
+  .input-field label {
+    color: #fff;
+  }
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: #fff;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+  }
+  /* valid color */
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: #fff;
+  }
+</style>
+
+<script
+src="https://code.jquery.com/jquery-2.2.4.js"
+integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+crossorigin="anonymous"></script>
+<script src='../js/materialize.js'></script>
+<script  src="../js/index.js"></script>
+<script  src="../js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+  <script  src="../js/particles-index.js"></script>
+
+
+  </body>
+</html>
