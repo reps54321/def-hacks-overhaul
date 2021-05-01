@@ -50,6 +50,7 @@
     html,
     body {
       height: 100%;
+      overflow: hidden;
     }
 
     p {
@@ -111,6 +112,41 @@
     <li><a href="../intern.html">INTERN</a></li>
     <li><a href="../index.html#OUR-TEAM">OUR TEAM</a></li>
     <li><a href="mailto:virtual@defhacks.co">CONTACT</a></li>
+    <li class="ndd-li">
+      <a href="">PAST HACKATHONS ▾</a>
+
+      <style>
+        .ndd {
+          min-width: 100%;
+          /* Set width of the dropdown */
+          display: none;
+          position: absolute;
+          z-index: 999;
+        }
+
+        .ndd-li:hover .ndd {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .ndd li a {
+          display: inline-block;
+          width: 10%;
+          background-color: #fff !important;
+        }
+
+        .ndd li a:hover {
+          background-color: lightgray !important;
+        }
+      </style>
+
+      <ul class="ndd">
+        <li><a href="seattle.html">SEATTLE 2019</a></li>
+        <li><a href="#">SANTIAGO 2019</a></li>
+        <li><a href="virtual.html">VIRTUAL 2020</a></li>
+        <li><a href="global_2.0.html">GLOBAL 2.0</a></li>
+      </ul>
+    </li>
     <!--<li><a href="../blog/blog.html">BLOG</a></li>-->
   </ul>
   </div>
