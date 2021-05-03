@@ -54,6 +54,10 @@
       padding: 0
     }
 
+    img {
+      -webkit-user-drag: none;
+    }
+
     p {
       font-family: 'Open Sans', sans-serif;
       font-weight: 300;
@@ -248,23 +252,60 @@
         <ul class="right hide-on-med-and-down">
           <!-- Dropdown Trigger -->
           <!-- <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">EVENTS<i class="material-icons right">arrow_drop_down</i></a></li> -->
-          <li><a href="http://defhacks.co/hack">ATTEND</a></li>
+          <li><a href="/hackathons/worldwide_3.0.html">ATTEND</a></li>
           <li><a href="#SPONSOR">SPONSOR</a></li>
           <li><a href="intern.html">INTERN</a></li>
           <li><a href="#OUR-TEAM">OUR TEAM</a></li>
           <li><a href="mailto:virtual@defhacks.co">CONTACT</a></li>
-          <li><a href="blog/blog.html">BLOG</a></li>
+          <li class="ndd-li">
+            <a href="">PAST HACKATHONS ▾</a>
+
+            <style>
+              .ndd {
+                min-width: 100%;
+                /* Set width of the dropdown */
+                display: none;
+                position: absolute;
+                z-index: 999;
+              }
+
+              .ndd-li:hover .ndd {
+                display: flex;
+                flex-direction: column;
+              }
+
+              .ndd li a {
+                display: inline-block;
+                width: 10%;
+                background-color: #fff !important;
+              }
+
+              .ndd li a:hover {
+                background-color: lightgray !important;
+              }
+            </style>
+
+            <ul class="ndd">
+              <li><a href="hackathons/seattle.html">SEATTLE 2019</a></li>
+              <li><a href="hackathons/santiago.html">SANTIAGO 2019</a></li>
+              <li><a href="hackathons/virtual.html">VIRTUAL 2020</a></li>
+              <li><a href="hackathons/global_2.0.html">GLOBAL 2.0</a></li>
+            </ul>
+          </li>
+          <!--<li><a href="blog/blog.html">BLOG</a></li>-->
         </ul>
       </div>
       <ul class="side-nav" id="mobile-demo" style="transform: translateX(-100%);">
         <!-- Dropdown Trigger -->
         <!-- <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">EVENTS<i class="material-icons right">arrow_drop_down</i></a></li> -->
-        <li><a href="http://defhacks.co/hack">ATTEND</a></li>
+        <li><a href="/hackathons/worldwide_3.0.html">ATTEND</a></li>
         <li><a href="#SPONSOR">SPONSOR</a></li>
         <li><a href="intern.html">INTERN</a></li>
         <li><a href="#OUR-TEAM">OUR TEAM</a></li>
         <li><a href="mailto:virtual@defhacks.co">CONTACT</a></li>
-        <li><a href="blog/blog.html">BLOG</a></li>
+
+
+        <!-- <li><a href="blog/blog.html">BLOG</a></li>-->
       </ul>
     </div>
 
@@ -276,9 +317,9 @@
               <tr>
                 <td>REGISTRATION&nbsp;</td>
                 <td>FOR&nbsp;</td>
-                <td>DEF HACKS |&nbsp;</td>
-                <td>GLOBAL&nbsp;</td>
-                <td>2.0&nbsp;</td>
+                <td>DEF HACKS |</td>
+                <td>WORLDWIDE&nbsp;</td>
+                <td>3.0&nbsp;</td>
                 <td>IS&nbsp;</td>
                 <td>OPEN&nbsp;</td>
                 <td>NOW&nbsp;</td>
@@ -344,9 +385,9 @@
           </div>
         </div> -->
 
-      <div style="width:100%; height:240px;">
+      <div style="width:40vmax; height:240px; margin: 0 auto;">
         <div class="row" id="d" style="margin: 0 auto;">
-          <div class="card-columns col l6 m6 s12">
+          <div class="card-columns col l12 m6 s12">
             <div class="card-container" style="border:34px">
               <div class="text-card card-front">
                 <div class="text-box" style="height: 190px; line-height: 190px; display: table;">
@@ -355,72 +396,58 @@
               </div>
               <div class="text-card card-back">
                 <div class="text-box" style="height: 190px; line-height: 190px;">
-                  <a class="soon-chip" style="color: #fff; font-size:14px;">Worldwide
+                  <a class="soon-chip" style="color: #fff; font-size:14px;"
+                    href="hackathons/worldwide_3.0.html">Worldwide
                     v3.0</a></br>
                 </div>
               </div>
             </div>
           </div>
           <div class="card-columns col l6 m6 s12">
-            <div class="card-container">
-              <div class="text-card card-front">
-                <div class="text-box" style="height: 190px; line-height: 190px; display: table;">
-                  <h3 style="display: table-cell; vertical-align: middle;">Recently Concluded Events</h3>
-                </div>
-              </div>
-              <div class="text-card card-back">
-                <div class="text-box" style="height: 190px; line-height: 190px;">
-                  <p>
-                    <a class="soon-chip" href="hackathons/virtual.html" style="color: #fff; font-size: 14px;">VIRTUAL
-                      2020</a>
-                    <a class="soon-chip" href="hackathons/seattle.html" style="color: #fff; font-size: 14px;">SEATTLE
-                      2019</a> <br />
-                    <a class="soon-chip" href="hackathons/santiago.html" style="color: #fff; font-size: 14px;">SANTIAGO
-                      2019</a>
-                    <a class="soon-chip" href="hackathons/global_2.0.html" style="color: #fff; font-size:14px;">GLOBAL
-                      v2.0</a></br>
-                  </p>
-                </div>
-              </div>
-            </div>
+
+
+
           </div>
         </div>
       </div>
     </div>
+  </div>
+  </div>
+  </div>
 
-    <style>
-      @media only screen and (min-width: 600px) {
-        .soon-chip {
-          margin-top: 10px;
-        }
+  <style>
+    @media only screen and (min-width: 600px) {
+      .soon-chip {
+        margin-top: 10px;
       }
+    }
 
-      @media only screen and (max-width: 523px) {
-        .soon-chip {
-          margin: 5px !important;
-        }
+    @media only screen and (max-width: 523px) {
+      .soon-chip {
+        margin: 5px !important;
       }
+    }
 
+    #d {
+      width: 60%;
+    }
+
+    #banner {
+      height: 750px;
+      margin-bottom: 150px;
+      margin-top: 50px;
+    }
+
+    @media only screen and (max-width: 600px) {
       #d {
-        width: 60%;
+        width: 80%;
       }
 
       #banner {
-        height: 750px;
-        margin-bottom: 150px;
-        margin-top: 50px;
+        margin-top: -50px
       }
-
-      @media only screen and (max-width: 600px) {
-        #d {
-          width: 80%;
-        }
-
-        #banner {
-          margin-top: -50px
-        }
-      }
-    </style>
+    }
+  </style>
   </div>
   <div id="ATTEND" class="seperator-top hide-on-small-only fade-in four"
     style="border-bottom: 50px solid #303030; border-right: 1500px solid transparent; overflow: hidden">
