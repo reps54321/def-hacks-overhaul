@@ -555,26 +555,42 @@
         Speakers</h2>
 
       <script>$(document).ready(function () {
-          $('.owl-carousel').owlCarousel();
+          $('.owl-carousel').owlCarousel({
+            responsive: {
+              0: {
+                items: 2,
+                loop: true
+
+              },
+              600: {
+                items: 3,
+                loop: true
+              },
+              1000: {
+                items: 3,
+                loop: true
+              }
+            }
+          });
         });</script>
 
 
       <div class="owl-carousel owl-theme" style="color: #fff;">
-        <div class="base-img col l3 m6 s12" style="text-align: center;">
+        <div style="width: 15vmax; text-align: center;">
           <a href="https://en.wikipedia.org/wiki/Viral_B._Shah" target="_blank"><img
               style="width: 100%; margin: 0 auto;" src="../images/speakers/viral.jpg" class="responsive-img"></a>
           <p style="margin-bottom: -15px;"><strong>Viral Shah</strong></p>
           <P style="margin-bottom: 20px;">Founder of Julia Programming Language</p>
         </div>
 
-        <div class="base-img col l3 m6 s12" style="text-align: center;">
+        <div style="width: 15vmax; text-align: center;">
           <a href="https://www.linkedin.com/in/joshua-starmer-95a554130/" target="_blank"><img
               style="width: 100%; margin: 0 auto;" src="../images/speakers/Josh Starmer.jpg" class="responsive-img"></a>
           <p style="margin-bottom: -15px;"><strong>Josh Starmer</strong></p>
           <P style="margin-bottom: 20px;">Founder of StatQuest <br> Coursera Instructor</p>
         </div>
 
-        <div class="base-img col l3 m6 s12" style="text-align: center;">
+        <div style="width: 15vmax; text-align: center;">
           <a href="https://en.wikipedia.org/wiki/Michael_Seibel" target="_blank"><img
               style="width: 100%; margin: 0 auto;" src="../images/speakers/Michael_Seibel.jpeg"
               class="responsive-img"></a>
@@ -582,14 +598,14 @@
           <P style="margin-bottom: 20px;">Managing Director and Group Partner at Y Combinator
           </p>
         </div>
-        <div class="base-img col l3 m6 s12" style="text-align: center;">
+        <div style="width: 15vmax; text-align: center;">
           <a href="https://www.linkedin.com/in/juanpflores94" target="_blank"><img style="width: 100%; margin: 0 auto;"
               src="../images/speakers/Juan_Pablo_Flores_Cortés.jpg" class="responsive-img"></a>
           <p style="margin-bottom: -15px;"><strong>Juan Pablo Flores Cortés </strong></p>
           <P style="margin-bottom: 20px;">Program Manager at GitHub
           </p>
         </div>
-        <div class="base-img col l3 m6 s12" style="text-align: center; color: #FFFFFF;">
+        <div style="width: 15vmax; text-align: center;">
           <a href="https://www.linkedin.com/in/leony1/" target="_blank"><img style="width: 100%; margin: 0 auto;"
               src="../images/speakers/Leon_Yuan.jpg" class="responsive-img"></a>
           <p style="margin-bottom: -15px;"><strong>Leon Yuan</strong></p>
