@@ -19,6 +19,10 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="../css/particles-style.css">
   <link rel="stylesheet" href="../css/nav-styling.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="../js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="../js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+
   <script src="../js/app.js"></script>
 
 
@@ -462,6 +466,10 @@
         .question h4 {
           font-family: 'Oswald', sans-serif;
         }
+
+        img {
+          -webkit-user-drag: none !important;
+        }
       </style>
 
 
@@ -542,83 +550,78 @@
   <div class="section" style="width: 100%; background-color: #303030; padding: 40px 0px">
     <!-- Guest Speakers -->
     <div class="container">
+      <h2 style="color: #FFFFFF; margin-bottom: 30px; margin-top: 30px; text-align: center;"><i
+          class="fas fa-user"></i>Guest
+        Speakers</h2>
+
+      <script>$(document).ready(function () {
+          $('.owl-carousel').owlCarousel({
+            responsive: {
+              0: {
+                items: 2,
+                loop: true
+
+              },
+              600: {
+                items: 3,
+                loop: true
+              },
+              1000: {
+                items: 3,
+                loop: true
+              }
+            }
+          });
+        });</script>
+
+
+      <div class="owl-carousel owl-theme" style="color: #fff;">
+        <div style="width: 15vmax; text-align: center;">
+          <a href="https://en.wikipedia.org/wiki/Viral_B._Shah" target="_blank"><img
+              style="width: 100%; margin: 0 auto;" src="../images/speakers/viral.jpg" class="responsive-img"></a>
+          <p style="margin-bottom: -15px;"><strong>Viral Shah</strong></p>
+          <P style="margin-bottom: 20px;">Founder of Julia Programming Language</p>
+        </div>
+
+        <div style="width: 15vmax; text-align: center;">
+          <a href="https://www.linkedin.com/in/joshua-starmer-95a554130/" target="_blank"><img
+              style="width: 100%; margin: 0 auto;" src="../images/speakers/Josh Starmer.jpg" class="responsive-img"></a>
+          <p style="margin-bottom: -15px;"><strong>Josh Starmer</strong></p>
+          <P style="margin-bottom: 20px;">Founder of StatQuest <br> Coursera Instructor</p>
+        </div>
+
+        <div style="width: 15vmax; text-align: center;">
+          <a href="https://en.wikipedia.org/wiki/Michael_Seibel" target="_blank"><img
+              style="width: 100%; margin: 0 auto;" src="../images/speakers/Michael_Seibel.jpeg"
+              class="responsive-img"></a>
+          <p style="margin-bottom: -15px;"><strong>Michael Seibel</strong></p>
+          <P style="margin-bottom: 20px;">Managing Director and Group Partner at Y Combinator
+          </p>
+        </div>
+        <div style="width: 15vmax; text-align: center;">
+          <a href="https://www.linkedin.com/in/juanpflores94" target="_blank"><img style="width: 100%; margin: 0 auto;"
+              src="../images/speakers/Juan_Pablo_Flores_Cortés.jpg" class="responsive-img"></a>
+          <p style="margin-bottom: -15px;"><strong>Juan Pablo Flores Cortés </strong></p>
+          <P style="margin-bottom: 20px;">Program Manager at GitHub
+          </p>
+        </div>
+        <div style="width: 15vmax; text-align: center;">
+          <a href="https://www.linkedin.com/in/leony1/" target="_blank"><img style="width: 100%; margin: 0 auto;"
+              src="../images/speakers/Leon_Yuan.jpg" class="responsive-img"></a>
+          <p style="margin-bottom: -15px;"><strong>Leon Yuan</strong></p>
+          <P style="margin-bottom: 20px;">Former Intern at AT&T, Paycom, and Linkedin
+          </p>
+        </div>
+      </div>
+
       <div class="row">
         <div class="col s12"
-          style="color: #fff; margin: auto 0; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-          <h2 style=" margin-bottom: 30px; margin-top: 30px; text-align: center;"><i class="fas fa-user"></i>Guest
-            Speakers</h2>
+          style="color: #fff; margin: auto 0; display: flex; flex-direction: row; align-items: center; justify-content: center;">
 
-          <div>
 
-            <div class="base-img col l3 m6 s12" style="text-align: center;">
 
-              <a href="https://en.wikipedia.org/wiki/Viral_B._Shah" target="_blank"><img
-                  style="width: 100%; margin: 0 auto;" src="../images/speakers/viral.jpg" class="responsive-img"></a>
-              <p style="margin-bottom: -15px;"><strong>Viral Shah</strong></p>
-              <P style="margin-bottom: 20px;">Founder of Julia Programming Language</p>
-            </div>
-
-            <div class="base-img col l3 m6 s12" style="text-align: center;">
-
-              <a href="https://www.linkedin.com/in/joshua-starmer-95a554130/" target="_blank"><img
-                  style="width: 100%; margin: 0 auto;" src="../images/speakers/Josh Starmer.jpg"
-                  class="responsive-img"></a>
-              <p style="margin-bottom: -15px;"><strong>Josh Starmer</strong></p>
-              <P style="margin-bottom: 20px;">Founder of StatQuest <br> Coursera Instructor</p>
-            </div>
-
-            <div class="base-img col l3 m6 s12" style="text-align: center;">
-              <a href="https://en.wikipedia.org/wiki/Michael_Seibel" target="_blank"><img
-                  style="width: 100%; margin: 0 auto;" src="../images/speakers/Michael_Seibel.jpeg"
-                  class="responsive-img"></a>
-              <p style="margin-bottom: -15px;"><strong>Michael Seibel</strong></p>
-              <P style="margin-bottom: 20px;">Managing Director and Group Partner at Y Combinator
-              </p>
-            </div>
-            <div class="base-img col l3 m6 s12" style="text-align: center;">
-              <a href="https://www.linkedin.com/in/leony1/" target="_blank"><img style="width: 100%; margin: 0 auto;"
-                  src="../images/speakers/Leon_Yuan.jpg" class="responsive-img"></a>
-              <p style="margin-bottom: -15px;"><strong>Leon Yuan</strong></p>
-              <P style="margin-bottom: 20px;">Former Intern at AT&T, Paycom, and Linkedin
-              </p>
-            </div>
-          </div>
-
-          <!-- <div style="border: 2px solid white; display: flex">
-            <div class="" style="text-align: center;  border: 2px solid white; padding: 0;">
-              <a href="https://en.wikipedia.org/wiki/Viral_B._Shah" target="_blank"><img
-                  style="width: 50%; border-radius: 30px; " src="../images/speakers/viral.jpg"></a>
-              <p style="margin-bottom: -15px;"><strong>Viral Shah</strong></p>
-              <P style="margin-bottom: 20px;">Founder of Julia Programming Language</p>
-            </div>
-            
-            <div class="" style="text-align: center;">
-              <a href="https://en.wikipedia.org/wiki/Viral_B._Shah" target="_blank"><img
-                  style="width: 50%; border-radius: 30px;" src="../images/speakers/viral.jpg"></a>
-              <p style="margin-bottom: -15px;"><strong>Viral Shah</strong></p>
-              <P style="margin-bottom: 20px;">Founder of Julia Programming Language</p>
-            </div>
-            <div class="" style="text-align: center;">
-              <a href="https://en.wikipedia.org/wiki/Viral_B._Shah" target="_blank"><img
-                  style="width: 50%; border-radius: 30px;" src="../images/speakers/viral.jpg"></a>
-              <p style="margin-bottom: -15px;"><strong>Viral Shah</strong></p>
-              <P style="margin-bottom: 20px;">Founder of Julia Programming Language</p>
-            </div> -->
-          <!-- <div class="base-img col l3 m6 s12" style="text-align: center;">
-              <a href="https://www.linkedin.com/in/joshua-starmer-95a554130/" target="_blank"><img
-                  style="width: 100%; margin: 0 auto;" src="../images/speakers/Josh Starmer.jpg"
-                  class="responsive-img"></a>
-              <p style="margin-bottom: -15px;"><strong>Josh Starmer</strong></p>
-              <P style="margin-bottom: 20px;">Founder of StatQuest <br> Coursera Instructor</p>
-            </div>
-            <div class="base-img col l3 m6 s12" style="text-align: center;">
-              <a href="https://www.linkedin.com/in/leony1/" target="_blank"><img style="width: 100%; margin: 0 auto;"
-                  src="../images/speakers/Leon_Yuan.jpg" class="responsive-img"></a>
-              <p style="margin-bottom: -15px;"><strong>Leon Yuan</strong></p>
-              <P style="margin-bottom: 20px;">Former Intern at AT&T, Paycom, and Linkedin
-              </p>
-            </div> -->
         </div>
+
 
       </div>
     </div>
@@ -1275,10 +1278,11 @@
         </div>
       </div>
     </div>
-
     <script>
       var acc = document.getElementsByClassName("accordion");
       var i;
+
+
 
       for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function () {
@@ -1570,36 +1574,8 @@
     }
   </style>
 
-  <!-- Script of devfolio Button -->
-  <!-- Script of devfolio Button -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      let devfolioOptions = {
-        buttonSelector: '#devfolio-apply-now',
-        key: 'defhacks',
-      }
 
-      let script = document.createElement('script');
-      script.src = "https://devpost.com";
-
-      document.head.append(script);
-
-      script.onload = function () {
-        new Devfolio(devfolioOptions);
-      }
-
-      script.onerror = function () {
-        document.querySelector(devfolioOptions.buttonSelector).addEventListener('click', function () {
-          window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions.key;
-        });
-      }
-    });
-
-  </script>
-
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
   <script src="../js/materialize.js"></script>
   <script src="../js/index.js"></script>
   <script src="../js/main.js"></script>
