@@ -47,7 +47,7 @@ function leftClick() {
     currentStaff--;
     if(currentStaff < 0) {
         currentStaff = staff.length - 1;
-    }
+    } 
 
     //alert(staff[currentStaff].name);
 
